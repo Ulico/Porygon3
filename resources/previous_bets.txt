@@ -1,0 +1,1026 @@
+Damage,Kam,4,690818858155507733,1.2
+Damage,Kam,25,346119366598983680,1.2
+Damage,Kam,25,322111694367227925,1.2
+Damage,Kam,25,360844232971386883,1.2
+Damage,Kam,25,334109147048181761,1.2
+Damage,Kam,10,164238723892903937,1.2
+Kam,Damage,10,94227448064905216,5.0
+Damage,Kam,25,721162429123395636,1.2
+Damage,Kam,25,587786630149177344,1.2
+Cyb3r,The Over Baked Dachbuns (Tzim),25,254067888539959296,1.3333333333333333
+Cyb3r,The Over Baked Dachbuns (Tzim),25,322111694367227925,1.3333333333333333
+Cyb3r,The Over Baked Dachbuns (Tzim),5,164238723892903937,1.3333333333333333
+Cyb3r,The Over Baked Dachbuns (Tzim),20,587786630149177344,1.3333333333333333
+Cyb3r,The Over Baked Dachbuns (Tzim),30,721162429123395636,1.3333333333333333
+The Over Baked Dachbuns (Tzim),Cyb3r,10,346119366598983680,3.0
+The Over Baked Dachbuns (Tzim),Cyb3r,25,189879722367385601,3.0
+Hippojust,Roblox City Grimmy Timmys (Robbyrabs),12,346119366598983680,2.5
+Hippojust,Roblox City Grimmy Timmys (Robbyrabs),25,548254419188187146,2.5
+Roblox City Grimmy Timmys (Robbyrabs),Hippojust,5,94227448064905216,1.4
+Roblox City Grimmy Timmys (Robbyrabs),Hippojust,5,164238723892903937,1.4
+Hippojust,Roblox City Grimmy Timmys (Robbyrabs),10,322111694367227925,2.5
+Roblox City Grimmy Timmys (Robbyrabs),Hippojust,20,360844232971386883,1.4
+Roblox City Grimmy Timmys (Robbyrabs),Hippojust,40,721162429123395636,1.4
+Awesome Arctovishes (Praspian),Zorro,20,254067888539959296,1.5
+Zorro,Awesome Arctovishes (Praspian),3,164238723892903937,1.6666666666666665
+Zorro,Awesome Arctovishes (Praspian),36,587786630149177344,1.6666666666666665
+Zorro,Awesome Arctovishes (Praspian),10,360844232971386883,1.6666666666666665
+Zorro,Awesome Arctovishes (Praspian),10,690818858155507733,1.6666666666666665
+Awesome Arctovishes (Praspian),Zorro,8,346119366598983680,1.5
+Awesome Arctovishes (Praspian),Zorro,18,322111694367227925,1.5
+Yoda,Icenogle Industries (Matty),15,234849210103627787,2.5
+Icenogle Industries (Matty),Yoda,4,164238723892903937,1.4
+Icenogle Industries (Matty),Yoda,43,254067888539959296,1.4
+Icenogle Industries (Matty),Yoda,12,346119366598983680,1.4
+Icenogle Industries (Matty),Yoda,15,383990061932347392,1.4
+Icenogle Industries (Matty),Yoda,56,721162429123395636,1.4
+Icenogle Industries (Matty),Yoda,20,360844232971386883,1.4
+Yoda,Icenogle Industries (Matty),25,521163587692134401,2.5
+Icenogle Industries (Matty),Yoda,25,504281602474639393,1.4
+Icenogle Industries (Matty),Yoda,37,322111694367227925,1.4
+Sunyshore City Jolteons (Shrug),Bloomin' Florgeses (Alchemilla),36,360844232971386883,1.2
+Sunyshore City Jolteons (Shrug),Bloomin' Florgeses (Alchemilla),78,721162429123395636,1.2
+Sunyshore City Jolteons (Shrug),Bloomin' Florgeses (Alchemilla),5,94227448064905216,1.2
+Sunyshore City Jolteons (Shrug),Bloomin' Florgeses (Alchemilla),52,322111694367227925,1.2
+Bloomin' Florgeses (Alchemilla),Sunyshore City Jolteons (Shrug),2,690818858155507733,5.0
+Sunyshore City Jolteons (Shrug),Bloomin' Florgeses (Alchemilla),29,164238723892903937,1.2
+Sunyshore City Jolteons (Shrug),Bloomin' Florgeses (Alchemilla),16,346119366598983680,1.2
+Sunyshore City Jolteons (Shrug),Bloomin' Florgeses (Alchemilla),25,675336056169824298,1.2
+Sunyshore City Jolteons (Shrug),Bloomin' Florgeses (Alchemilla),10,234849210103627787,1.2
+Sunyshore City Jolteons (Shrug),Bloomin' Florgeses (Alchemilla),60,254067888539959296,1.2
+Chicago White Swadloons (Maofever),Po Town Keys (Trip),6,94227448064905216,1.5
+Po Town Keys (Trip),Chicago White Swadloons (Maofever),19,346119366598983680,1.6666666666666665
+Chicago White Swadloons (Maofever),Po Town Keys (Trip),15,383990061932347392,1.5
+Striaton Sableyes (Jdawgin13),Terrastilized Tinkatons (Pixixy),5,94227448064905216,1.3333333333333333
+Striaton Sableyes (Jdawgin13),Terrastilized Tinkatons (Pixixy),43,360844232971386883,1.2857142857142856
+Striaton Sableyes (Jdawgin13),Terrastilized Tinkatons (Pixixy),62,322111694367227925,1.2857142857142856
+Striaton Sableyes (Jdawgin13),Terrastilized Tinkatons (Pixixy),12,234849210103627787,1.2857142857142856
+Striaton Sableyes (Jdawgin13),Terrastilized Tinkatons (Pixixy),93,721162429123395636,1.2857142857142856
+Tagtree Mischievous Creatures (Saget),Shellshock,5,94227448064905216,2.5
+Tagtree Mischievous Creatures (Saget),Shellshock,12,690818858155507733,2.5
+Shellshock,Tagtree Mischievous Creatures (Saget),3,94227448064905216,1.3333333333333333
+Tagtree Mischievous Creatures (Saget),Shellshock,10,234849210103627787,3.0
+Tagtree Mischievous Creatures (Saget),Shellshock,15,504281602474639393,3.0
+Shellshock,Tagtree Mischievous Creatures (Saget),30,334109147048181761,1.3333333333333333
+Shellshock,Tagtree Mischievous Creatures (Saget),32,346119366598983680,1.3333333333333333
+Shellshock,Tagtree Mischievous Creatures (Saget),80,322111694367227925,1.3333333333333333
+Ulico,The Big Money Meowths (Richer),2,94227448064905216,1.4
+The Big Money Meowths (Richer),Ulico,3,94227448064905216,3.0
+Ulico,The Big Money Meowths (Richer),20,504281602474639393,1.3333333333333333
+Ulico,The Big Money Meowths (Richer),120,721162429123395636,1.3333333333333333
+Ulico,The Big Money Meowths (Richer),8,164238723892903937,1.3333333333333333
+Ulico,The Big Money Meowths (Richer),72,254067888539959296,1.3333333333333333
+Ulico,The Big Money Meowths (Richer),25,254067888539959296,1.3333333333333333
+The Big Money Meowths (Richer),Ulico,15,234849210103627787,3.0
+Ulico,The Big Money Meowths (Richer),25,721162429123395636,1.3333333333333333
+Yoda,Awesome Arctovishes (Praspian),50,360844232971386883,1.3333333333333333
+Awesome Arctovishes (Praspian),Yoda,60,504281602474639393,3.0
+Awesome Arctovishes (Praspian),Yoda,10,164238723892903937,3.0
+Yoda,Awesome Arctovishes (Praspian),25,521163587692134401,1.3333333333333333
+Awesome Arctovishes (Praspian),Yoda,56,346119366598983680,3.0
+Awesome Arctovishes (Praspian),Yoda,10,587786630149177344,3.0
+Hippojust,Chicago White Swadloons (Maofever),30,360844232971386883,1.3333333333333333
+Hippojust,Chicago White Swadloons (Maofever),61,504281602474639393,1.3333333333333333
+Hippojust,Chicago White Swadloons (Maofever),50,334109147048181761,1.3333333333333333
+Chicago White Swadloons (Maofever),Hippojust,10,164238723892903937,3.0
+Chicago White Swadloons (Maofever),Hippojust,30,675336056169824298,3.0
+Chicago White Swadloons (Maofever),Hippojust,20,94227448064905216,3.0
+Hippojust,Chicago White Swadloons (Maofever),50,254067888539959296,1.3333333333333333
+Chicago White Swadloons (Maofever),Hippojust,8,346119366598983680,3.0
+Striaton Sableyes (Jdawgin13),Po Town Keys (Trip),70,587786630149177344,1.2
+Striaton Sableyes (Jdawgin13),Po Town Keys (Trip),66,322111694367227925,1.2
+Po Town Keys (Trip),Striaton Sableyes (Jdawgin13),10,164238723892903937,5.0
+Striaton Sableyes (Jdawgin13),Po Town Keys (Trip),80,504281602474639393,1.2
+Striaton Sableyes (Jdawgin13),Po Town Keys (Trip),218,721162429123395636,1.2
+Striaton Sableyes (Jdawgin13),Po Town Keys (Trip),66,334109147048181761,1.2
+Striaton Sableyes (Jdawgin13),Po Town Keys (Trip),40,234849210103627787,1.2
+Striaton Sableyes (Jdawgin13),Po Town Keys (Trip),65,360844232971386883,1.2
+Po Town Keys (Trip),Striaton Sableyes (Jdawgin13),20,346119366598983680,5.0
+Striaton Sableyes (Jdawgin13),Po Town Keys (Trip),30,383990061932347392,1.2
+Tagtree Mischievous Creatures (Saget),Kam,15,94227448064905216,1.3333333333333333
+Tagtree Mischievous Creatures (Saget),Kam,30,690818858155507733,1.3333333333333333
+Tagtree Mischievous Creatures (Saget),Kam,10,164238723892903937,1.3333333333333333
+Kam,Tagtree Mischievous Creatures (Saget),20,234849210103627787,3.0
+Tagtree Mischievous Creatures (Saget),Kam,222,254067888539959296,1.3333333333333333
+Tagtree Mischievous Creatures (Saget),Kam,30,360844232971386883,1.3333333333333333
+Hammerlocke Hydreigons (Cyb3r),Zorro,15,94227448064905216,1.2
+Zorro,Hammerlocke Hydreigons (Cyb3r),50,587786630149177344,5.0
+Hammerlocke Hydreigons (Cyb3r),Zorro,262,721162429123395636,1.2
+Hammerlocke Hydreigons (Cyb3r),Zorro,180,346119366598983680,1.2
+Hammerlocke Hydreigons (Cyb3r),Zorro,80,322111694367227925,1.2
+Hammerlocke Hydreigons (Cyb3r),Zorro,20,94227448064905216,1.2
+Hammerlocke Hydreigons (Cyb3r),Zorro,296,254067888539959296,1.2
+Hammerlocke Hydreigons (Cyb3r),Zorro,50,189879722367385601,1.2
+Hammerlocke Hydreigons (Cyb3r),Zorro,20,234849210103627787,1.2
+Damage,Icenogle Industries (Matty),72,383990061932347392,1.5
+Damage,Icenogle Industries (Matty),20,587786630149177344,1.5
+Icenogle Industries (Matty),Damage,50,504281602474639393,2.0
+Damage,Icenogle Industries (Matty),314,721162429123395636,1.5
+Damage,Icenogle Industries (Matty),62,234849210103627787,1.5
+Damage,Icenogle Industries (Matty),50,322111694367227925,1.5
+Damage,Icenogle Industries (Matty),42,254067888539959296,1.5
+Damage,Icenogle Industries (Matty),216,346119366598983680,1.5
+Shellshock,The Over Baked Dachbuns (Tzim),15,94227448064905216,1.5
+The Over Baked Dachbuns (Tzim),Shellshock,54,504281602474639393,2.0
+The Over Baked Dachbuns (Tzim),Shellshock,40,322111694367227925,2.0
+Shellshock,The Over Baked Dachbuns (Tzim),377,254067888539959296,1.5
+Shellshock,The Over Baked Dachbuns (Tzim),20,587786630149177344,1.5
+The Over Baked Dachbuns (Tzim),Shellshock,50,334109147048181761,2.0
+The Over Baked Dachbuns (Tzim),Shellshock,10,164238723892903937,2.0
+Shellshock,The Over Baked Dachbuns (Tzim),50,346119366598983680,1.5
+The Over Baked Dachbuns (Tzim),Shellshock,30,360844232971386883,2.0
+Shellshock,The Over Baked Dachbuns (Tzim),54,383990061932347392,1.5
+Shellshock,The Over Baked Dachbuns (Tzim),25,675336056169824298,1.5
+The Over Baked Dachbuns (Tzim),Shellshock,25,521163587692134401,2.0
+The Over Baked Dachbuns (Tzim),Shellshock,43,234849210103627787,2.0
+Shellshock,The Over Baked Dachbuns (Tzim),60,189879722367385601,1.5
+The Over Baked Dachbuns (Tzim),Shellshock,25,504281602474639393,2.0
+Shellshock,The Over Baked Dachbuns (Tzim),20,94227448064905216,1.5
+Ulico,Terrastilized Tinkatons (Pixixy),25,675336056169824298,1.5
+Ulico,Terrastilized Tinkatons (Pixixy),90,189879722367385601,1.5
+Ulico,Terrastilized Tinkatons (Pixixy),20,94227448064905216,1.5
+Ulico,Terrastilized Tinkatons (Pixixy),349,346119366598983680,1.5
+Terrastilized Tinkatons (Pixixy),Ulico,20,164238723892903937,2.0
+Ulico,Terrastilized Tinkatons (Pixixy),565,254067888539959296,1.5
+The Big Money Meowths (Richer),Roblox City Grimmy Timmys (Robbyrabs),50,322111694367227925,3.5
+The Big Money Meowths (Richer),Roblox City Grimmy Timmys (Robbyrabs),57,346119366598983680,3.5
+The Big Money Meowths (Richer),Roblox City Grimmy Timmys (Robbyrabs),75,234849210103627787,3.5
+The Big Money Meowths (Richer),Roblox City Grimmy Timmys (Robbyrabs),848,254067888539959296,3.5
+The Big Money Meowths (Richer),Roblox City Grimmy Timmys (Robbyrabs),10,94227448064905216,3.5
+The Big Money Meowths (Richer),Roblox City Grimmy Timmys (Robbyrabs),25,254067888539959296,3.5
+Roblox City Grimmy Timmys (Robbyrabs),The Big Money Meowths (Richer),135,189879722367385601,1.2857142857142856
+Awesome Arctovishes (Praspian),Run it Back (Damage),100,675336056169824298,5.0
+Run it Back (Damage),Awesome Arctovishes (Praspian),50,455838049423720459,1.2
+Run it Back (Damage),Awesome Arctovishes (Praspian),50,690818858155507733,1.2
+Run it Back (Damage),Awesome Arctovishes (Praspian),198,189879722367385601,1.2
+Awesome Arctovishes (Praspian),Run it Back (Damage),25,521163587692134401,5.0
+Run it Back (Damage),Awesome Arctovishes (Praspian),83,360844232971386883,1.2
+Awesome Arctovishes (Praspian),Run it Back (Damage),20,587786630149177344,5.0
+Run it Back (Damage),Awesome Arctovishes (Praspian),50,322111694367227925,1.2
+Awesome Arctovishes (Praspian),Run it Back (Damage),9,587786630149177344,5.0
+Run it Back (Damage),Awesome Arctovishes (Praspian),50,334109147048181761,1.2
+Awesome Arctovishes (Praspian),Run it Back (Damage),4,334109147048181761,5.0
+Awesome Arctovishes (Praspian),Run it Back (Damage),20,164238723892903937,5.0
+Awesome Arctovishes (Praspian),Run it Back (Damage),50,346119366598983680,5.0
+Awesome Arctovishes (Praspian),Run it Back (Damage),20,504281602474639393,5.0
+Hammerlocke Hydreigons (Cyb3r),Big Mike and the Big Mikes (Lego Yoda),30,455838049423720459,1.25
+Hammerlocke Hydreigons (Cyb3r),Big Mike and the Big Mikes (Lego Yoda),66,322111694367227925,1.25
+Hammerlocke Hydreigons (Cyb3r),Big Mike and the Big Mikes (Lego Yoda),100,504281602474639393,1.25
+Hammerlocke Hydreigons (Cyb3r),Big Mike and the Big Mikes (Lego Yoda),496,721162429123395636,1.25
+Hammerlocke Hydreigons (Cyb3r),Big Mike and the Big Mikes (Lego Yoda),40,587786630149177344,1.25
+Hammerlocke Hydreigons (Cyb3r),Big Mike and the Big Mikes (Lego Yoda),238,189879722367385601,1.25
+Hammerlocke Hydreigons (Cyb3r),Big Mike and the Big Mikes (Lego Yoda),80,383990061932347392,1.25
+Hammerlocke Hydreigons (Cyb3r),Big Mike and the Big Mikes (Lego Yoda),442,346119366598983680,1.25
+Hammerlocke Hydreigons (Cyb3r),Big Mike and the Big Mikes (Lego Yoda),60,334109147048181761,1.25
+Big Mike and the Big Mikes (Lego Yoda),Hammerlocke Hydreigons (Cyb3r),10,164238723892903937,4.0
+Sunyshore City Jolteons (Shrug),Chicago White Swadloons (Maofever),59,164238723892903937,1.2
+Sunyshore City Jolteons (Shrug),Chicago White Swadloons (Maofever),82,322111694367227925,1.2
+Chicago White Swadloons (Maofever),Sunyshore City Jolteons (Shrug),52,346119366598983680,5.0
+Chicago White Swadloons (Maofever),Sunyshore City Jolteons (Shrug),25,690818858155507733,5.0
+Sunyshore City Jolteons (Shrug),Chicago White Swadloons (Maofever),30,587786630149177344,1.2
+Sunyshore City Jolteons (Shrug),Chicago White Swadloons (Maofever),620,721162429123395636,1.2
+Sunyshore City Jolteons (Shrug),Chicago White Swadloons (Maofever),55,383990061932347392,1.2
+Terrastilized Tinkatons (Pixixy),Po Town Keys (Trip),80,383990061932347392,1.3333333333333333
+Terrastilized Tinkatons (Pixixy),Po Town Keys (Trip),100,360844232971386883,1.3333333333333333
+Terrastilized Tinkatons (Pixixy),Po Town Keys (Trip),50,322111694367227925,1.3333333333333333
+Terrastilized Tinkatons (Pixixy),Po Town Keys (Trip),50,346119366598983680,1.3333333333333333
+Po Town Keys (Trip),Terrastilized Tinkatons (Pixixy),105,504281602474639393,3.0
+Terrastilized Tinkatons (Pixixy),Po Town Keys (Trip),10,164238723892903937,1.3333333333333333
+Zorro,The Over Baked Dachbuns (Tzim),30,587786630149177344,3.0
+Zorro,The Over Baked Dachbuns (Tzim),100,504281602474639393,3.0
+Zorro,The Over Baked Dachbuns (Tzim),11,587786630149177344,3.0
+Hippojust,Striaton Sableyes (Jdawgin13),75,548254419188187146,4.0
+Striaton Sableyes (Jdawgin13),Hippojust,5,94227448064905216,1.25
+Striaton Sableyes (Jdawgin13),Hippojust,517,346119366598983680,1.25
+Striaton Sableyes (Jdawgin13),Hippojust,744,721162429123395636,1.25
+Striaton Sableyes (Jdawgin13),Hippojust,115,322111694367227925,1.25
+Striaton Sableyes (Jdawgin13),Hippojust,25,587786630149177344,1.25
+Striaton Sableyes (Jdawgin13),Hippojust,133,360844232971386883,1.25
+Icenogle Industries (Matty),Tagtree Mischievous Creatures (Saget),100,322111694367227925,1.2857142857142856
+Icenogle Industries (Matty),Tagtree Mischievous Creatures (Saget),600,346119366598983680,1.2857142857142856
+Icenogle Industries (Matty),Tagtree Mischievous Creatures (Saget),297,189879722367385601,1.2857142857142856
+Icenogle Industries (Matty),Tagtree Mischievous Creatures (Saget),10,587786630149177344,1.2857142857142856
+Tagtree Mischievous Creatures (Saget),Icenogle Industries (Matty),10,164238723892903937,3.5
+Tagtree Mischievous Creatures (Saget),Icenogle Industries (Matty),3,94227448064905216,3.5
+Icenogle Industries (Matty),Tagtree Mischievous Creatures (Saget),166,360844232971386883,1.2857142857142856
+Ulico,Bloomin' Florgeses (Alchemilla),50,94227448064905216,1.2222222222222223
+Ulico,Bloomin' Florgeses (Alchemilla),45,94227448064905216,1.2222222222222223
+Ulico,Bloomin' Florgeses (Alchemilla),50,690818858155507733,1.2222222222222223
+Ulico,Bloomin' Florgeses (Alchemilla),173,322111694367227925,1.2222222222222223
+Ulico,Bloomin' Florgeses (Alchemilla),25,322111694367227925,1.2222222222222223
+Ulico,Bloomin' Florgeses (Alchemilla),800,346119366598983680,1.2222222222222223
+Ulico,Bloomin' Florgeses (Alchemilla),25,504281602474639393,1.2222222222222223
+Ulico,Bloomin' Florgeses (Alchemilla),382,189879722367385601,1.2222222222222223
+Ulico,Bloomin' Florgeses (Alchemilla),25,189879722367385601,1.2222222222222223
+Ulico,Bloomin' Florgeses (Alchemilla),100,334109147048181761,1.2222222222222223
+Ulico,Bloomin' Florgeses (Alchemilla),930,721162429123395636,1.2222222222222223
+Ulico,Bloomin' Florgeses (Alchemilla),25,721162429123395636,1.2222222222222223
+Shellshock,Kam,50,690818858155507733,1.2222222222222223
+Shellshock,Kam,1000,346119366598983680,1.2222222222222223
+Shellshock,Kam,242,322111694367227925,1.2222222222222223
+Shellshock,Kam,20,164238723892903937,1.2222222222222223
+Kam,Shellshock,10,94227448064905216,4.5
+Shellshock,Kam,242,383990061932347392,1.2222222222222223
+Shellshock,Kam,497,189879722367385601,1.2222222222222223
+Shellshock,Kam,25,254067888539959296,1.2222222222222223
+Shellshock,Kam,1168,721162429123395636,1.2222222222222223
+Run it Back (Damage),Hammerlocke Hydreigons (Cyb3r),45,164238723892903937,2.0
+Run it Back (Damage),Hammerlocke Hydreigons (Cyb3r),130,690818858155507733,2.0
+Hammerlocke Hydreigons (Cyb3r),Run it Back (Damage),25,521163587692134401,1.5
+Run it Back (Damage),Hammerlocke Hydreigons (Cyb3r),20,234849210103627787,2.0
+Hammerlocke Hydreigons (Cyb3r),Run it Back (Damage),30,254067888539959296,1.5
+Run it Back (Damage),Hammerlocke Hydreigons (Cyb3r),243,346119366598983680,2.0
+Run it Back (Damage),Hammerlocke Hydreigons (Cyb3r),100,322111694367227925,2.0
+Hammerlocke Hydreigons (Cyb3r),Run it Back (Damage),125,222471962881032192,1.5
+Sunyshore City Jolteons (Shrug),Striaton Sableyes (Jdawgin13),100,164238723892903937,2.0
+Striaton Sableyes (Jdawgin13),Sunyshore City Jolteons (Shrug),395,322111694367227925,1.5
+Striaton Sableyes (Jdawgin13),Sunyshore City Jolteons (Shrug),239,360844232971386883,1.5
+Striaton Sableyes (Jdawgin13),Sunyshore City Jolteons (Shrug),20,234849210103627787,1.5
+Striaton Sableyes (Jdawgin13),Sunyshore City Jolteons (Shrug),286,346119366598983680,1.5
+The Over Baked Dachbuns (Tzim),Big Mike and the Big Mikes (Lego Yoda),19,690818858155507733,1.5
+The Over Baked Dachbuns (Tzim),Big Mike and the Big Mikes (Lego Yoda),50,234849210103627787,1.5
+The Over Baked Dachbuns (Tzim),Big Mike and the Big Mikes (Lego Yoda),20,94227448064905216,1.5
+The Over Baked Dachbuns (Tzim),Big Mike and the Big Mikes (Lego Yoda),593,322111694367227925,1.5
+The Over Baked Dachbuns (Tzim),Big Mike and the Big Mikes (Lego Yoda),202,346119366598983680,1.5
+Awesome Arctovishes (Praspian),Tagtree Mischievous Creatures (Saget),302,346119366598983680,2.5
+Awesome Arctovishes (Praspian),Tagtree Mischievous Creatures (Saget),31,504281602474639393,2.5
+Tagtree Mischievous Creatures (Saget),Awesome Arctovishes (Praspian),100,721162429123395636,1.4
+Awesome Arctovishes (Praspian),Tagtree Mischievous Creatures (Saget),80,234849210103627787,2.5
+Awesome Arctovishes (Praspian),Tagtree Mischievous Creatures (Saget),100,322111694367227925,2.5
+Awesome Arctovishes (Praspian),Tagtree Mischievous Creatures (Saget),25,675336056169824298,2.5
+Icenogle Industries (Matty),Kam,25,94227448064905216,1.2
+Icenogle Industries (Matty),Kam,1327,721162429123395636,1.2
+Ulico,Po Town Keys (Trip),358,360844232971386883,1.2857142857142856
+Ulico,Po Town Keys (Trip),600,346119366598983680,1.2857142857142856
+Ulico,Po Town Keys (Trip),100,234849210103627787,1.2857142857142856
+Ulico,Po Town Keys (Trip),593,346119366598983680,1.2857142857142856
+Ulico,Po Town Keys (Trip),1593,721162429123395636,1.2857142857142856
+Shellshock Sun Squad (Shellshock),Zorro,20,94227448064905216,1.2857142857142856
+Zorro,Shellshock Sun Squad (Shellshock),50,587786630149177344,3.5
+Zorro,Shellshock Sun Squad (Shellshock),77,504281602474639393,3.5
+Zorro,Shellshock Sun Squad (Shellshock),104,234849210103627787,3.5
+Shellshock Sun Squad (Shellshock),Zorro,1687,346119366598983680,1.2857142857142856
+Shellshock Sun Squad (Shellshock),Zorro,500,322111694367227925,1.2857142857142856
+Shellshock Sun Squad (Shellshock),Zorro,460,360844232971386883,1.2857142857142856
+Roblox City Grimmy Timmys (Robbyrabs),Bloomin' Florgeses (Alchemilla),2000,346119366598983680,1.2
+Roblox City Grimmy Timmys (Robbyrabs),Bloomin' Florgeses (Alchemilla),1215,322111694367227925,1.2
+Roblox City Grimmy Timmys (Robbyrabs),Bloomin' Florgeses (Alchemilla),148,334109147048181761,1.2
+Terrastilized Tinkatons (Pixixy),The Dastardly Dittos (HippoJust),321,383990061932347392,1.5
+Terrastilized Tinkatons (Pixixy),The Dastardly Dittos (HippoJust),20,94227448064905216,1.5
+Terrastilized Tinkatons (Pixixy),The Dastardly Dittos (HippoJust),250,346119366598983680,1.5
+Terrastilized Tinkatons (Pixixy),The Dastardly Dittos (HippoJust),200,322111694367227925,1.5
+The Big Money Meowths (Richer),Chicago White Swadloons (Maofever),25,234849210103627787,1.4
+The Big Money Meowths (Richer),Chicago White Swadloons (Maofever),100,322111694367227925,1.4
+Chicago White Swadloons (Maofever),The Big Money Meowths (Richer),20,94227448064905216,2.5
+Chicago White Swadloons (Maofever),The Big Money Meowths (Richer),25,234849210103627787,2.5
+The Big Money Meowths (Richer),Chicago White Swadloons (Maofever),100,234849210103627787,1.4
+The Big Money Meowths (Richer),Chicago White Swadloons (Maofever),25,548254419188187146,1.4
+The Big Money Meowths (Richer),Chicago White Swadloons (Maofever),150,334109147048181761,1.4
+Chicago White Swadloons (Maofever),The Big Money Meowths (Richer),25,548254419188187146,2.5
+The Big Money Meowths (Richer),Chicago White Swadloons (Maofever),100,690818858155507733,1.4
+Chicago White Swadloons (Maofever),The Big Money Meowths (Richer),25,254067888539959296,2.5
+The Big Money Meowths (Richer),Chicago White Swadloons (Maofever),1,222471962881032192,1.4
+The Big Money Meowths (Richer),Chicago White Swadloons (Maofever),24,222471962881032192,1.4
+Chicago White Swadloons (Maofever),The Big Money Meowths (Richer),50,346119366598983680,2.5
+Awesome Arctovishes (Praspian),Goku (Kam),31,346119366598983680,1.5
+Awesome Arctovishes (Praspian),Goku (Kam),50,675336056169824298,1.5
+Awesome Arctovishes (Praspian),Goku (Kam),500,322111694367227925,1.5
+Awesome Arctovishes (Praspian),Goku (Kam),1500,346119366598983680,1.5
+Goku (Kam),Awesome Arctovishes (Praspian),60,234849210103627787,2.0
+Awesome Arctovishes (Praspian),Goku (Kam),200,189879722367385601,1.5
+Awesome Arctovishes (Praspian),Goku (Kam),213,690818858155507733,1.5
+Hammerlocke Hydreigons (Cyb3r),Tagtree Mischievous Creatures (Saget),658,322111694367227925,1.2222222222222223
+Big Mike and the Big Mikes (Lego Yoda),Zorro,25,521163587692134401,1.4
+Zorro,Big Mike and the Big Mikes (Lego Yoda),34,587786630149177344,2.5
+Big Mike and the Big Mikes (Lego Yoda),Zorro,63,254067888539959296,1.4
+Big Mike and the Big Mikes (Lego Yoda),Zorro,200,322111694367227925,1.4
+Zorro,Big Mike and the Big Mikes (Lego Yoda),750,346119366598983680,2.5
+Zorro,Big Mike and the Big Mikes (Lego Yoda),400,721162429123395636,2.5
+Striaton Sableyes (Jdawgin13),The Big Money Meowths (Richer),3,346119366598983680,1.2222222222222223
+Striaton Sableyes (Jdawgin13),The Big Money Meowths (Richer),102,234849210103627787,1.2222222222222223
+The Big Money Meowths (Richer),Striaton Sableyes (Jdawgin13),20,234849210103627787,4.5
+Striaton Sableyes (Jdawgin13),The Big Money Meowths (Richer),700,322111694367227925,1.2222222222222223
+Striaton Sableyes (Jdawgin13),The Big Money Meowths (Richer),2673,721162429123395636,1.2222222222222223
+Striaton Sableyes (Jdawgin13),The Big Money Meowths (Richer),35,587786630149177344,1.2222222222222223
+Run it Back (Damage),The Over Baked Dachbuns (Tzim),617,360844232971386883,1.3333333333333333
+Run it Back (Damage),The Over Baked Dachbuns (Tzim),20,94227448064905216,1.3333333333333333
+Run it Back (Damage),The Over Baked Dachbuns (Tzim),100,234849210103627787,1.3333333333333333
+Run it Back (Damage),The Over Baked Dachbuns (Tzim),40,587786630149177344,1.3333333333333333
+Run it Back (Damage),The Over Baked Dachbuns (Tzim),860,322111694367227925,1.3333333333333333
+The Over Baked Dachbuns (Tzim),Run it Back (Damage),5,94227448064905216,3.0
+The Over Baked Dachbuns (Tzim),Run it Back (Damage),20,455838049423720459,3.0
+Run it Back (Damage),The Over Baked Dachbuns (Tzim),416,721162429123395636,1.3333333333333333
+Po Town Keys (Trip),The Dastardly Dittos (HippoJust),25,94227448064905216,2.5
+Sunyshore City Jolteons (Shrug),Terrastilized Tinkatons (Pixixy),15,94227448064905216,1.3333333333333333
+Sunyshore City Jolteons (Shrug),Terrastilized Tinkatons (Pixixy),500,322111694367227925,1.3333333333333333
+Sunyshore City Jolteons (Shrug),Terrastilized Tinkatons (Pixixy),750,346119366598983680,1.3333333333333333
+Shellshock Sun Squad (Shellshock),Icenogle Industries (Matty),25,504281602474639393,2.0
+Shellshock Sun Squad (Shellshock),Icenogle Industries (Matty),300,346119366598983680,2.0
+Icenogle Industries (Matty),Shellshock Sun Squad (Shellshock),1200,322111694367227925,1.5
+Chicago White Swadloons (Maofever),Bloomin' Florgeses (Alchemilla),50,94227448064905216,1.5
+Chicago White Swadloons (Maofever),Bloomin' Florgeses (Alchemilla),800,346119366598983680,1.5
+Chicago White Swadloons (Maofever),Bloomin' Florgeses (Alchemilla),150,234849210103627787,1.5
+Chicago White Swadloons (Maofever),Bloomin' Florgeses (Alchemilla),200,322111694367227925,1.5
+Chicago White Swadloons (Maofever),Bloomin' Florgeses (Alchemilla),1300,346119366598983680,1.5
+Striaton Sableyes (Jdawgin13),Bloomin' Florgeses (Alchemilla),3430,721162429123395636,1.1666666666666667
+Striaton Sableyes (Jdawgin13),Bloomin' Florgeses (Alchemilla),338,322111694367227925,1.1666666666666667
+Striaton Sableyes (Jdawgin13),Bloomin' Florgeses (Alchemilla),4000,346119366598983680,1.1666666666666667
+Striaton Sableyes (Jdawgin13),Bloomin' Florgeses (Alchemilla),52,334109147048181761,1.1666666666666667
+Striaton Sableyes (Jdawgin13),Bloomin' Florgeses (Alchemilla),58,234849210103627787,1.1666666666666667
+The Over Baked Dachbuns (Tzim),Tagtree Mischievous Creatures (Saget),200,234849210103627787,1.4
+The Over Baked Dachbuns (Tzim),Tagtree Mischievous Creatures (Saget),250,346119366598983680,1.4
+Hammerlocke Hydreigons (Cyb3r),Goku (Kam),4002,721162429123395636,1.1666666666666667
+Hammerlocke Hydreigons (Cyb3r),Goku (Kam),68,234849210103627787,1.1666666666666667
+Hammerlocke Hydreigons (Cyb3r),Goku (Kam),4500,346119366598983680,1.1666666666666667
+Hammerlocke Hydreigons (Cyb3r),Goku (Kam),394,322111694367227925,1.1666666666666667
+Goku (Kam),Hammerlocke Hydreigons (Cyb3r),25,222471962881032192,6.0
+Ulico,The Dastardly Dittos (HippoJust),2642,346119366598983680,1.4
+Sunyshore City Jolteons (Shrug),Po Town Keys (Trip),1500,721162429123395636,1.2222222222222223
+Sunyshore City Jolteons (Shrug),Po Town Keys (Trip),400,322111694367227925,1.2222222222222223
+Sunyshore City Jolteons (Shrug),Po Town Keys (Trip),2500,346119366598983680,1.2222222222222223
+Zorro,Run it Back (Damage),50,587786630149177344,4.5
+Zorro,Run it Back (Damage),50,234849210103627787,4.5
+Run it Back (Damage),Zorro,40,322111694367227925,1.2222222222222223
+Run it Back (Damage),Zorro,50,504281602474639393,1.2222222222222223
+Chicago White Swadloons (Maofever),Roblox City Grimmy Timmys (RobbyRabs),25,254067888539959296,4.5
+Chicago White Swadloons (Maofever),Roblox City Grimmy Timmys (RobbyRabs),20,94227448064905216,4.5
+Roblox City Grimmy Timmys (RobbyRabs),Chicago White Swadloons (Maofever),20,94227448064905216,1.2222222222222223
+Chicago White Swadloons (Maofever),Roblox City Grimmy Timmys (RobbyRabs),100,234849210103627787,4.5
+Roblox City Grimmy Timmys (RobbyRabs),Chicago White Swadloons (Maofever),100,346119366598983680,1.2222222222222223
+Roblox City Grimmy Timmys (RobbyRabs),Chicago White Swadloons (Maofever),20,322111694367227925,1.2222222222222223
+Chicago White Swadloons (Maofever),Roblox City Grimmy Timmys (RobbyRabs),25,690818858155507733,4.5
+Roblox City Grimmy Timmys (RobbyRabs),Chicago White Swadloons (Maofever),169,721162429123395636,1.2222222222222223
+Icenogle Industries (Matty),Awesome Arctovishes (Praspian),25,94227448064905216,1.2222222222222223
+Shellshock Sun Squad (Shellshock),Big Mike and the Big Mikes (Lego Yoda),50,94227448064905216,1.4
+Big Mike and the Big Mikes (Lego Yoda),Shellshock Sun Squad (Shellshock),25,521163587692134401,2.5
+Shellshock Sun Squad (Shellshock),Big Mike and the Big Mikes (Lego Yoda),24,322111694367227925,1.4
+Shellshock Sun Squad (Shellshock),Big Mike and the Big Mikes (Lego Yoda),344,346119366598983680,1.4
+Shellshock Sun Squad (Shellshock),Big Mike and the Big Mikes (Lego Yoda),60,587786630149177344,1.4
+Run it Back (Damage),Big Mike and the Big Mikes (Lego Yoda),34,322111694367227925,1.1666666666666667
+Run it Back (Damage),Big Mike and the Big Mikes (Lego Yoda),3207,721162429123395636,1.1666666666666667
+Run it Back (Damage),Big Mike and the Big Mikes (Lego Yoda),25,322111694367227925,1.1666666666666667
+Run it Back (Damage),Big Mike and the Big Mikes (Lego Yoda),25,721162429123395636,1.1666666666666667
+Run it Back (Damage),Big Mike and the Big Mikes (Lego Yoda),86,334109147048181761,1.1666666666666667
+Zorro,Tagtree Mirage Champions (Saget),100,587786630149177344,2.5
+Zorro,Tagtree Mirage Champions (Saget),49,322111694367227925,2.5
+Sunyshore City Jolteons (Shrug),The Dastardly Dittos (HippoJust),100,587786630149177344,1.4
+Sunyshore City Jolteons (Shrug),The Dastardly Dittos (HippoJust),435,346119366598983680,1.4
+Sunyshore City Jolteons (Shrug),The Dastardly Dittos (HippoJust),20,322111694367227925,1.4
+Sunyshore City Jolteons (Shrug),The Dastardly Dittos (HippoJust),20,94227448064905216,1.4
+Chicago White Swadloons (Maofever),Ulico,113,164238723892903937,4.0
+Chicago White Swadloons (Maofever),Ulico,100,94227448064905216,4.0
+Ulico,Chicago White Swadloons (Maofever),100,94227448064905216,1.25
+Ulico,Chicago White Swadloons (Maofever),200,587786630149177344,1.25
+Ulico,Chicago White Swadloons (Maofever),659,346119366598983680,1.25
+Chicago White Swadloons (Maofever),Ulico,25,690818858155507733,4.0
+Ulico,Chicago White Swadloons (Maofever),100,455838049423720459,1.25
+Chicago White Swadloons (Maofever),Ulico,25,254067888539959296,4.0
+Chicago White Swadloons (Maofever),Ulico,200,721162429123395636,4.0
+Terrastilized Tinkatons (Pixixy),Bloomin' Florgeses (Alchemilla),28,322111694367227925,1.4
+Terrastilized Tinkatons (Pixixy),Bloomin' Florgeses (Alchemilla),823,346119366598983680,1.4
+Terrastilized Tinkatons (Pixixy),Bloomin' Florgeses (Alchemilla),100,455838049423720459,1.4
+The Over Baked Dachbuns (Tzim),Goku (Kam),89,94227448064905216,1.5
+Goku (Kam),The Over Baked Dachbuns (Tzim),25,222471962881032192,2.0
+The Over Baked Dachbuns (Tzim),Goku (Kam),30,322111694367227925,1.5
+The Over Baked Dachbuns (Tzim),Goku (Kam),1000,346119366598983680,1.5
+The Over Baked Dachbuns (Tzim),Goku (Kam),53,346119366598983680,1.5
+The Over Baked Dachbuns (Tzim),Goku (Kam),150,234849210103627787,1.5
+Icenogle Industries (Matty),Hammerlocke Hydreigons (Cyb3r),279,346119366598983680,2.5
+Hammerlocke Hydreigons (Cyb3r),Icenogle Industries (Matty),50,322111694367227925,1.4
+Hammerlocke Hydreigons (Cyb3r),Icenogle Industries (Matty),3570,721162429123395636,1.4
+Icenogle Industries (Matty),Hammerlocke Hydreigons (Cyb3r),60,234849210103627787,2.5
+Big Mike and the Big Mikes (Lego Yoda),Tagtree Mirage Champions (Saget),100,346119366598983680,4.0
+Sunyshore City Jolteons (Shrug),Ulico,340,234849210103627787,2.0
+Ulico,Sunyshore City Jolteons (Shrug),200,346119366598983680,1.5
+Striaton Sableyes (Jdawgin13),Chicago White Swadloons (Maofever),287,94227448064905216,1.2222222222222223
+Striaton Sableyes (Jdawgin13),Chicago White Swadloons (Maofever),345,587786630149177344,1.2222222222222223
+Striaton Sableyes (Jdawgin13),Chicago White Swadloons (Maofever),1323,346119366598983680,1.2222222222222223
+Striaton Sableyes (Jdawgin13),Chicago White Swadloons (Maofever),25,587786630149177344,1.2222222222222223
+Roblox City Grimmy Timmys (RobbyRabs),Terrastilized Tinkatons (Pixixy),20,322111694367227925,1.2857142857142856
+Terrastilized Tinkatons (Pixixy),Roblox City Grimmy Timmys (RobbyRabs),25,690818858155507733,3.5
+Terrastilized Tinkatons (Pixixy),Roblox City Grimmy Timmys (RobbyRabs),25,254067888539959296,3.5
+Terrastilized Tinkatons (Pixixy),Roblox City Grimmy Timmys (RobbyRabs),50,383990061932347392,3.5
+Terrastilized Tinkatons (Pixixy),Roblox City Grimmy Timmys (RobbyRabs),25,383990061932347392,3.5
+Hammerlocke Hydreigons (Cyb3r),Awesome Arctovishes (Praspian),25,521163587692134401,1.2857142857142856
+Hammerlocke Hydreigons (Cyb3r),Awesome Arctovishes (Praspian),25,521163587692134401,1.2857142857142856
+Goku (Kam),Zorro,25,222471962881032192,2.5
+Zorro,Goku (Kam),153,587786630149177344,1.4
+Zorro,Goku (Kam),30,322111694367227925,1.4
+Goku (Kam),Zorro,50,455838049423720459,2.5
+The Dastardly Dittos (HippoJust),Bloomin' Florgeses (Alchemilla),30,322111694367227925,1.25
+The Dastardly Dittos (HippoJust),Bloomin' Florgeses (Alchemilla),1000,346119366598983680,1.25
+Roblox City Grimmy Timmys (RobbyRabs),Po Town Keys (Trip),37,322111694367227925,1.4
+Roblox City Grimmy Timmys (RobbyRabs),Po Town Keys (Trip),225,346119366598983680,1.4
+Tagtree Mirage Champions (Saget),Run it Back (Damage),25,690818858155507733,3.5
+The Over Baked Dachbuns (Tzim),Awesome Arctovishes (Praspian),25,254067888539959296,2.5
+The Over Baked Dachbuns (Tzim),Awesome Arctovishes (Praspian),200,346119366598983680,2.5
+Zorro,Icenogle Industries (Matty),200,587786630149177344,3.0
+Striaton Sableyes (Jdawgin13),Ulico,25,94227448064905216,1.5
+Ulico,Striaton Sableyes (Jdawgin13),200,346119366598983680,2.0
+Goku (Kam),Big Mike and the Big Mikes (Lego Yoda),50,94227448064905216,1.5
+Chicago White Swadloons (Maofever),Terrastilized Tinkatons (Pixixy),25,94227448064905216,1.5
+Terrastilized Tinkatons (Pixixy),Chicago White Swadloons (Maofever),250,346119366598983680,2.0
+Cyb3r,HippoJust,50,346119366598983680,1.3333333333333333
+Cyb3r,HippoJust,100,383990061932347392,1.3333333333333333
+HippoJust,Cyb3r,300,234849210103627787,3.0
+HippoJust,Cyb3r,500,548254419188187146,3.0
+HippoJust,Cyb3r,150,164238723892903937,3.0
+HippoJust,Cyb3r,200,675336056169824298,3.0
+Cyb3r,HippoJust,250,94227448064905216,1.3333333333333333
+HippoJust,Cyb3r,50,322111694367227925,3.0
+Cyb3r,HippoJust,1333,721162429123395636,1.3333333333333333
+Praspian,Jdawgin13,50,322111694367227925,3.0
+Praspian,Jdawgin13,100,346119366598983680,3.0
+Jdawgin13,Praspian,1000,721162429123395636,1.3333333333333333
+Jdawgin13,Praspian,301,690818858155507733,1.3333333333333333
+Jdawgin13,Praspian,100,383990061932347392,1.3333333333333333
+Jdawgin13,Praspian,1000,254067888539959296,1.3333333333333333
+Jdawgin13,Praspian,750,164238723892903937,1.3333333333333333
+Jdawgin13,Praspian,300,234849210103627787,1.3333333333333333
+Praspian,Jdawgin13,100,94227448064905216,3.0
+Praspian,Jdawgin13,500,548254419188187146,3.0
+Tzim,Shrug,100,94227448064905216,3.0
+Damage,Trip,750,164238723892903937,1.3333333333333333
+Damage,Trip,600,675336056169824298,1.3333333333333333
+Damage,Trip,900,322111694367227925,1.3333333333333333
+Damage,Trip,100,94227448064905216,1.3333333333333333
+Damage,Trip,500,346119366598983680,1.3333333333333333
+Damage,Trip,301,690818858155507733,1.3333333333333333
+Kam,Richer,1,504281602474639393,1.75
+Matty Ice,Pixixy,100,322111694367227925,1.3333333333333333
+Pixixy,Matty Ice,150,164238723892903937,3.0
+Matty Ice,Pixixy,301,690818858155507733,1.3333333333333333
+Pixixy,Matty Ice,99,690818858155507733,3.0
+Matty Ice,Pixixy,1777,721162429123395636,1.3333333333333333
+Pixixy,Matty Ice,500,383990061932347392,3.0
+Pixixy,Matty Ice,50,94227448064905216,3.0
+Pixixy,Matty Ice,50,346119366598983680,3.0
+Pixixy,Matty Ice,300,234849210103627787,3.0
+Alchemilla,Pumpkinfox,995,504281602474639393,1.75
+Pumpkinfox,Alchemilla,100,346119366598983680,1.75
+Alchemilla,Pumpkinfox,100,164238723892903937,1.75
+Pumpkinfox,Alchemilla,200,234849210103627787,1.75
+Alchemilla,Pumpkinfox,50,94227448064905216,1.75
+Pumpkinfox,Alchemilla,333,254067888539959296,1.75
+Shellshock,Mao,200,455838049423720459,1.3333333333333333
+Mao,Shellshock,520,94227448064905216,3.0
+Shellshock,Mao,100,322111694367227925,1.3333333333333333
+Shellshock,Mao,150,346119366598983680,1.3333333333333333
+Shellshock,Mao,300,254067888539959296,1.3333333333333333
+Ulico,Lego Yoda,1000,259519712180830209,1.3333333333333333
+Ulico,Lego Yoda,0,504281602474639393,1.3333333333333333
+Ulico,Lego Yoda,0,504281602474639393,1.3333333333333333
+Ulico,Lego Yoda,200,455838049423720459,1.3333333333333333
+Joel,Saget,200,455838049423720459,1.3333333333333333
+Ulico,Lego Yoda,1,504281602474639393,1.3333333333333333
+Ulico,Lego Yoda,1,504281602474639393,1.3333333333333333
+Ulico,Lego Yoda,1,504281602474639393,1.3333333333333333
+Ulico,Lego Yoda,1,504281602474639393,1.3333333333333333
+Ulico,Lego Yoda,0,504281602474639393,1.3333333333333333
+Ulico,Lego Yoda,1000,360844232971386883,1.3333333333333333
+Saget,Joel,100,296638456367677441,3.0
+Saget,Joel,150,164238723892903937,3.0
+Joel,Saget,300,234849210103627787,1.3333333333333333
+Saget,Joel,250,234849210103627787,3.0
+Saget,Joel,100,94227448064905216,3.0
+Saget,Joel,200,222471962881032192,3.0
+Joel,Saget,200,346119366598983680,1.3333333333333333
+Ulico,Lego Yoda,200,346119366598983680,1.3333333333333333
+Ulico,Lego Yoda,200,94227448064905216,1.3333333333333333
+Ulico,Lego Yoda,300,164238723892903937,1.3333333333333333
+Shrug,Jdawgin13,250,164238723892903937,2.0
+Praspian,Pumpkinfox,100,164238723892903937,1.3333333333333333
+Praspian,Pumpkinfox,500,322111694367227925,1.3333333333333333
+Praspian,Pumpkinfox,464,690818858155507733,1.3333333333333333
+Pumpkinfox,Praspian,100,346119366598983680,3.0
+Praspian,Pumpkinfox,250,164238723892903937,1.3333333333333333
+Praspian,Pumpkinfox,1933,254067888539959296,1.3333333333333333
+Praspian,Pumpkinfox,50,721162429123395636,1.3333333333333333
+Pumpkinfox,Praspian,50,94227448064905216,3.0
+Pumpkinfox,Praspian,300,234849210103627787,3.0
+Praspian,Pumpkinfox,300,234849210103627787,1.3333333333333333
+Pumpkinfox,Praspian,100,383990061932347392,3.0
+Praspian,Pumpkinfox,257,504281602474639393,1.3333333333333333
+Magnificent Manaphy's (Pixixy),Mamoswine <3 (Lego Yoda),100,94227448064905216,1.75
+Magnificent Manaphy's (Pixixy),Mamoswine <3 (Lego Yoda),288,690818858155507733,1.75
+Magnificent Manaphy's (Pixixy),Mamoswine <3 (Lego Yoda),500,234849210103627787,1.75
+Magnificent Manaphy's (Pixixy),Mamoswine <3 (Lego Yoda),200,346119366598983680,1.75
+Magnificent Manaphy's (Pixixy),Mamoswine <3 (Lego Yoda),500,383990061932347392,1.75
+Magnificent Manaphy's (Pixixy),Mamoswine <3 (Lego Yoda),1000,322111694367227925,1.75
+Magnificent Manaphy's (Pixixy),Mamoswine <3 (Lego Yoda),342,504281602474639393,1.75
+Magnificent Manaphy's (Pixixy),Mamoswine <3 (Lego Yoda),200,164238723892903937,1.75
+Blackthorn Beasts (Saget),Richer,100,94227448064905216,1.3333333333333333
+Blackthorn Beasts (Saget),Richer,300,234849210103627787,1.3333333333333333
+Blackthorn Beasts (Saget),Richer,1050,222471962881032192,1.3333333333333333
+Richer,Blackthorn Beasts (Saget),300,346119366598983680,3.0
+Richer,Blackthorn Beasts (Saget),200,504281602474639393,3.0
+Damage,Shellshock,200,164238723892903937,1.5
+Shellshock,Damage,100,94227448064905216,2.0
+Damage,Shellshock,300,234849210103627787,1.5
+Damage,Shellshock,999,504281602474639393,1.5
+Damage,Shellshock,300,322111694367227925,1.5
+Damage,Shellshock,500,383990061932347392,1.5
+Damage,Shellshock,350,164238723892903937,1.5
+Los Angeles Laxers (Cyb3r),Return of the Icenogle (Matty Ice),300,675336056169824298,1.5
+Los Angeles Laxers (Cyb3r),Return of the Icenogle (Matty Ice),1000,504281602474639393,1.5
+Los Angeles Laxers (Cyb3r),Return of the Icenogle (Matty Ice),250,346119366598983680,1.5
+Los Angeles Laxers (Cyb3r),Return of the Icenogle (Matty Ice),1000,322111694367227925,1.5
+Los Angeles Laxers (Cyb3r),Return of the Icenogle (Matty Ice),267,721162429123395636,1.5
+Return of the Icenogle (Matty Ice),Los Angeles Laxers (Cyb3r),150,164238723892903937,2.0
+Tzim,Chicago White Swadloons (Mao),150,164238723892903937,1.75
+Tzim,Chicago White Swadloons (Mao),150,675336056169824298,1.75
+Chicago White Swadloons (Mao),Tzim,25,94227448064905216,1.75
+Tzim,Chicago White Swadloons (Mao),200,322111694367227925,1.75
+Tzim,Chicago White Swadloons (Mao),500,234849210103627787,1.75
+Chicago White Swadloons (Mao),Tzim,500,504281602474639393,1.75
+The Tapu Bulicos (Ulico),Joel,50,675336056169824298,2.0
+The Tapu Bulicos (Ulico),Joel,1583,259519712180830209,2.0
+The Tapu Bulicos (Ulico),Joel,50,94227448064905216,2.0
+The Tapu Bulicos (Ulico),Joel,500,234849210103627787,2.0
+The Tapu Bulicos (Ulico),Joel,1000,504281602474639393,2.0
+The Tapu Bulicos (Ulico),Joel,350,254067888539959296,2.0
+The Tapu Bulicos (Ulico),Joel,227,254067888539959296,2.0
+The Tapu Bulicos (Ulico),Joel,150,164238723892903937,2.0
+HippoJust,Kam,150,675336056169824298,1.3333333333333333
+Kam,HippoJust,100,346119366598983680,3.0
+The Tapu Bulicos (Ulico),Richer,600,346119366598983680,1.25
+The Tapu Bulicos (Ulico),Richer,650,721162429123395636,1.25
+The Tapu Bulicos (Ulico),Richer,300,234849210103627787,1.25
+Joel,Mamoswine <3 (Lego Yoda),1000,322111694367227925,1.25
+Joel,Mamoswine <3 (Lego Yoda),250,222471962881032192,1.25
+Heahea Heatran (Trip),Awesome Arctovishes (Praspian),300,346119366598983680,1.75
+Awesome Arctovishes (Praspian),Heahea Heatran (Trip),300,234849210103627787,1.75
+HippoJust,Blackthorn Beasts (Saget),13,504281602474639393,1.75
+Blackthorn Beasts (Saget),HippoJust,250,234849210103627787,1.75
+HippoJust,Blackthorn Beasts (Saget),300,322111694367227925,1.75
+Blackthorn Beasts (Saget),HippoJust,300,94227448064905216,1.75
+Blackthorn Beasts (Saget),HippoJust,400,346119366598983680,1.75
+Blackthorn Beasts (Saget),HippoJust,312,222471962881032192,1.75
+Jdawgin13,Tzim,400,322111694367227925,1.25
+Tzim,Jdawgin13,300,234849210103627787,4.0
+Heahea Heatran (Trip),Alchemilla,300,164238723892903937,1.3333333333333333
+Heahea Heatran (Trip),Alchemilla,900,164238723892903937,1.3333333333333333
+Heahea Heatran (Trip),Alchemilla,66,164238723892903937,1.3333333333333333
+Heahea Heatran (Trip),Alchemilla,825,164238723892903937,1.3333333333333333
+Heahea Heatran (Trip),Alchemilla,400,675336056169824298,1.3333333333333333
+Heahea Heatran (Trip),Alchemilla,310,504281602474639393,1.3333333333333333
+Heahea Heatran (Trip),Alchemilla,200,322111694367227925,1.3333333333333333
+Heahea Heatran (Trip),Alchemilla,300,322111694367227925,1.3333333333333333
+Heahea Heatran (Trip),Alchemilla,1000,346119366598983680,1.3333333333333333
+Heahea Heatran (Trip),Alchemilla,407,94227448064905216,1.3333333333333333
+Heahea Heatran (Trip),Alchemilla,100,234849210103627787,1.3333333333333333
+Run it Back (Damage),Chicago White Swadloons (Mao),400,322111694367227925,1.25
+Chicago White Swadloons (Mao),Run it Back (Damage),200,504281602474639393,4.0
+Chicago White Swadloons (Mao),Run it Back (Damage),150,164238723892903937,4.0
+Run it Back (Damage),Chicago White Swadloons (Mao),208,234849210103627787,1.25
+Chicago White Swadloons (Mao),Run it Back (Damage),75,94227448064905216,4.0
+Chicago White Swadloons (Mao),Run it Back (Damage),25,94227448064905216,4.0
+Run it Back (Damage),Chicago White Swadloons (Mao),50,94227448064905216,1.25
+The Operation (Shrug),Pumpkinfox's Trash Dragoons (Pumpkinfox),236,504281602474639393,1.25
+The Operation (Shrug),Pumpkinfox's Trash Dragoons (Pumpkinfox),750,322111694367227925,1.25
+The Operation (Shrug),Pumpkinfox's Trash Dragoons (Pumpkinfox),300,94227448064905216,1.25
+The Operation (Shrug),Pumpkinfox's Trash Dragoons (Pumpkinfox),813,721162429123395636,1.25
+The Operation (Shrug),Pumpkinfox's Trash Dragoons (Pumpkinfox),2638,164238723892903937,1.25
+Shellshock,Alchemilla,155,94227448064905216,1.25
+Shellshock,Alchemilla,295,504281602474639393,1.25
+Shellshock,Alchemilla,750,322111694367227925,1.25
+Shellshock,Alchemilla,1968,690818858155507733,1.25
+Shellshock,Alchemilla,1833,360844232971386883,1.25
+Shellshock,Alchemilla,260,234849210103627787,1.25
+Shellshock,Alchemilla,500,548254419188187146,1.25
+Shellshock,Alchemilla,500,334109147048181761,1.25
+Shellshock,Alchemilla,1016,721162429123395636,1.25
+Shellshock,Alchemilla,3298,164238723892903937,1.25
+Shellshock,Alchemilla,1500,700414621546184774,1.25
+Magnificent Manaphy's (Pixixy),Los Angeles Laxers (Cyb3r),1000,261042964053098496,4.0
+Magnificent Manaphy's (Pixixy),Los Angeles Laxers (Cyb3r),150,164238723892903937,4.0
+Los Angeles Laxers (Cyb3r),Magnificent Manaphy's (Pixixy),625,548254419188187146,1.25
+Magnificent Manaphy's (Pixixy),Los Angeles Laxers (Cyb3r),369,504281602474639393,4.0
+Magnificent Manaphy's (Pixixy),Los Angeles Laxers (Cyb3r),468,690818858155507733,4.0
+Los Angeles Laxers (Cyb3r),Magnificent Manaphy's (Pixixy),250,234849210103627787,1.25
+Magnificent Manaphy's (Pixixy),Los Angeles Laxers (Cyb3r),75,234849210103627787,4.0
+Los Angeles Laxers (Cyb3r),Magnificent Manaphy's (Pixixy),50,346119366598983680,1.25
+Magnificent Manaphy's (Pixixy),Los Angeles Laxers (Cyb3r),1000,721162429123395636,4.0
+Magnificent Manaphy's (Pixixy),Los Angeles Laxers (Cyb3r),50,94227448064905216,4.0
+Magnificent Manaphy's (Pixixy),Los Angeles Laxers (Cyb3r),2,690818858155507733,4.0
+Los Angeles Laxers (Cyb3r),Magnificent Manaphy's (Pixixy),400,322111694367227925,1.25
+Magnificent Manaphy's (Pixixy),Los Angeles Laxers (Cyb3r),300,383990061932347392,4.0
+Los Angeles Laxers (Cyb3r),Magnificent Manaphy's (Pixixy),200,334109147048181761,1.25
+Run it Back (Damage),Alchemilla,500,164238723892903937,1.2
+Run it Back (Damage),Alchemilla,2062,346119366598983680,1.2
+Run it Back (Damage),Alchemilla,4566,322111694367227925,1.2
+Run it Back (Damage),Alchemilla,520,721162429123395636,1.2
+Run it Back (Damage),Alchemilla,768,94227448064905216,1.2
+Run it Back (Damage),Alchemilla,1522,164238723892903937,1.2
+Run it Back (Damage),Alchemilla,250,164238723892903937,1.2
+Blackthorn Beasts (Saget),Mamoswine <3 (Lego Yoda),200,164238723892903937,1.5
+Blackthorn Beasts (Saget),Mamoswine <3 (Lego Yoda),950,346119366598983680,1.5
+Blackthorn Beasts (Saget),Mamoswine <3 (Lego Yoda),250,504281602474639393,1.5
+Blackthorn Beasts (Saget),Mamoswine <3 (Lego Yoda),400,234849210103627787,1.5
+Blackthorn Beasts (Saget),Mamoswine <3 (Lego Yoda),400,164238723892903937,1.5
+Blackthorn Beasts (Saget),Mamoswine <3 (Lego Yoda),800,322111694367227925,1.5
+Joel,Richer,200,164238723892903937,1.2
+Joel,Richer,900,322111694367227925,1.2
+Joel,Richer,624,721162429123395636,1.2
+Joel,Richer,500,164238723892903937,1.2
+Joel,Richer,2000,346119366598983680,1.2
+Joel,Richer,2500,254067888539959296,1.2
+Joel,Richer,250,222471962881032192,1.2
+Joel,Richer,300,234849210103627787,1.2
+Joel,Richer,500,455838049423720459,1.2
+Tzim,Awesome Arctovishes (Praspian),150,164238723892903937,2.0
+Awesome Arctovishes (Praspian),Tzim,200,94227448064905216,1.5
+Awesome Arctovishes (Praspian),Tzim,200,322111694367227925,1.5
+Awesome Arctovishes (Praspian),Tzim,200,164238723892903937,1.5
+Tzim,Awesome Arctovishes (Praspian),200,234849210103627787,2.0
+Magnificent Manaphy's (Pixixy),HippoJust,150,164238723892903937,2.0
+The Operation (Shrug),Shellshock,500,164238723892903937,1.75
+The Operation (Shrug),Shellshock,2827,164238723892903937,1.75
+Shellshock,The Operation (Shrug),300,322111694367227925,1.75
+Shellshock,The Operation (Shrug),300,346119366598983680,1.75
+Chicago White Swadloons (Mao),Heahea Heatran (Trip),150,164238723892903937,2.0
+Chicago White Swadloons (Mao),Heahea Heatran (Trip),50,94227448064905216,2.0
+Striaton Sableyes (Jdawgin13),Pumpkinfox's Trash Dragoons (Pumpkinfox),200,164238723892903937,1.2
+Striaton Sableyes (Jdawgin13),Pumpkinfox's Trash Dragoons (Pumpkinfox),500,94227448064905216,1.2
+Striaton Sableyes (Jdawgin13),Pumpkinfox's Trash Dragoons (Pumpkinfox),2240,690818858155507733,1.2
+Striaton Sableyes (Jdawgin13),Pumpkinfox's Trash Dragoons (Pumpkinfox),1000,346119366598983680,1.2
+Striaton Sableyes (Jdawgin13),Pumpkinfox's Trash Dragoons (Pumpkinfox),1700,322111694367227925,1.2
+Striaton Sableyes (Jdawgin13),Pumpkinfox's Trash Dragoons (Pumpkinfox),375,504281602474639393,1.2
+Los Angeles Laxers (Cyb3r),Kam,200,164238723892903937,1.2
+Los Angeles Laxers (Cyb3r),Kam,500,94227448064905216,1.2
+Los Angeles Laxers (Cyb3r),Kam,450,504281602474639393,1.2
+The Tapu Bulicos (Ulico),Return of the Icenogle (Matty Ice),200,164238723892903937,1.75
+The Tapu Bulicos (Ulico),Return of the Icenogle (Matty Ice),72,94227448064905216,1.75
+Return of the Icenogle (Matty Ice),The Tapu Bulicos (Ulico),790,504281602474639393,1.75
+Return of the Icenogle (Matty Ice),The Tapu Bulicos (Ulico),2000,189879722367385601,1.75
+The Tapu Bulicos (Ulico),Return of the Icenogle (Matty Ice),200,234849210103627787,1.75
+Return of the Icenogle (Matty Ice),The Tapu Bulicos (Ulico),500,383990061932347392,1.75
+Return of the Icenogle (Matty Ice),The Tapu Bulicos (Ulico),500,346119366598983680,1.75
+Return of the Icenogle (Matty Ice),The Tapu Bulicos (Ulico),250,222471962881032192,1.75
+Magnificent Manaphy's (Pixixy),Kam,200,164238723892903937,1.5
+Magnificent Manaphy's (Pixixy),Kam,500,383990061932347392,1.5
+Magnificent Manaphy's (Pixixy),Kam,1383,504281602474639393,1.5
+Kam,Magnificent Manaphy's (Pixixy),438,222471962881032192,2.0
+Magnificent Manaphy's (Pixixy),Kam,1000,346119366598983680,1.5
+Magnificent Manaphy's (Pixixy),Kam,274,346119366598983680,1.5
+Chicago White Swadloons (Mao),Alchemilla,250,296638456367677441,1.5
+The Tapu Bulicos (Ulico),Blackthorn Beasts (Saget),750,296638456367677441,1.5
+The Tapu Bulicos (Ulico),Blackthorn Beasts (Saget),200,164238723892903937,1.5
+Chicago White Swadloons (Mao),Alchemilla,2000,164238723892903937,1.5
+Richer,Mamoswine <3 (Lego Yoda),200,164238723892903937,2.0
+Richer,Mamoswine <3 (Lego Yoda),500,675336056169824298,2.0
+The Tapu Bulicos (Ulico),Blackthorn Beasts (Saget),300,675336056169824298,1.5
+Chicago White Swadloons (Mao),Alchemilla,1450,94227448064905216,1.5
+The Tapu Bulicos (Ulico),Blackthorn Beasts (Saget),500,346119366598983680,1.5
+The Operation (Shrug),Awesome Arctovishes (Praspian),1000,164238723892903937,1.5
+The Operation (Shrug),Awesome Arctovishes (Praspian),1000,164238723892903937,1.5
+The Operation (Shrug),Awesome Arctovishes (Praspian),100,94227448064905216,1.5
+The Operation (Shrug),Awesome Arctovishes (Praspian),876,222471962881032192,1.5
+Striaton Sableyes (Jdawgin13),Run it Back (Damage),200,164238723892903937,1.75
+Run it Back (Damage),Striaton Sableyes (Jdawgin13),200,675336056169824298,1.75
+Run it Back (Damage),Striaton Sableyes (Jdawgin13),500,322111694367227925,1.75
+Striaton Sableyes (Jdawgin13),Run it Back (Damage),1314,222471962881032192,1.75
+Striaton Sableyes (Jdawgin13),Run it Back (Damage),200,164238723892903937,1.75
+HippoJust,Return of the Icenogle (Matty Ice),200,164238723892903937,2.0
+Return of the Icenogle (Matty Ice),HippoJust,3500,189879722367385601,1.5
+Return of the Icenogle (Matty Ice),HippoJust,1000,675336056169824298,1.5
+Return of the Icenogle (Matty Ice),HippoJust,2438,690818858155507733,1.5
+HippoJust,Return of the Icenogle (Matty Ice),1281,548254419188187146,2.0
+Joel,Los Angeles Laxers (Cyb3r),200,164238723892903937,1.75
+Joel,Los Angeles Laxers (Cyb3r),100,675336056169824298,1.75
+Joel,Los Angeles Laxers (Cyb3r),650,296638456367677441,1.75
+Los Angeles Laxers (Cyb3r),Joel,200,94227448064905216,1.75
+Joel,Los Angeles Laxers (Cyb3r),1000,322111694367227925,1.75
+Joel,Los Angeles Laxers (Cyb3r),200,164238723892903937,1.75
+Los Angeles Laxers (Cyb3r),Joel,5250,189879722367385601,1.75
+Shellshock,Heahea Heatran (Trip),250,296638456367677441,1.5
+Shellshock,Heahea Heatran (Trip),200,164238723892903937,1.5
+Shellshock,Heahea Heatran (Trip),500,675336056169824298,1.5
+Shellshock,Heahea Heatran (Trip),2000,322111694367227925,1.5
+Shellshock,Heahea Heatran (Trip),2000,675336056169824298,1.5
+Tzim,Pumpkinfox's Trash Dragoons (Pumpkinfox),200,164238723892903937,1.5
+Tzim,Pumpkinfox's Trash Dragoons (Pumpkinfox),200,1148050505180921976,1.5
+Tzim,Pumpkinfox's Trash Dragoons (Pumpkinfox),250,234849210103627787,1.5
+Tzim,Pumpkinfox's Trash Dragoons (Pumpkinfox),500,322111694367227925,1.5
+Tzim,Pumpkinfox's Trash Dragoons (Pumpkinfox),500,721162429123395636,1.5
+Striaton Sableyes (Jdawgin13),HippoJust,500,1148050505180921976,1.3333333333333333
+HippoJust,Striaton Sableyes (Jdawgin13),200,234849210103627787,3.0
+Striaton Sableyes (Jdawgin13),HippoJust,750,721162429123395636,1.3333333333333333
+Blackthorn Beasts (Saget),Run it Back (Damage),400,164238723892903937,3.0
+Blackthorn Beasts (Saget),Run it Back (Damage),500,254067888539959296,3.0
+Run it Back (Damage),Blackthorn Beasts (Saget),1000,322111694367227925,1.3333333333333333
+Run it Back (Damage),Blackthorn Beasts (Saget),1000,721162429123395636,1.3333333333333333
+Richer,Alchemilla,4183,675336056169824298,1.75
+Richer,Alchemilla,1200,164238723892903937,1.75
+Richer,Alchemilla,487,234849210103627787,1.75
+Richer,Alchemilla,9487,189879722367385601,1.75
+Richer,Alchemilla,6578,322111694367227925,1.75
+Chicago White Swadloons (Mao),The Tapu Bulicos (Ulico),400,164238723892903937,3.0
+The Tapu Bulicos (Ulico),Chicago White Swadloons (Mao),300,94227448064905216,1.3333333333333333
+The Tapu Bulicos (Ulico),Chicago White Swadloons (Mao),400,234849210103627787,1.3333333333333333
+The Tapu Bulicos (Ulico),Chicago White Swadloons (Mao),450,346119366598983680,1.3333333333333333
+The Operation (Shrug),Magnificent Manaphy's (Pixixy),3902,164238723892903937,1.3333333333333333
+The Operation (Shrug),Magnificent Manaphy's (Pixixy),2100,164238723892903937,1.3333333333333333
+The Operation (Shrug),Magnificent Manaphy's (Pixixy),2725,94227448064905216,1.3333333333333333
+The Operation (Shrug),Magnificent Manaphy's (Pixixy),2407,690818858155507733,1.3333333333333333
+Shellshock Sod Squad (Shellshock),Mamoswine <3 (Lego Yoda),600,164238723892903937,1.3333333333333333
+Shellshock Sod Squad (Shellshock),Mamoswine <3 (Lego Yoda),2300,675336056169824298,1.3333333333333333
+Shellshock Sod Squad (Shellshock),Mamoswine <3 (Lego Yoda),3000,322111694367227925,1.3333333333333333
+Shellshock Sod Squad (Shellshock),Mamoswine <3 (Lego Yoda),3633,94227448064905216,1.3333333333333333
+Shellshock Sod Squad (Shellshock),Mamoswine <3 (Lego Yoda),1500,164238723892903937,1.3333333333333333
+Shellshock Sod Squad (Shellshock),Mamoswine <3 (Lego Yoda),750,383990061932347392,1.3333333333333333
+Kam,Pumpkinfox's Trash Dragoons (Pumpkinfox),200,164238723892903937,1.75
+Kam,Pumpkinfox's Trash Dragoons (Pumpkinfox),5000,675336056169824298,1.75
+Kam,Pumpkinfox's Trash Dragoons (Pumpkinfox),250,222471962881032192,1.75
+Kam,Pumpkinfox's Trash Dragoons (Pumpkinfox),2000,690818858155507733,1.75
+Kam,Pumpkinfox's Trash Dragoons (Pumpkinfox),1800,164238723892903937,1.75
+Kam,Pumpkinfox's Trash Dragoons (Pumpkinfox),4844,94227448064905216,1.75
+Kam,Pumpkinfox's Trash Dragoons (Pumpkinfox),3000,322111694367227925,1.75
+Kam,Pumpkinfox's Trash Dragoons (Pumpkinfox),986,234849210103627787,1.75
+Return of the Icenogle (Matty Ice),Tzim,600,164238723892903937,1.3333333333333333
+Tzim,Return of the Icenogle (Matty Ice),300,234849210103627787,3.0
+Tzim,Return of the Icenogle (Matty Ice),250,504281602474639393,3.0
+Return of the Icenogle (Matty Ice),Tzim,2000,322111694367227925,1.3333333333333333
+Return of the Icenogle (Matty Ice),Tzim,8477,94227448064905216,1.3333333333333333
+Los Angeles Laxers (Cyb3r),Awesome Arctovishes (Praspian),400,164238723892903937,1.3333333333333333
+Los Angeles Laxers (Cyb3r),Awesome Arctovishes (Praspian),650,1148050505180921976,1.3333333333333333
+Los Angeles Laxers (Cyb3r),Awesome Arctovishes (Praspian),437,222471962881032192,1.3333333333333333
+Los Angeles Laxers (Cyb3r),Awesome Arctovishes (Praspian),16602,189879722367385601,1.3333333333333333
+Los Angeles Laxers (Cyb3r),Awesome Arctovishes (Praspian),3000,322111694367227925,1.3333333333333333
+Awesome Arctovishes (Praspian),Los Angeles Laxers (Cyb3r),750,504281602474639393,3.0
+Awesome Arctovishes (Praspian),Los Angeles Laxers (Cyb3r),325,234849210103627787,3.0
+The Ecruteak Eclipse (Joel),Heahea Heatran (Trip),400,164238723892903937,1.3333333333333333
+The Ecruteak Eclipse (Joel),Heahea Heatran (Trip),4000,322111694367227925,1.3333333333333333
+Heahea Heatran (Trip),The Ecruteak Eclipse (Joel),400,234849210103627787,3.0
+The Ecruteak Eclipse (Joel),Heahea Heatran (Trip),22136,189879722367385601,1.3333333333333333
+Kam,Awesome Arctovishes (Praspian),1000,234849210103627787,3.0
+HippoJust,Jim Davis The Team (Pumpkinfox),800,346119366598983680,1.3333333333333333
+HippoJust,Jim Davis The Team (Pumpkinfox),500,164238723892903937,1.3333333333333333
+Blackthorn Beasts (Saget),Alchemilla,1000,675336056169824298,1.3333333333333333
+Blackthorn Beasts (Saget),Alchemilla,600,234849210103627787,1.3333333333333333
+Blackthorn Beasts (Saget),Alchemilla,12236,164238723892903937,1.3333333333333333
+Blackthorn Beasts (Saget),Alchemilla,6509,690818858155507733,1.3333333333333333
+Magnificent Manaphy's (Pixixy),Tzim,1000,383990061932347392,1.75
+Tzim,Magnificent Manaphy's (Pixixy),500,346119366598983680,1.75
+Chicago White Swadloons (Mao),Mamoswine <3 (Lego Yoda),500,346119366598983680,1.75
+Chicago White Swadloons (Mao),Mamoswine <3 (Lego Yoda),500,296638456367677441,1.75
+Chicago White Swadloons (Mao),Mamoswine <3 (Lego Yoda),3000,322111694367227925,1.75
+Chicago White Swadloons (Mao),Mamoswine <3 (Lego Yoda),500,164238723892903937,1.75
+Chicago White Swadloons (Mao),Mamoswine <3 (Lego Yoda),29515,189879722367385601,1.75
+Los Angeles Laxers (Cyb3r),The Tapu Bulicos (Ulico),533,1148050505180921976,1.5
+The Tapu Bulicos (Ulico),Los Angeles Laxers (Cyb3r),250,164238723892903937,2.0
+The Tapu Bulicos (Ulico),Los Angeles Laxers (Cyb3r),1500,346119366598983680,2.0
+Richer,Heahea Heatran (Trip),800,234849210103627787,3.0
+Richer,Heahea Heatran (Trip),1500,164238723892903937,3.0
+Striaton Sableyes (Jdawgin13),Shellshock Sod Squad (Shellshock),600,1148050505180921976,1.5
+Striaton Sableyes (Jdawgin13),Shellshock Sod Squad (Shellshock),2000,164238723892903937,1.5
+Run it Back (Damage),Return of the Icenogle (Matty Ice),600,1148050505180921976,1.5
+Run it Back (Damage),Return of the Icenogle (Matty Ice),5000,322111694367227925,1.5
+Run it Back (Damage),Return of the Icenogle (Matty Ice),1500,234849210103627787,1.5
+The Operation (Shrug),The Ecruteak Eclipse (Joel),10000,675336056169824298,2.0
+The Operation (Shrug),The Ecruteak Eclipse (Joel),15000,164238723892903937,2.0
+The Ecruteak Eclipse (Joel),The Operation (Shrug),2000,322111694367227925,1.5
+Striaton Sableyes (Jdawgin13),Mamoswine <3 (Lego Yoda),22000,675336056169824298,1.25
+Striaton Sableyes (Jdawgin13),Mamoswine <3 (Lego Yoda),10595,322111694367227925,1.25
+Striaton Sableyes (Jdawgin13),Mamoswine <3 (Lego Yoda),4000,164238723892903937,1.25
+Striaton Sableyes (Jdawgin13),Mamoswine <3 (Lego Yoda),1150,234849210103627787,1.25
+HippoJust,Awesome Arctovishes (Praspian),500,548254419188187146,1.75
+Awesome Arctovishes (Praspian),HippoJust,4000,164238723892903937,1.75
+Blackthorn Beasts (Saget),Heahea Heatran (Trip),3689,164238723892903937,1.75
+Blackthorn Beasts (Saget),Heahea Heatran (Trip),250,254067888539959296,1.75
+Blackthorn Beasts (Saget),Heahea Heatran (Trip),51901,189879722367385601,1.75
+Blackthorn Beasts (Saget),Heahea Heatran (Trip),13243,322111694367227925,1.75
+Blackthorn Beasts (Saget),Heahea Heatran (Trip),200,234849210103627787,1.75
+Blackthorn Beasts (Saget),Heahea Heatran (Trip),1000,721162429123395636,1.75
+The Operation (Shrug),Richer,27920,675336056169824298,1.25
+The Operation (Shrug),Richer,36000,164238723892903937,1.25
+The Operation (Shrug),Richer,1238,234849210103627787,1.25
+The Operation (Shrug),Richer,2000,322111694367227925,1.25
+Kam,The Tapu Bulicos (Ulico),250,504281602474639393,4.0
+Kam,The Tapu Bulicos (Ulico),200,234849210103627787,4.0
+The Tapu Bulicos (Ulico),Kam,400,234849210103627787,1.25
+Tzim,Run it Back (Damage),916,383990061932347392,4.0
+Tzim,Run it Back (Damage),916,383990061932347392,4.0
+Run it Back (Damage),Tzim,20000,164238723892903937,1.25
+Chicago White Swadloons (Mao),Los Angeles Laxers (Cyb3r),2000,164238723892903937,4.0
+Chicago White Swadloons (Mao),Los Angeles Laxers (Cyb3r),2000,164238723892903937,4.0
+Magnificent Manaphy's (Pixixy),The Ecruteak Eclipse (Joel),3000,164238723892903937,4.0
+Return of the Icenogle (Matty Ice),Alchemilla,9000,690818858155507733,1.25
+Return of the Icenogle (Matty Ice),Alchemilla,23676,322111694367227925,1.25
+Return of the Icenogle (Matty Ice),Alchemilla,10456,164238723892903937,1.25
+Return of the Icenogle (Matty Ice),Alchemilla,41000,164238723892903937,1.25
+Return of the Icenogle (Matty Ice),Alchemilla,90827,189879722367385601,1.25
+Shellshock Sod Squad (Shellshock),Jim Davis The Team (Pumpkinfox),16000,164238723892903937,1.25
+Shellshock Sod Squad (Shellshock),Jim Davis The Team (Pumpkinfox),29595,322111694367227925,1.25
+Shellshock Sod Squad (Shellshock),Jim Davis The Team (Pumpkinfox),113534,189879722367385601,1.25
+Run it Back (Damage),Richer,37243,322111694367227925,1.2
+Run it Back (Damage),Richer,10000,164238723892903937,1.2
+Kam,Striaton Sableyes (Jdawgin13),1083,222471962881032192,5.0
+Striaton Sableyes (Jdawgin13),Kam,1500,234849210103627787,1.2
+Striaton Sableyes (Jdawgin13),Kam,10000,164238723892903937,1.2
+The Ecruteak Eclipse (Joel),Alchemilla,8570,164238723892903937,1.2
+The Ecruteak Eclipse (Joel),Alchemilla,73000,164238723892903937,1.2
+The Ecruteak Eclipse (Joel),Alchemilla,142167,189879722367385601,1.2
+The Ecruteak Eclipse (Joel),Alchemilla,250,504281602474639393,1.2
+The Operation (Shrug),Return of the Icenogle (Matty Ice),300,504281602474639393,1.75
+The Operation (Shrug),Return of the Icenogle (Matty Ice),97884,164238723892903937,1.75
+The Operation (Shrug),Return of the Icenogle (Matty Ice),500,94227448064905216,1.75
+The Tapu Bulicos (Ulico),Shellshock Sod Squad (Shellshock),1925,334109147048181761,1.75
+The Tapu Bulicos (Ulico),Shellshock Sod Squad (Shellshock),250,334109147048181761,1.75
+Cyb3r,Saget,400,675336056169824298,1.3333333333333333
+Saget,Cyb3r,50,164238723892903937,3.0
+Cyb3r,Saget,250,322111694367227925,1.3333333333333333
+Saget,Cyb3r,50,193042128606199808,3.0
+Cyb3r,Saget,500,721162429123395636,1.3333333333333333
+Saget,Cyb3r,100,94227448064905216,3.0
+Cyb3r,Saget,150,346119366598983680,1.3333333333333333
+Ulico,Dustin,50,164238723892903937,1.3333333333333333
+Ulico,Dustin,300,346119366598983680,1.3333333333333333
+Dustin,Ulico,50,94227448064905216,3.0
+Ulico,Dustin,500,234849210103627787,1.3333333333333333
+Tzim14,2015 Chicago Chimchars (Trip),750,690818858155507733,1.75
+Tzim14,2015 Chicago Chimchars (Trip),916,234849210103627787,1.75
+Tzim14,2015 Chicago Chimchars (Trip),750,504281602474639393,1.75
+Tzim14,2015 Chicago Chimchars (Trip),400,721162429123395636,1.75
+Tzim14,2015 Chicago Chimchars (Trip),150,346119366598983680,1.75
+The Fab Four (Shrug),Slashing Sceptiles (Fury),316,164238723892903937,1.3333333333333333
+The Fab Four (Shrug),Slashing Sceptiles (Fury),516,721162429123395636,1.3333333333333333
+Job's Not Finished (Damage),Ajay,250,346119366598983680,1.3333333333333333
+Job's Not Finished (Damage),Ajay,450,322111694367227925,1.3333333333333333
+Job's Not Finished (Damage),Ajay,200,254067888539959296,1.3333333333333333
+Sheer Cold (Wyki),Richer,200,425075709527195648,1.75
+Blackthorn Bellibombs (Jdawgin13),Awesome Arctovishes (Praspian),500,346119366598983680,1.3333333333333333
+Blackthorn Bellibombs (Jdawgin13),Awesome Arctovishes (Praspian),500,254067888539959296,1.3333333333333333
+Awesome Arctovishes (Praspian),Blackthorn Bellibombs (Jdawgin13),100,675336056169824298,3.0
+Richer,Sheer Cold (Wyki),50,164238723892903937,1.75
+Richer,Sheer Cold (Wyki),50,193042128606199808,1.75
+Tzim14,2015 Chicago Chimchars (Trip),50,164238723892903937,1.75
+Tzim14,2015 Chicago Chimchars (Trip),50,193042128606199808,1.75
+Ajay,Job's Not Finished (Damage),50,164238723892903937,3.0
+House Fire Fishies (Pixixy),Shellshock Stakes Squad (Shellshock),50,164238723892903937,3.0
+Ajay,Job's Not Finished (Damage),100,373975063558619137,3.0
+Awesome Arctovishes (Praspian),Blackthorn Bellibombs (Jdawgin13),50,164238723892903937,3.0
+The Fab Four (Shrug),Slashing Sceptiles (Fury),50,164238723892903937,1.3333333333333333
+Roblox City Rotoms (RobbyRabs),Melemele Matty Mons (Matty),50,164238723892903937,3.0
+Slashing Sceptiles (Fury),The Fab Four (Shrug),50,193042128606199808,3.0
+Electric Struggle/The One Hit KO (Kam),Windy City Whimsicotts (Joel),50,164238723892903937,3.0
+Windy City Whimsicotts (Joel),Electric Struggle/The One Hit KO (Kam),250,455838049423720459,1.3333333333333333
+Windy City Whimsicotts (Joel),Electric Struggle/The One Hit KO (Kam),700,675336056169824298,1.3333333333333333
+Windy City Whimsicotts (Joel),Electric Struggle/The One Hit KO (Kam),500,322111694367227925,1.3333333333333333
+Windy City Whimsicotts (Joel),Electric Struggle/The One Hit KO (Kam),150,346119366598983680,1.3333333333333333
+The Fab Four (Shrug),Ulico,550,164238723892903937,2.0
+The Fab Four (Shrug),Ulico,1000,1266101247581229087,2.0
+Ulico,The Fab Four (Shrug),200,193042128606199808,1.5
+Ulico,The Fab Four (Shrug),400,100417412481961984,1.5
+Ulico,The Fab Four (Shrug),1000,360844232971386883,1.5
+House Fire Fishies (Pixixy),Roblox City Rotoms (RobbyRabs),500,675336056169824298,1.75
+House Fire Fishies (Pixixy),Roblox City Rotoms (RobbyRabs),200,164238723892903937,1.75
+Roblox City Rotoms (RobbyRabs),House Fire Fishies (Pixixy),1750,1266101247581229087,1.75
+Roblox City Rotoms (RobbyRabs),House Fire Fishies (Pixixy),200,346119366598983680,1.75
+Roblox City Rotoms (RobbyRabs),House Fire Fishies (Pixixy),500,100417412481961984,1.75
+Icerend Ruin Sabers (Saget),Tzim14,300,164238723892903937,1.3333333333333333
+Melemele Matty Mons (Matty),The Spikemuth Seven (Cyb3r),200,164238723892903937,2.0
+The Spikemuth Seven (Cyb3r),Melemele Matty Mons (Matty),200,346119366598983680,1.5
+2015 Chicago Chimchars (Trip),Awesome Arctovishes (Praspian),2500,1266101247581229087,3.0
+Awesome Arctovishes (Praspian),2015 Chicago Chimchars (Trip),250,690818858155507733,1.3333333333333333
+2015 Chicago Chimchars (Trip),Awesome Arctovishes (Praspian),333,346119366598983680,3.0
+2015 Chicago Chimchars (Trip),Awesome Arctovishes (Praspian),250,322111694367227925,3.0
+Awesome Arctovishes (Praspian),2015 Chicago Chimchars (Trip),500,254067888539959296,1.3333333333333333
+2015 Chicago Chimchars (Trip),Awesome Arctovishes (Praspian),66,254067888539959296,3.0
+Blackthorn Bellibombs (Jdawgin13),Shellshock Stakes Squad (Shellshock),500,254067888539959296,1.5
+Blackthorn Bellibombs (Jdawgin13),Shellshock Stakes Squad (Shellshock),100,690818858155507733,1.5
+Shellshock Stakes Squad (Shellshock),Blackthorn Bellibombs (Jdawgin13),33,690818858155507733,2.0
+Blackthorn Bellibombs (Jdawgin13),Shellshock Stakes Squad (Shellshock),250,346119366598983680,1.5
+Slashing Sceptiles (Fury),Electric Struggle/The One Hit KO (Kam),1000,675336056169824298,1.75
+Sheer Cold (Wyki),Dustin,350,346119366598983680,3.0
+Sheer Cold (Wyki),Dustin,125,346119366598983680,3.0
+Sheer Cold (Wyki),Dustin,300,322111694367227925,3.0
+Sheer Cold (Wyki),Dustin,200,425075709527195648,3.0
+Electric Struggle/The One Hit KO (Kam),Slashing Sceptiles (Fury),1000,222471962881032192,1.75
+Electric Struggle/The One Hit KO (Kam),Slashing Sceptiles (Fury),250,455838049423720459,1.75
+Dustin,Sheer Cold (Wyki),500,455838049423720459,1.3333333333333333
+Job's Not Finished (Damage),Windy City Whimsicotts (Joel),800,164238723892903937,1.5
+Job's Not Finished (Damage),Windy City Whimsicotts (Joel),100,193042128606199808,1.5
+Roblox City Rotoms (RobbyRabs),The Spikemuth Seven (Cyb3r),250,164238723892903937,4.0
+The Spikemuth Seven (Cyb3r),Roblox City Rotoms (RobbyRabs),500,322111694367227925,1.25
+Roblox City Rotoms (RobbyRabs),The Spikemuth Seven (Cyb3r),750,1266101247581229087,4.0
+Roblox City Rotoms (RobbyRabs),The Spikemuth Seven (Cyb3r),500,504281602474639393,4.0
+Slashing Sceptiles (Fury),Ulico,500,193042128606199808,4.0
+Sheer Cold (Wyki),The Fab Four (Shrug),50,193042128606199808,4.0
+Shellshock Stakes Squad (Shellshock),2015 Chicago Chimchars (Trip),50,193042128606199808,1.25
+Ulico,Slashing Sceptiles (Fury),250,360844232971386883,1.25
+Slashing Sceptiles (Fury),Ulico,150,346119366598983680,4.0
+Awesome Arctovishes (Praspian),Icerend Ruin Sabers (Saget),500,675336056169824298,1.75
+Icerend Ruin Sabers (Saget),Awesome Arctovishes (Praspian),250,222471962881032192,1.75
+Icerend Ruin Sabers (Saget),Awesome Arctovishes (Praspian),100,346119366598983680,1.75
+Icerend Ruin Sabers (Saget),Awesome Arctovishes (Praspian),200,322111694367227925,1.75
+Icerend Ruin Sabers (Saget),Awesome Arctovishes (Praspian),400,234849210103627787,1.75
+Tzim14,Melemele Matty Mons (Matty),50,455838049423720459,4.0
+Tzim14,Melemele Matty Mons (Matty),1,675336056169824298,4.0
+Melemele Matty Mons (Matty),Tzim14,400,322111694367227925,1.25
+Dustin,Ajay,250,455838049423720459,1.75
+Ajay,Dustin,1250,189879722367385601,1.75
+Dustin,Ajay,500,254067888539959296,1.75
+Ajay,Dustin,500,721162429123395636,1.75
+Windy City Whimsicotts (Joel),Richer,2440,675336056169824298,1.25
+Windy City Whimsicotts (Joel),Richer,600,690818858155507733,1.25
+Windy City Whimsicotts (Joel),Richer,200,455838049423720459,1.25
+Windy City Whimsicotts (Joel),Richer,667,254067888539959296,1.25
+Blackthorn Bellibombs (Jdawgin13),2015 Chicago Chimchars (Trip),1125,322111694367227925,1.2
+Blackthorn Bellibombs (Jdawgin13),2015 Chicago Chimchars (Trip),750,690818858155507733,1.2
+Awesome Arctovishes (Praspian),House Fire Fishies (Pixixy),500,675336056169824298,1.5
+Job's Not Finished (Damage),Richer,250,675336056169824298,1.2
+Job's Not Finished (Damage),Richer,250,322111694367227925,1.2
+Job's Not Finished (Damage),Richer,250,690818858155507733,1.2
+Job's Not Finished (Damage),Richer,250,164238723892903937,1.2
+Job's Not Finished (Damage),Richer,200,346119366598983680,1.2
+Job's Not Finished (Damage),Richer,150,346119366598983680,1.2
+The Spikemuth Seven (Cyb3r),Tzim14,1000,675336056169824298,1.2
+Tzim14,The Spikemuth Seven (Cyb3r),200,94227448064905216,5.0
+The Spikemuth Seven (Cyb3r),Tzim14,562,360844232971386883,1.2
+The Fab Four (Shrug),Windy City Whimsicotts (Joel),200,94227448064905216,1.75
+The Fab Four (Shrug),Windy City Whimsicotts (Joel),300,164238723892903937,1.75
+The Fab Four (Shrug),Windy City Whimsicotts (Joel),250,254067888539959296,1.75
+Ulico,Sheer Cold (Wyki),200,94227448064905216,1.2
+Ulico,Sheer Cold (Wyki),800,254067888539959296,1.2
+Ajay,Electric Struggle/The One Hit KO (Kam),500,675336056169824298,1.5
+Ajay,Electric Struggle/The One Hit KO (Kam),750,94227448064905216,1.5
+Slashing Sceptiles (Fury),Dustin,300,254067888539959296,2.0
+Blackthorn Bellibombs (Jdawgin13),The Spikemuth Seven (Cyb3r),250,346119366598983680,1.75
+Blackthorn Bellibombs (Jdawgin13),The Spikemuth Seven (Cyb3r),250,164238723892903937,1.75
+Blackthorn Bellibombs (Jdawgin13),The Spikemuth Seven (Cyb3r),20,346119366598983680,1.75
+The Spikemuth Seven (Cyb3r),Blackthorn Bellibombs (Jdawgin13),550,322111694367227925,1.75
+Tzim14,Roblox City Rotoms (RobbyRabs),100,164238723892903937,2.0
+The Fab Four (Shrug),Dustin,338,164238723892903937,1.5
+Ajay,Windy City Whimsicotts (Joel),150,164238723892903937,2.0
+Windy City Whimsicotts (Joel),Ajay,200,346119366598983680,1.5
+House Fire Fishies (Pixixy),2015 Chicago Chimchars (Trip),150,164238723892903937,1.5
+2015 Chicago Chimchars (Trip),House Fire Fishies (Pixixy),150,346119366598983680,2.0
+Job's Not Finished (Damage),Icerend Ruin Sabers (Saget),250,322111694367227925,1.3333333333333333
+Job's Not Finished (Damage),Icerend Ruin Sabers (Saget),750,504281602474639393,1.3333333333333333
+Job's Not Finished (Damage),Icerend Ruin Sabers (Saget),900,1266101247581229087,1.3333333333333333
+Icerend Ruin Sabers (Saget),Job's Not Finished (Damage),150,164238723892903937,3.0
+House Fire Fishies (Pixixy),The Fab Four (Shrug),100,675336056169824298,3.0
+The Fab Four (Shrug),House Fire Fishies (Pixixy),300,346119366598983680,1.3333333333333333
+The Fab Four (Shrug),House Fire Fishies (Pixixy),532,164238723892903937,1.3333333333333333
+Windy City Whimsicotts (Joel),Roblox City Rotoms (RobbyRabs),3000,675336056169824298,1.3333333333333333
+Roblox City Rotoms (RobbyRabs),Windy City Whimsicotts (Joel),100,164238723892903937,3.0
+Roblox City Rotoms (RobbyRabs),Windy City Whimsicotts (Joel),300,346119366598983680,3.0
+Roblox City Rotoms (RobbyRabs),Windy City Whimsicotts (Joel),500,254067888539959296,3.0
+Roblox City Rotoms (RobbyRabs),Windy City Whimsicotts (Joel),694,254067888539959296,3.0
+2015 Chicago Chimchars (Trip),Sheer Cold (Wyki),700,675336056169824298,1.75
+Awesome Arctovishes (Praspian),Ulico,100,164238723892903937,3.0
+Ajay,The Spikemuth Seven (Cyb3r),150,164238723892903937,3.0
+Ajay,The Spikemuth Seven (Cyb3r),300,94227448064905216,3.0
+Ajay,The Spikemuth Seven (Cyb3r),400,234849210103627787,3.0
+Richer,Tzim14,100,164238723892903937,1.75
+Tzim14,Richer,100,94227448064905216,1.75
+Shellshock Stakes Squad (Shellshock),Slashing Sceptiles (Fury),300,94227448064905216,1.3333333333333333
+Melemele Matty Mons (Matty),Electric Struggle/The One Hit KO (Kam),800,690818858155507733,1.3333333333333333
+Electric Struggle/The One Hit KO (Kam),Melemele Matty Mons (Matty),20,94227448064905216,3.0
+Melemele Matty Mons (Matty),Blackthorn Bellibombs (Jdawgin13),150,164238723892903937,2.0
+Blackthorn Bellibombs (Jdawgin13),Melemele Matty Mons (Matty),500,504281602474639393,1.5
+Melemele Matty Mons (Matty),Blackthorn Bellibombs (Jdawgin13),2000,487009004984205355,2.0
+Blackthorn Bellibombs (Jdawgin13),Melemele Matty Mons (Matty),1066,690818858155507733,1.5
+Blackthorn Bellibombs (Jdawgin13),Melemele Matty Mons (Matty),1625,721162429123395636,1.5
+Icerend Ruin Sabers (Saget),Richer,1599,690818858155507733,1.3333333333333333
+Icerend Ruin Sabers (Saget),Richer,750,222471962881032192,1.3333333333333333
+Icerend Ruin Sabers (Saget),Richer,1000,721162429123395636,1.3333333333333333
+Icerend Ruin Sabers (Saget),Richer,1250,504281602474639393,1.3333333333333333
+Awesome Arctovishes (Praspian),Sheer Cold (Wyki),500,721162429123395636,1.3333333333333333
+Sheer Cold (Wyki),Awesome Arctovishes (Praspian),100,164238723892903937,3.0
+Job's Not Finished (Damage),Shellshock Stakes Squad (Shellshock),1000,346119366598983680,1.5
+The Fab Four (Shrug),The Spikemuth Seven (Cyb3r),759,164238723892903937,2.0
+The Spikemuth Seven (Cyb3r),The Fab Four (Shrug),500,346119366598983680,1.5
+The Spikemuth Seven (Cyb3r),The Fab Four (Shrug),1500,721162429123395636,1.5
+Ajay,Tzim14,600,164238723892903937,1.3333333333333333
+Roblox City Rotoms (RobbyRabs),Electric Struggle/The One Hit KO (Kam),1000,1266101247581229087,1.75
+Roblox City Rotoms (RobbyRabs),Electric Struggle/The One Hit KO (Kam),2133,690818858155507733,1.75
+Roblox City Rotoms (RobbyRabs),Electric Struggle/The One Hit KO (Kam),1500,346119366598983680,1.75
+Roblox City Rotoms (RobbyRabs),Electric Struggle/The One Hit KO (Kam),3582,254067888539959296,1.75
+Roblox City Rotoms (RobbyRabs),Electric Struggle/The One Hit KO (Kam),1666,504281602474639393,1.75
+Slashing Sceptiles (Fury),House Fire Fishies (Pixixy),250,346119366598983680,1.75
+Ulico,Windy City Whimsicotts (Joel),250,346119366598983680,1.5
+2015 Chicago Chimchars (Trip),Dustin,497,346119366598983680,3.0
+2015 Chicago Chimchars (Trip),Dustin,1500,1266101247581229087,3.0
+2015 Chicago Chimchars (Trip),Dustin,200,164238723892903937,3.0
+Icerend Ruin Sabers (Saget),Ajay,800,1266101247581229087,1.75
+Ajay,Icerend Ruin Sabers (Saget),200,164238723892903937,1.75
+The Fab Four (Shrug),Tzim14,1568,164238723892903937,1.25
+The Fab Four (Shrug),Tzim14,3982,690818858155507733,1.25
+Ulico,Roblox City Rotoms (RobbyRabs),125,346119366598983680,1.25
+The Fab Four (Shrug),Tzim14,6518,254067888539959296,1.25
+Slashing Sceptiles (Fury),Job's Not Finished (Damage),1300,193042128606199808,4.0
+Job's Not Finished (Damage),Slashing Sceptiles (Fury),125,346119366598983680,1.25
+Dustin,Awesome Arctovishes (Praspian),2225,100417412481961984,1.75
+Blackthorn Bellibombs (Jdawgin13),Sheer Cold (Wyki),1000,504281602474639393,1.2
+House Fire Fishies (Pixixy),Tzim14,250,164238723892903937,1.5
+Tzim14,House Fire Fishies (Pixixy),500,346119366598983680,2.0
+Tzim14,House Fire Fishies (Pixixy),250,690818858155507733,2.0
+2015 Chicago Chimchars (Trip),Electric Struggle/The One Hit KO (Kam),500,346119366598983680,2.0
+Roblox City Rotoms (RobbyRabs),Sheer Cold (Wyki),3616,504281602474639393,1.5
+Roblox City Rotoms (RobbyRabs),Sheer Cold (Wyki),2500,346119366598983680,1.5
+Dustin,Melemele Matty Mons (Matty),4143,100417412481961984,2.0
+Dustin,Melemele Matty Mons (Matty),2400,373975063558619137,2.0
+The Rough & Tough Ragers (Ulico),Blackthorn Bellibombs (Jdawgin13),500,346119366598983680,1.75
+Blackthorn Bellibombs (Jdawgin13),The Rough & Tough Ragers (Ulico),375,164238723892903937,1.75

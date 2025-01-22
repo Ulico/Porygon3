@@ -1,0 +1,388 @@
+{
+  "players": [
+    {
+      "name": "Cyb3r",
+      "username": [
+        "cyb3rstr4w"
+      ],
+      "id": 254067888539959296,
+      "aliases": [
+        "cyber",
+        "cyberstraw"
+      ],
+      "seed": 1,
+      "team": "The Spikemuth Seven",
+      "league": "Main",
+      "active": true
+    },
+    {
+      "name": "Jdawgin13",
+      "username": [
+        "Jdawgin13"
+      ],
+      "id": 189879722367385601,
+      "aliases": [
+        "jdawg"
+      ],
+      "seed": 1,
+      "team": "Blackthorn Bellibombs",
+      "active": true,
+      "league": "Main"
+    },
+    {
+      "name": "Damage",
+      "username": [
+        "damage77"
+      ],
+      "active": true,
+      "id": 346119366598983680,
+      "team": "Job's Not Finished",
+      "seed": 1,
+      "league": "Main"
+    },
+    {
+      "name": "Matty Ice",
+      "username": [
+        "IcyyyMatt"
+      ],
+      "id": 721162429123395636,
+      "team": "Melemele Matty Mons",
+      "active": true,
+      "aliases": [
+        "mattyice",
+        "matty",
+        "matty_ice",
+        "matty_ice17",
+        "icyyymatt"
+      ],
+      "seed": 2,
+      "league": "Main"
+    },
+    {
+      "name": "Pixixy",
+      "username": [
+        "Pixixy"
+      ],
+      "id": 383990061932347392,
+      "seed": 4,
+      "active": true,
+      "team": "House Fire Fishies",
+      "league": "Main"
+    },
+    {
+      "name": "Ulico",
+      "username": [
+        "Ulico"
+      ],
+      "id": 322111694367227925,
+      "seed": 1,
+      "team": "The Rough & Tough Ragers",
+      "active": true,
+      "league": "Main"
+    },
+    {
+      "name": "Lego Yoda",
+      "username": [
+        "legostarwarsyoda",
+        "biggerpharma"
+      ],
+      "aliases": [
+        "yoda",
+        "legoyoda"
+      ],
+      "id": 521163587692134401,
+      "team": "Mamoswine <3",
+      "seed": 4,
+      "active": true,
+      "league": "Main"
+    },
+    {
+      "name": "RobbyRabs",
+      "username": [
+        "RobbyRabs"
+      ],
+      "id": 504281602474639393,
+      "aliases": [
+        "robby"
+      ],
+      "seed": 4,
+      "team": "Roblox City Rotoms",
+      "active": true,
+      "league": "Main"
+    },
+    {
+      "name": "Praspian",
+      "username": [
+        "Praspian"
+      ],
+      "id": 675336056169824298,
+      "team": "Awesome Arctovishes",
+      "seed": 3,
+      "active": true,
+      "league": "Main"
+    },
+    {
+      "name": "Tzim",
+      "username": [
+        "Tzim14"
+      ],
+      "id": 234849210103627787,
+      "aliases": [
+        "tzim14"
+      ],
+      "seed": 5,
+      "active": true,
+      "league": "Main"
+    },
+    {
+      "name": "Shrug",
+      "username": [
+        "callmeshrug"
+      ],
+      "id": 164238723892903937,
+      "team": "The Fab Four",
+      "seed": 2,
+      "active": true,
+      "league": "Main"
+    },
+    {
+      "name": "Saget",
+      "username": [
+        "Saget69"
+      ],
+      "id": 690818858155507733,
+      "team": "Icerend Ruin Sabres",
+      "seed": 3,
+      "active": true,
+      "league": "Main"
+    },
+    {
+      "name": "Mao",
+      "username": [
+        "SATMaofever"
+      ],
+      "id": 94227448064905216,
+      "aliases": [
+        "maofever",
+        "sat|maofever",
+        "satmaofever"
+      ],
+      "team": "Chicago White Swadloons",
+      "seed": 4,
+      "active": true,
+      "league": "Main"
+    },
+    {
+      "name": "Shellshock",
+      "username": [
+        "Shellshock20"
+      ],
+      "id": 334109147048181761,
+      "seed": 2,
+      "team": "Shellshock Stakes Squad",
+      "active": true,
+      "league": "Main"
+    },
+    {
+      "name": "Trip",
+      "username": [
+        "Tr1pl3-33"
+      ],
+      "aliases": [
+        "trip_ics"
+      ],
+      "id": 455838049423720459,
+      "team": "2015 Chicago Chimchars",
+      "active": true,
+      "seed": 5,
+      "league": "Main"
+    },
+    {
+      "name": "Alchemilla",
+      "username": [
+        "AlchemillaVGC"
+      ],
+      "id": 700414621546184774,
+      "aliases": [
+        "hero",
+        ".alchemilla_"
+      ],
+      "seed": 5,
+      "active": true,
+      "league": "Main"
+    },
+    {
+      "name": "HippoJust",
+      "username": [
+        "HippoJust"
+      ],
+      "id": 548254419188187146,
+      "active": false,
+      "seed": 3,
+      "league": "Main"
+    },
+    {
+      "name": "Kam",
+      "username": [
+        "KamPlaysKirby"
+      ],
+      "id": 222471962881032192,
+      "seed": 4,
+      "team": "Electric Struggle/The One Hit KO",
+      "active": true,
+      "league": "Main"
+    },
+    {
+      "name": "Zorro",
+      "league": "Main",
+      "username": [
+        "Trainer Zorro"
+      ],
+      "active": false,
+      "id": 587786630149177344
+    },
+    {
+      "name": "Richer",
+      "seed": 5,
+      "league": "Main",
+      "active": true,
+      "id": 296638456367677441,
+      "username": [
+        "RicherPeach"
+      ]
+    },
+    {
+      "name": "Joel",
+      "username": [
+        "JuniorJrJr"
+      ],
+      "aliases": [
+        "joelr"
+      ],
+      "seed": 2,
+      "active": true,
+      "team": "Windy City Whimsicotts",
+      "league": "Main",
+      "id": 360844232971386883
+    },
+    {
+      "name": "Byron",
+      "active": false,
+      "username": [
+        "ByroneDaLord"
+      ]
+    },
+    {
+      "name": "Busen",
+      "username": [
+        "busenbb"
+      ],
+      "aliases": [
+        "borsalino",
+        "richer/busen"
+      ],
+      "league": "Main",
+      "id": 317391640681644032
+    },
+    {
+      "name": "Walbats"
+    },
+    {
+      "name": "Laura",
+      "id": 503314851666591746,
+      "seed": 5,
+      "team": "Trash Dragoons",
+      "league": "Main",
+      "active": false,
+      "aliases": [
+        "pumpkinfox"
+      ],
+      "username": [
+        "PumpkinFox14"
+      ]
+    },
+    {
+      "name": "Davo",
+      "id": 259519712180830209,
+      "active": false
+    },
+    {
+      "name": "PyroCat",
+      "active": false,
+      "id": 487009004984205355
+    },
+    {
+      "name": "Manishere",
+      "active": false
+    },
+    {
+      "name": "Bingo",
+      "active": false
+    },
+    {
+      "name": "Magician",
+      "active": false
+    },
+    {
+      "name": "roobee!!",
+      "active": false
+    },
+    {
+      "name": "keegan",
+      "active": false
+    },
+    {
+      "name": "Schuh2daface",
+      "active": false,
+      "id": 1148050505180921976
+    },
+    {
+      "name": "Ajay",
+      "id": 100417412481961984,
+      "league": "Main",
+      "seed": 3,
+      "active": true,
+      "username": [
+        "AJ34"
+      ]
+    },
+    {
+      "name": "Fury",
+      "id": 193042128606199808,
+      "league": "Main",
+      "active": true,
+      "team": "Slashing Sceptiles",
+      "seed": 4,
+      "username": [
+        "BIGSCEPTILEFAN"
+      ]
+    },
+    {
+      "name": "Dustin",
+      "id": 373975063558619137,
+      "league": "Main",
+      "seed": 3,
+      "username": [
+        "duhstin"
+      ],
+      "active": true
+    },
+    {
+      "name": "Wyki",
+      "id": 425075709527195648,
+      "league": "Main",
+      "team": "Sheer Cold",
+      "username": [
+        "wyki"
+      ],
+      "seed": 5,
+      "active": true
+    },
+    {
+      "name": "BillyButcher",
+      "id": 1266101247581229087,
+      "league": "Main",
+      "active": false
+    }
+  ]
+}
