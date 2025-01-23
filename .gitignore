@@ -40,3 +40,15 @@ package-lock.json
 
 # Ignore TypeScript build output
 *.tsbuildinfo
+
+# Ignore Python cache directories
+__pycache__/
+
+# Ignore Discord secret file
+discord_secret.txt
+
+# Ignore service account file
+service_account.json
+
+# Ignore tera image
+tera.png
