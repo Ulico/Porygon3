@@ -12,8 +12,8 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.wait import WebDriverWait
 import utils
-import players
-import replay_analyzer
+import misc_programs.players
+import misc_programs.replay_analyzer as replay_analyzer
 
 
 class UploadReplayButton(discord.ui.Button):
