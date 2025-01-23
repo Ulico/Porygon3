@@ -2,12 +2,11 @@ import discord
 import gspread
 from discord.ext import commands
 
-import players
-import replay_analyzer
+import misc_programs.players as players
+import misc_programs.replay_analyzer as replay_analyzer
 import utils
 
 import re
-
 from urllib.request import Request, urlopen
 import matplotlib.pyplot as plt
 
@@ -111,7 +110,7 @@ class SeasonCog(commands.Cog):
                 utils.SBL_SEASON_DOC_KEY[
                     players.get_attribute_by_value("name", "league", name)
                 ]
-            ).worksheet("Schedule Table")
+            ).workhoeet("Schedule Table")
 
             start_loc = ("B", 25)
 

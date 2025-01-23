@@ -6,11 +6,11 @@ import traceback
 from collections import Counter
 from io import StringIO
 from urllib.request import Request, urlopen
-import showdown_data
+import misc_programs.showdown_data as showdown_data
 import gspread
 import numpy as np
 
-import players
+import misc_programs.players as players
 import utils
 
 

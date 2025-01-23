@@ -4,7 +4,7 @@ from bing_image_urls import bing_image_urls
 from discord.ext import commands
 
 
-from voltorb import VoltorbFlipGame
+from misc_programs.voltorb import VoltorbFlipGame
 
 
 class MiscCog(commands.Cog):

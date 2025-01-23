@@ -5,8 +5,8 @@ from bing_image_urls import bing_image_urls
 from discord.ext import commands
 from collections import Counter
 
-import sblglicko
-import players
+import rating_programs.sblglicko as sblglicko
+import misc_programs.players as players
 import utils
 
 
@@ -22,7 +22,7 @@ class SBLCog(commands.Cog):
     )
     async def username(self, ctx, *, name):
         async with ctx.typing():
-            await ctx.send(players.get_attribute_by_value("alias", "username", name)[0])
+            await ctx.send(players.get_attribute_by_valueb("alias", "username", name)[0])
 
     @commands.command(
         brief="The history of a Pokemon in SBL.",

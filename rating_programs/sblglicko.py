@@ -1,7 +1,7 @@
 import utils
 import glicko2
 import math
-import players
+import misc_programs.players as players
 
 
 def get_rating_string(name):

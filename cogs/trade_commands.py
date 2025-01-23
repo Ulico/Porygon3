@@ -7,7 +7,7 @@ import gspread
 from discord import Interaction
 from discord.ext import commands
 
-import players
+import misc_programs.players as players
 
 
 class Trade:

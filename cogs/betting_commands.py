@@ -7,7 +7,7 @@ import numpy as np
 from discord import Interaction
 from discord.ext import commands
 from datetime import datetime, timezone
-import players
+import misc_programs.players as players
 import utils
 
 
