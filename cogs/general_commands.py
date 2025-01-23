@@ -64,7 +64,6 @@ class GeneralPokemonCog(commands.Cog):
 
     # @commands.command()
     # async def guess(self, ctx, *, question=None):
-    #     openai.api_key = "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"
     #     global guessing_pokemon
     #     if question and guessing_pokemon != "":
     #         if guessing_pokemon.casefold() in question.casefold():
