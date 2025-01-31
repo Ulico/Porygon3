@@ -19,7 +19,7 @@ def get_team(name: str):
     start_loc = (1, 1)
     row_jump = utils.NUM_POKEMON + 4
     col_jump = 4
-    row_size = 5
+    row_size = 6
     distance_from_name_to_pokemon = 2
 
     for i in range(utils.NUM_TEAMS):
@@ -110,9 +110,9 @@ class SeasonCog(commands.Cog):
                 utils.SBL_SEASON_DOC_KEY[
                     players.get_attribute_by_value("name", "league", name)
                 ]
-            ).workhoeet("Schedule Table")
+            ).worksheet("Schedule Table")
 
-            start_loc = ("B", 25)
+            start_loc = ("B", 28)
 
             team_range = f"{start_loc[0]}{start_loc[1]}:{start_loc[0]}{start_loc[1] + utils.NUM_TEAMS - 1}"
             teams = ws.batch_get([team_range])[0]

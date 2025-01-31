@@ -28,7 +28,7 @@ async def on_message(message):
             await message.channel.send("Tuesday count: " + str(tuesday_count))
         with open("resources/tuesday.txt", "w") as file:
             file.write(str(tuesday_count))
-    if "!" in lowered_message and message.author.id == 189879722367385601:
+    if "!" in lowered_message and message.author.id == 189879722367385601 and message.channel.id == 989245813865717780:
         total_punctuation = sum(
             1 for char in lowered_message if char in string.punctuation
         )
