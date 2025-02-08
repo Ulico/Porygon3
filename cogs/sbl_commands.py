@@ -31,7 +31,7 @@ class SBLCog(commands.Cog):
     )
     async def history(self, ctx, *, name):
         async with ctx.typing():
-            gc = gspread.service_account(filename="resources\\service_account.json")
+            gc = gspread.service_account(filename="resources/service_account.json")
 
             df = pd.DataFrame(gc.open("Trade History").sheet1.get_all_values())
             df.columns = df.iloc[0]
@@ -66,7 +66,7 @@ class SBLCog(commands.Cog):
                         else:
                             history_string += f"{line['Player']} and {line['Player With']} traded {line['Drop']} for {line['Add']}.\n"
 
-                pokemon_df = pd.read_csv("resources\\pokemon.csv")
+                pokemon_df = pd.read_csv("resources/pokemon.csv")
                 row = pokemon_df[
                     pokemon_df["Name"].apply(lambda v: v.lower() == name.lower())
                 ]

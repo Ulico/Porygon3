@@ -44,7 +44,7 @@ async def on_message(message):
         await client.process_commands(message)
 
 
-with open("resources\\discord_secret.txt") as f:
+with open("resources/discord_secret.txt") as f:
     cogs = ["general", "trade", "betting", "season", "showdown", "sbl", "misc"]
 
     for cog in cogs:

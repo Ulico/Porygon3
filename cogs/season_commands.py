@@ -97,7 +97,7 @@ class SeasonCog(commands.Cog):
     )
     async def schedule(self, ctx, *, name: str = None):
         async with ctx.typing():
-            gc = gspread.service_account(filename="resources\\service_account.json")
+            gc = gspread.service_account(filename="resources/service_account.json")
 
             if name is None:
                 name = players.get_attribute_by_value(

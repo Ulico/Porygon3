@@ -188,7 +188,7 @@ class TradeButtonView(discord.ui.View):
 def add_free_agency(name, add, drop, week):
     # return 0
     try:
-        gc = gspread.service_account(filename="resources\\service_account.json")
+        gc = gspread.service_account(filename="resources/service_account.json")
 
         doc_id = utils.SBL_SEASON_DOC_KEY[
             players.get_attribute_by_value("alias", "league", name)
@@ -249,7 +249,7 @@ def add_free_agency(name, add, drop, week):
 
 def add_trade(trade: Trade):
     try:
-        gc = gspread.service_account(filename="resources\\service_account.json")
+        gc = gspread.service_account(filename="resources/service_account.json")
 
         doc_id = utils.SBL_SEASON_DOC_KEY[
             players.get_attribute_by_value("alias", "league", trade.player1.name)

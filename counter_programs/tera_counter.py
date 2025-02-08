@@ -23,7 +23,7 @@ with open("all_games.txt", "r") as file:
 
 # return
 # r = Replay('replays/test.txt')
-# f = open("replays\\test.txt", "r")
+# f = open("replays/test.txt", "r")
 # print(re.findall(r'https:\/\/replay.*\n', f.read()))
 links = [str(x.strip()) + ".log" for x in link_list]
 

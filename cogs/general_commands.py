@@ -28,7 +28,7 @@ class GeneralPokemonCog(commands.Cog):
     )
     async def randompokemon(self, ctx):
         async with ctx.typing():
-            pokemon_df = pd.read_csv("resources\\pokemon.csv")
+            pokemon_df = pd.read_csv("resources/pokemon.csv")
             row = pokemon_df.sample(1)
             number = utils.get_pokedex_number(row["Number"].item())
             type1 = row["Type 1"].item().capitalize()
@@ -92,7 +92,7 @@ class GeneralPokemonCog(commands.Cog):
     #     elif guessing_pokemon != "":
     #         await ctx.send("Please finish the current guessing game.")
     #     else:
-    #         pokemon_df = pd.read_csv("resources\\pokemon.csv")
+    #         pokemon_df = pd.read_csv("resources/pokemon.csv")
 
     #         while True:
     #             row = pokemon_df.sample(1)
@@ -115,7 +115,7 @@ class GeneralPokemonCog(commands.Cog):
     async def pokemon(self, ctx, *, name):
 
         async with ctx.typing():
-            pokemon_df = pd.read_csv("resources\\pokemon.csv")
+            pokemon_df = pd.read_csv("resources/pokemon.csv")
             stats = []
 
             # print(name)

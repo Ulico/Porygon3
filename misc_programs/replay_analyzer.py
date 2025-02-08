@@ -160,7 +160,7 @@ def upload_replay(gamelink: str):
 
         winner = re.search(r"\|win\|([\w\- !]*)", data).group(1)
 
-        gc = gspread.service_account(filename="resources\\service_account.json")
+        gc = gspread.service_account(filename="resources/service_account.json")
         print()
 
         # doc_id = '14IPwnyeKxohvc__aZz1HuspPHHaLmWSBzzIIX4wWi-U'
@@ -346,7 +346,7 @@ class Pokemon:
 
 def get_data(name):
     name = players.get_attribute_by_value("alias", "name", name)
-    gc = gspread.service_account(filename="resources\\service_account.json")
+    gc = gspread.service_account(filename="resources/service_account.json")
 
     # doc_id = '14IPwnyeKxohvc__aZz1HuspPHHaLmWSBzzIIX4wWi-U'
     doc_id = utils.SBL_SEASON_DOC_KEY[
@@ -360,7 +360,7 @@ def get_data(name):
 
     # return
     # r = Replay('replays/test.txt')
-    # f = open("replays\\test.txt", "r")
+    # f = open("replays/test.txt", "r")
     # print(re.findall(r'https:\/\/replay.*\n', f.read()))
     links = [str(x.strip()) + ".log" for x in link_list]
 
@@ -536,7 +536,7 @@ def get_data(name):
 
 def get_ots_data(name):
     name = players.get_attribute_by_value("alias", "name", name)
-    gc = gspread.service_account(filename="resources\\service_account.json")
+    gc = gspread.service_account(filename="resources/service_account.json")
 
     # doc_id = '14IPwnyeKxohvc__aZz1HuspPHHaLmWSBzzIIX4wWi-U'
     doc_id = utils.SBL_SEASON_DOC_KEY[
@@ -563,7 +563,7 @@ def get_ots_data(name):
     # link_list = ["https://replay.pokemonshowdown.com/gen9vgc2024regf-2016216707"]
     # return
     # r = Replay('replays/test.txt')
-    # f = open("replays\\test.txt", "r")
+    # f = open("replays/test.txt", "r")
     # print(re.findall(r'https:\/\/replay.*\n', f.read()))
     links = [str(x.strip()) + ".log" for x in link_list]
 

@@ -70,7 +70,7 @@ def get_current_week():
 
 
 def get_values_from_sheet(league_name, wsname):
-    gc = gspread.service_account(filename="resources\\service_account.json")
+    gc = gspread.service_account(filename="resources/service_account.json")
     ws = gc.open_by_key(SBL_SEASON_DOC_KEY[league_name]).worksheet(wsname)
     # np.set_printoptions(threshold=np.inf)
     return np.array(ws.get_all_values())
@@ -126,7 +126,7 @@ def format_week(week_str):
 
 
 def get_record_sheet():
-    gc = gspread.service_account(filename="resources\\service_account.json")
+    gc = gspread.service_account(filename="resources/service_account.json")
     df = pd.DataFrame(
         gc.open("Records").sheet1.get_all_values(),
         columns=[
@@ -155,7 +155,7 @@ def is_url_image(image_url):
 
 
 def get_time_elapsed_str() -> str:
-    modification_time = os.path.getmtime("resources\\coins.txt")
+    modification_time = os.path.getmtime("resources/coins.txt")
 
     # Calculate the time elapsed since the file was last edited
     current_time = time.time()
