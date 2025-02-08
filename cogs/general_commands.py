@@ -5,7 +5,6 @@ import urllib.request
 from functools import cmp_to_key
 from urllib.parse import quote
 import discord
-import openai
 import pandas as pd
 from bs4 import BeautifulSoup
 from discord.ext import commands
