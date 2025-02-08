@@ -199,6 +199,7 @@ class SBLCog(commands.Cog):
 
     @commands.command(
         brief="Match/game record between players.",
+        aliases=["mu"],
         help="Displays the match and game record (count and percentages) between two SBL players. Uses match data from Shrug's Records Document.",
     )
     async def matchup(self, ctx, *, search):
