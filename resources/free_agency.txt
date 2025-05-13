@@ -1,9 +1,0 @@
-Joel,Glaceon,Flareon,6
-Ulico,Charizard,Moltres,6
-Shellshock,Volcarona,Kommo-O,8
-Cyb3r,Rotom-Frost,Eelektross,8
-Cyb3r,Flareon,Tatsugiri,8
-Fury,Tinkatuff,Tinkaton,8
-Fury,Lycanroc Midday,Sceptile,8
-Dustin,Hisuian Samurott,Mandibuzz,9
-Dustin,Magmar,Dondozo,9

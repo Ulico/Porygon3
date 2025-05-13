@@ -22,7 +22,7 @@ class SBLCog(commands.Cog):
     )
     async def username(self, ctx, *, name):
         async with ctx.typing():
-            await ctx.send(players.get_attribute_by_valueb("alias", "username", name)[0])
+            await ctx.send(players.get_attribute_by_value("alias", "username", name)[0])
 
     @commands.command(
         brief="The history of a Pokemon in SBL.",
@@ -103,6 +103,7 @@ class SBLCog(commands.Cog):
                 return
 
         name = players.get_attribute_by_value("alias", "name", name)
+        print(name)
 
         df = df[
             df["Player 1"].apply(utils.equals_ic(name))
@@ -110,7 +111,7 @@ class SBLCog(commands.Cog):
         ]
         count = 0
         for i, line in df[::-1].iterrows():
-            # print(row['Winner Name'], name)
+            print(line['Winner Name'], name)
             if line["Winner Name"].lower() != name.lower():
                 await ctx.send(
                     f'{name.capitalize()} has a winning streak of {count} matches, their last loss being Season {line["Season"]} {utils.format_week(line["Week"])} against {line["Winner Name"]}.'
@@ -207,7 +208,9 @@ class SBLCog(commands.Cog):
             p1, p2 = search.split(" ")
             p1 = players.get_attribute_by_value("alias", "name", p1)
             p2 = players.get_attribute_by_value("alias", "name", p2)
+            print(p1, p2)
             df = utils.get_record_sheet()
+            # println(df)
             df = df[
                 df["Player 1"].apply(
                     lambda v: v.casefold() in [p1.casefold(), p2.casefold()]
@@ -216,6 +219,7 @@ class SBLCog(commands.Cog):
                     lambda v: v.casefold() in [p1.casefold(), p2.casefold()]
                 )
             ]
+            print(df)
             if df.empty:
                 await ctx.send("Could not find any matches.")
                 return

@@ -38,10 +38,15 @@ name_replacement_dict = {
     "Palafin-Hero": "Palafin",
     "Tornadus-Therian": "Tornadus-T",
     "Thundurus-Therian": "Thundurus-T",
+    "Landorus-Therian": "Landorus-T",
     "Urshifu-*": "Urshifu-RS",
     "Urshifu-Rapid-Strike": "Urshifu-RS",
     "Tatsugiri-Stretchy": "Tatsugiri",
+    "Tatsugiri-Droopy" : "Tatsugiri",
+    "Ogerpon-Hearthflame-Tera": "Ogerpon-Hearthflame",
     "Sinistcha-Masterpiece": "Sinistcha",
+    "Greninja-*":"Greninja",
+    "Alcremie-Salted-Cream":"Alcremie"
 }
 
 
@@ -76,23 +81,30 @@ def upload_replay(gamelink: str):
         kill_dict = {name: 0 for name in name_dict.values()}
         print(death_dict)
         for kill in re.findall(
-            r"\|move\|p1[ab]: ([^|]*?)\|[\w -]*\|.*\n(?:^(?:(?!\|move\||\|\n).)*$\n)*?\|faint\|p2[ab].*\n(?:\|(faint)\|p2[ab].*\n)?",
+            r"(?=\|move\|p1[ab]: ([^|]*?)\|[\w -]*\|.*\n(?:^(?:(?!\|move\||\|\n).)*$\n)*?(\|faint\|p2[ab].*\n)(?:.*\n)*?(?:\|(faint)\|p2[ab].*\n)?)",
             data,
             re.MULTILINE,
         ):
-            kill_dict[name_dict[kill[0]]] += 2 if kill[1] else 1
+            kill_dict[name_dict[kill[0]]] += 2 if kill[2] else 1
         for kill in re.findall(
-            r"\|move\|p2[ab]: ([^|]*?)\|[\w -]*\|.*\n(?:^(?:(?!\|move\||\|\n).)*$\n)*?\|faint\|p1[ab].*\n(?:\|(faint)\|p1[ab].*\n)?",
+            r"(?=\|move\|p2[ab]: ([^|]*?)\|[\w -]*\|.*\n(?:^(?:(?!\|move\||\|\n).)*$\n)*?(\|faint\|p1[ab].*\n)(?:.*\n)*?(?:\|(faint)\|p1[ab].*\n)?)",
             data,
             re.MULTILINE,
         ):
-            kill_dict[name_dict[kill[0]]] += 2 if kill[1] else 1
+            kill_dict[name_dict[kill[0]]] += 2 if kill[2] else 1
 
         for kill in re.findall(
             r"(?=\|move\|p[12][ab]: (.*?)\|Toxic\|(p[12][ab]: .*)(?:.|\n)*\|-damage\|\2\|0 fnt\|\[from\] psn)",
             data,
             re.MULTILINE,
         ):  # toxic
+            kill_dict[name_dict[kill[0]]] += 1
+
+        for kill in re.findall(
+            r"(?=\|move\|p[12][ab]: (.*?)\|Poison Jab\|(p[12][ab]: .*)(?:.|\n)*\|-damage\|\2\|0 fnt\|\[from\] psn)",
+            data,
+            re.MULTILINE,
+        ):  # Poison jab poison
             kill_dict[name_dict[kill[0]]] += 1
 
         for kill in re.findall(
@@ -124,6 +136,13 @@ def upload_replay(gamelink: str):
             kill_dict[name_dict[kill[0]]] += 1
 
         for kill in re.findall(
+            r"(?:\|move\|p[12][ab]: (.*?)\|Sacred Fire\|(?:.|\n)*\|-status\|(.*?)\|brn\n(?:.|\n)*\2\|0 fnt\|\[from\] brn)",
+            data,
+            re.MULTILINE,
+        ):  # heatwave
+            kill_dict[name_dict[kill[0]]] += 1
+
+        for kill in re.findall(
             r"(?:\|-weather\|Sandstorm\|\[from\] ability: Sand Stream\|\[of\] p1[ab]: (.*)\n(?:.|\n)*\|-damage\|p2[ab]: (.*?)\|0 fnt\|\[from\] Sandstorm(?:.|\n)*\|faint\|p2[ab]: \2)",
             data,
             re.MULTILINE,
@@ -145,11 +164,18 @@ def upload_replay(gamelink: str):
             kill_dict[name_dict[kill[0]]] += 1
 
         for kill in re.findall(
-            r"(?:\|move\|p[12][ab]: (.*?)\|Perish Song\|(p[12][ab]: .*)\n(?:.|\n)*\|perish0(?:.|\n)*\|faint\|(.*\n\|faint)?)",
+            r"(?:\|move\|p2[ab]: (.*?)\|Perish Song\|(?:p2[ab]: .*)\n(?:.|\n)*\|perish0(?:.|\n)*(?:\|faint\|p1[ab]: (.*))\n(?:\|faint\|p1[ab]: (.*)))",
             data,
             re.MULTILINE,
-        ):  # perish song
-            kill_dict[name_dict[kill[0]]] += 2 if kill[1] else 1
+        ):  # perish song 1
+            kill_dict[name_dict[kill[0]]] += 2 if kill[2] else 1
+
+        for kill in re.findall(
+            r"(?:\|move\|p1[ab]: (.*?)\|Perish Song\|(?:p1[ab]: .*)\n(?:.|\n)*\|perish0(?:.|\n)*(?:\|faint\|p2[ab]: (.*))\n(?:\|faint\|p2[ab]: (.*)))",
+            data,
+            re.MULTILINE,
+        ):  # perish song 2
+            kill_dict[name_dict[kill[0]]] += 2 if kill[2] else 1
 
         for kill in re.findall(
             r"(?:p[12][ab]: ([^|]*?)\|0 fnt\|\[from\] Leech Seed\|\[of\] p[12][ab]: ([^|]*?)$)",
@@ -535,7 +561,9 @@ def get_data(name):
 
 
 def get_ots_data(name):
+    print(name)
     name = players.get_attribute_by_value("alias", "name", name)
+    print(name)
     gc = gspread.service_account(filename="resources/service_account.json")
 
     # doc_id = '14IPwnyeKxohvc__aZz1HuspPHHaLmWSBzzIIX4wWi-U'

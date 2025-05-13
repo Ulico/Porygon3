@@ -277,7 +277,7 @@ def process_bets(bets):
         # print(values)
         num = utils.get_current_week()
 
-        num = 10
+        # num = 10
 
         for week_num in [num, num - 1]:
 

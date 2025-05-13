@@ -270,6 +270,7 @@ class SeasonCog(commands.Cog):
             # print(data)
             for tera in re.findall(r"\|-terastallize\|.*\|(.*)", data):
                 tera_dict[tera] = tera_dict.get(tera, 0) + 1
+                # print(tera)
         #
         # print(tera_dict)
         sorted_data = {

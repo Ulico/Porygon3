@@ -36,26 +36,26 @@
       ],
       "active": true,
       "id": 346119366598983680,
-      "team": "Job's Not Finished",
+      "team": "The Boundless Tricksters",
       "seed": 1,
       "league": "Main"
     },
     {
-      "name": "Matty Ice",
+      "name": "MattyIce",
       "username": [
         "IcyyyMatt"
       ],
       "id": 721162429123395636,
-      "team": "Melemele Matty Mons",
+      "team": "The Icenogle Pirates",
       "active": true,
       "aliases": [
-        "mattyice",
+        "matty ice",
         "matty",
         "matty_ice",
         "matty_ice17",
         "icyyymatt"
       ],
-      "seed": 2,
+      "seed": 3,
       "league": "Main"
     },
     {
@@ -66,7 +66,7 @@
       "id": 383990061932347392,
       "seed": 4,
       "active": true,
-      "team": "House Fire Fishies",
+      "team": "The Femboy Compass",
       "league": "Main"
     },
     {
@@ -105,7 +105,7 @@
       "aliases": [
         "robby"
       ],
-      "seed": 4,
+      "seed": 2,
       "team": "Roblox City Rotoms",
       "active": true,
       "league": "Main"
@@ -140,7 +140,7 @@
         "callmeshrug"
       ],
       "id": 164238723892903937,
-      "team": "The Fab Four",
+      "team": "The Oakland PokeAthletics",
       "seed": 2,
       "active": true,
       "league": "Main"
@@ -151,8 +151,8 @@
         "Saget69"
       ],
       "id": 690818858155507733,
-      "team": "Icerend Ruin Sabres",
-      "seed": 3,
+      "team": "Crown Tundra Crystals",
+      "seed": 2,
       "active": true,
       "league": "Main"
     },
@@ -178,7 +178,7 @@
         "Shellshock20"
       ],
       "id": 334109147048181761,
-      "seed": 2,
+      "seed": 3,
       "team": "Shellshock Stakes Squad",
       "active": true,
       "league": "Main"
@@ -194,7 +194,7 @@
       "id": 455838049423720459,
       "team": "2015 Chicago Chimchars",
       "active": true,
-      "seed": 5,
+      "seed": 4,
       "league": "Main"
     },
     {
@@ -227,8 +227,8 @@
         "KamPlaysKirby"
       ],
       "id": 222471962881032192,
-      "seed": 4,
-      "team": "Electric Struggle/The One Hit KO",
+      "seed": 5,
+      "team": "Sleeper Pickzzz...",
       "active": true,
       "league": "Main"
     },
@@ -243,7 +243,7 @@
     },
     {
       "name": "Richer",
-      "seed": 5,
+      "seed": 6,
       "league": "Main",
       "active": true,
       "id": 296638456367677441,
@@ -338,9 +338,10 @@
     },
     {
       "name": "Ajay",
+      "team": "Romeoville Rowlets",
       "id": 100417412481961984,
       "league": "Main",
-      "seed": 3,
+      "seed": 2,
       "active": true,
       "username": [
         "AJ34"
@@ -371,7 +372,7 @@
       "name": "Wyki",
       "id": 425075709527195648,
       "league": "Main",
-      "team": "Sheer Cold",
+      "team": "Imposter Syndrome",
       "username": [
         "wyki"
       ],
@@ -383,6 +384,63 @@
       "id": 1266101247581229087,
       "league": "Main",
       "active": false
+    },
+    {
+      "name": "Mikey",
+      "id": 135575025322426368,
+      "league": "Main",
+      "active": true,
+      "username": [
+        "mikey20100"
+      ],
+      "team": "Kanto Classics",
+      "seed": 6
+    },
+    {
+      "name": "Nave",
+      "id": 91031350051614720,
+      "league": "Main",
+      "active": true,
+      "username": [
+        "nave"
+      ],
+      "seed" : 4
+    },
+    {
+      "name": "s8nplz",
+      "id": 214088047216558081,
+      "aliases" : [
+        "s8n"
+      ],
+      "username": [
+        "gliscor43"
+      ],
+      "league": "Main",
+      "active": true,
+      "seed" : 6
+    },
+    {
+      "name": "Man Li Gi",
+      "id": 137389584299458561,
+      "league": "Main",
+      "aliases": [
+        "manligi"
+      ],
+      "username" : [
+        "MOOKY95"
+      ],
+      "active": true,
+      "seed" : 5
+    },
+    {
+      "name": "KingOfLies",
+      "id": 694970218275012679,
+      "league": "Main",
+      "username": [
+        "KingOfShuba"
+      ],
+      "active": true,
+      "seed": 6
     }
   ]
 }

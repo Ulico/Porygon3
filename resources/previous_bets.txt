@@ -1024,3 +1024,4 @@ Dustin,Melemele Matty Mons (Matty),4143,100417412481961984,2.0
 Dustin,Melemele Matty Mons (Matty),2400,373975063558619137,2.0
 The Rough & Tough Ragers (Ulico),Blackthorn Bellibombs (Jdawgin13),500,346119366598983680,1.75
 Blackthorn Bellibombs (Jdawgin13),The Rough & Tough Ragers (Ulico),375,164238723892903937,1.75
+Striaton Sableyes (Jdawgin13),The Icenogle Pirates (MattyIce),1250,164238723892903937,1.3333333333333333
