@@ -579,8 +579,11 @@ def get_ots_data(name):
     link_list = []
     found = False
 
+    # print(values[:, 4])
+
     for item in values[:, 4]:
-        if name in item:
+        # print(item)
+        if name.lower() in item.lower():
             found = True
         elif found and re.match(r"https://replay.*$", item):
             link_list.append(item)

@@ -19,7 +19,7 @@ TEST_CHANNEL_ID = 884553177104523377
 
 NUM_TEAMS = 24
 NUM_POKEMON = 10
-START_WEEK = 9
+START_WEEK = 8
 MATCHES_PER_WEEK = 12
 
 SEASON_NUMBER = 9
@@ -31,7 +31,7 @@ SBL_SEASON_DOC_KEY = {
 FORMAT_ABBR = "gen94v4doublesdraft"
 
 NUM_WEEKS = 10
-POST_SEASON_BREAK = 0
+POST_SEASON_BREAK = 2
 ALLOW_UPLOAD = True
 WEEKLY_COINS = 250
 allow_bets = True
@@ -187,24 +187,31 @@ def get_matchesleft():
 
     if num > NUM_WEEKS:
         pairs = []
-        for page in ["Playoffs", "Season 8 Cup"]:
+        for page in ["Playoffs", "Cup"]:
             values = get_values_from_sheet("Main", page)
             playoff_week = (
                 num - NUM_WEEKS - POST_SEASON_BREAK
             )  # -1 for all star if necesarry
-            # print(playoff_week)
+            # print("playofff week:" + playoff_week)
+            print(playoff_week)
             matches = []
             # playoff_week = 2
             for week in range(playoff_week, 0, -1):
                 players = values.T[2 * week - 1][HEADER_LENGTH:]
+                # print(players)
+                # print([p=='' for p in players])
                 scores = values.T[2 * week][HEADER_LENGTH:]
+                # print(scores)
+                # print([" ".join(m.split(" ")[:-1])
+                #     for (m, s) in zip(players, scores)])
                 matches += [
-                    " ".join(m.split(" ")[:-1])
+                    m
                     for (m, s) in zip(players, scores)
                     if m and not s
                 ]
-            print(matches)
+            # print(range(playoff_week, 0, -1))
             # Pair up the remaining strings
+            print(matches)
 
             for i in range(0, math.floor(len(matches) / 2) * 2, 2):
                 pair = f"{matches[i]} vs. {matches[i+1]}"
