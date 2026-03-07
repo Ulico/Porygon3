@@ -3,7 +3,7 @@ import re
 from urllib.request import Request, urlopen
 import matplotlib.pyplot as plt
 
-with open("all_games.txt", "r") as file:
+with open("counter_programs/all_games.txt", "r") as file:
     link_list = [
         line.strip() for line in file if line.strip().startswith("https://replay")
     ]
@@ -12,7 +12,7 @@ links = [str(x.strip()) + ".log" for x in link_list]
 
 crit_dict = {}
 
-mode = 0  # 0 is given, 1 is received
+mode = 1  # 0 is given, 1 is received
 
 for link in links:
     # print(link)
@@ -54,7 +54,7 @@ plt.xticks([n for n in range(int(max(values)) + 1)])
 # Set labels and title
 plt.xlabel("# of Misses")
 plt.ylabel("Usernames")
-plt.title(f"SBL Season 7 Miss Count ({'Given' if mode == 0 else 'Received'})")
+plt.title(f"SBL Season 9 Miss Count ({'Given' if mode == 0 else 'Received'})")
 
 # Rotate the x-axis labels for better visibility
 # plt.xticks(rotation=90)

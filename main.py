@@ -45,7 +45,7 @@ async def on_message(message):
 
 
 with open("resources/discord_secret.txt") as f:
-    cogs = ["general", "trade", "betting", "season", "showdown", "sbl", "misc"]
+    cogs = ["general", "trade", "betting", "season", "showdown", "sbl", "misc", "rating"]
 
     for cog in cogs:
         asyncio.run(client.load_extension(f"cogs.{cog}_commands"))

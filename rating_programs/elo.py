@@ -1,54 +1,106 @@
 import utils
-from elosports.elo import Elo
+import pandas as pd
+from collections import defaultdict
+import matplotlib.pyplot as plt
 
-records = utils.get_record_sheet()
 
-# print(records)
+# === CONFIGURATION ===
+INITIAL_RATING = 1500
+K_FACTOR = 32
 
-players = {}
-eloLeague = Elo(k = 50)
+# === ELO FUNCTIONS ===
+def expected_score(rating_a, rating_b):
+    return 1 / (1 + 10 ** ((rating_b - rating_a) / 400))
 
-for index, game in records.iterrows():
-    # if int(index) > 394 and int(index) < 495:
+def update_elo(rating_winner, rating_loser, k=K_FACTOR):
+    expected_win = expected_score(rating_winner, rating_loser)
+    expected_lose = expected_score(rating_loser, rating_winner)
 
-        # if (int(index) % 10 == 5):
-        #     for item in dict(sorted(eloLeague.ratingDict.items(), key=lambda item: item[1])).items():
-        #         print(item[0], item[1])
-        #     print('\n-----------------------------------\n')
-        # print(game)
-        p1 = game['Player 1']
-        p2 = game['Player 2']
-        if p1 not in players:
-            eloLeague.addPlayer(p1, rating = 1600)
-            players[p1] = 1
+    new_winner_rating = rating_winner + k * (1 - expected_win)
+    new_loser_rating = rating_loser + k * (0 - expected_lose)
+
+    return new_winner_rating, new_loser_rating
+
+# === MAIN FUNCTION: Calculates Elo ratings and returns leaderboard ===
+def calculate_elo_ratings():
+    df = utils.get_record_sheet()
+    ratings = defaultdict(lambda: INITIAL_RATING)
+
+    for _, row in df.iterrows():
+        p1 = row["Player 1"]
+        p2 = row["Player 2"]
+        winner = row["Winner"]
+
+        if winner == 1:
+            winner_name, loser_name = p1, p2
+        elif winner == 2:
+            winner_name, loser_name = p2, p1
         else:
-            players[p1] += 1
-        if p2 not in players:
-            eloLeague.addPlayer(p2, rating = 1600)
-            players[p2] = 1
+            continue
+
+        r_win = ratings[winner_name]
+        r_lose = ratings[loser_name]
+        ratings[winner_name], ratings[loser_name] = update_elo(r_win, r_lose)
+
+    for player, rating in ratings.items():
+        print(f"{player}: {int(round(rating))}")
+
+    leaderboard = pd.DataFrame(
+        [
+            {"Player": player, "Elo Rating": int(round(rating))}
+            for player, rating in ratings.items()
+        ]
+    )
+    leaderboard = leaderboard.sort_values(by="Elo Rating", ascending=False).reset_index(drop=True)
+
+    # # Create a leaderboard DataFrame
+    # leaderboard = pd.DataFrame(
+    #     [
+    #         {"Player": player, "Elo Rating": int(round(rating))}
+    #         for player, rating in ratings.items()
+    #     ]
+    # )
+    # leaderboard = leaderboard.sort_values(by="Elo Rating", ascending=False).reset_index(
+    #     drop=True
+    # )
+    # print(leaderboard)
+    return leaderboard
+
+# === FUNCTION: Plots Elo progression for a given player ===
+def plot_elo_progression(player_name):
+    df = utils.get_record_sheet()
+    ratings = defaultdict(lambda: INITIAL_RATING)
+    player_elo_history = []
+
+    for i, row in df.iterrows():
+        p1 = row["Player 1"]
+        p2 = row["Player 2"]
+        winner = row["Winner"]
+
+        if winner == 1:
+            winner_name, loser_name = p1, p2
+        elif winner == 2:
+            winner_name, loser_name = p2, p1
         else:
-            players[p2] += 1
+            continue
 
-        # if index == 200:
-        #     eloLeague.k = 32
+        r_win = ratings[winner_name]
+        r_lose = ratings[loser_name]
+        new_r_win, new_r_lose = update_elo(r_win, r_lose)
 
-        if game['Winner Name'] == p1:
-            eloLeague.gameOver(p1, p2, False)
-        else:
-            eloLeague.gameOver(p2, p1, False)
-    
-# print(eloLeague.ratingDict)
-print(players)
+        ratings[winner_name], ratings[loser_name] = new_r_win, new_r_lose
 
-limit = 1
+        # Track Elo for the selected player
+        if player_name == p1 or player_name == p2:
+            player_elo_history.append(ratings[player_name])
 
-for item in dict(sorted(eloLeague.ratingDict.items(), key=lambda item: item[1])).items():
-    if (players[item[0]] >= limit):
-     print(item[0], item[1])
+    # Plotting
+    plt.figure(figsize=(10, 5))
+    plt.plot(range(1, len(player_elo_history) + 1), player_elo_history, marker="o")
+    plt.title(f"Elo Rating Over Time: {player_name}")
+    plt.xlabel("Match Number")
+    plt.ylabel("Elo Rating")
+    plt.grid(True)
+    plt.tight_layout()
+    plt.show()
 
-# print(eloLeague.expectResult(eloLeague.ratingDict['Jdawgin13'],eloLeague.ratingDict['Ulico']))
-# from elosports.elo import Elo
-# eloLeague = Elo(k = 20)
-# eloLeague.addPlayer("Daniel", rating = 1600)
-# eloLeague.addPlayer("Harry")
-# eloLeague.expectResult(eloLeague.ratingDict['Daniel'],eloLeague.ratingDict['Harry'])

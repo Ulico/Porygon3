@@ -3,7 +3,7 @@ import re
 from urllib.request import Request, urlopen
 import matplotlib.pyplot as plt
 
-with open("all_games.txt", "r") as file:
+with open("counter_programs/all_games.txt", "r") as file:
     link_list = [
         line.strip() for line in file if line.strip().startswith("https://replay")
     ]
@@ -57,7 +57,7 @@ plt.barh(usernames, values)
 # Set labels and title
 plt.xlabel("# of Paras")
 plt.ylabel("Usernames")
-plt.title(f"SBL Season 7 Paras Count ({'Given' if mode == 0 else 'Received'})")
+plt.title(f"SBL Season 9 Paras Count ({'Given' if mode == 0 else 'Received'})")
 
 # Rotate the x-axis labels for better visibility
 # plt.xticks(rotation=90)

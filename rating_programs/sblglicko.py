@@ -46,14 +46,14 @@ def get_leaderboard():
     # print(records)
     playerratings = {}
     for _, game in records.iterrows():
-        p1 = game["Player 1"]
-        p2 = game["Player 2"]
+        p1 = game["Player 1"].lower()
+        p2 = game["Player 2"].lower()
         if p1 not in playerratings:
             playerratings[p1] = glicko2.Player(vol=0.08)
         if p2 not in playerratings:
             playerratings[p2] = glicko2.Player(vol=0.08)
 
-        if game["Winner Name"] == p1:
+        if game["Winner Name"].lower() == p1:
             playerratings[p1].update_player(
                 [playerratings[p2].rating], [playerratings[p2].rd], [1]
             )

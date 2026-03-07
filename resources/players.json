@@ -93,7 +93,7 @@
       "id": 521163587692134401,
       "team": "Mamoswine <3",
       "seed": 4,
-      "active": true,
+      "active": false,
       "league": "Main"
     },
     {
@@ -208,7 +208,7 @@
         ".alchemilla_"
       ],
       "seed": 5,
-      "active": true,
+      "active": false,
       "league": "Main"
     },
     {

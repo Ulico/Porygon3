@@ -8,6 +8,8 @@ import utils
 
 import re
 from urllib.request import Request, urlopen
+import csv
+import os
 import matplotlib.pyplot as plt
 
 
@@ -69,22 +71,87 @@ class NominationModal(
         # )
 
 
-class NominateView(discord.ui.View):
-    def __init__(self, bot):
-        super().__init__(timeout=None)
-        self.bot = bot
-        self.add_buttons()
-
-    def add_buttons(self):
-        nominate_button = discord.ui.Button(
-            label="Nominate", style=discord.ButtonStyle.blurple
+class NominationsSelect(discord.ui.Select):
+    def __init__(self):
+        options = [
+            discord.SelectOption(label="Biggest Brain Play", description="Nominate a play that was genius!"),
+            discord.SelectOption(label="Most Improved Player", description="Nominate a player who improved the most."),
+            discord.SelectOption(label="King of Hax", description="Nominate the luckiest (or unluckiest) player."),
+            discord.SelectOption(label="MVP", description="Nominate the most valuable Pokémon."),
+            discord.SelectOption(label="Best Nickname (Individual)", description="Nominate the best single nickname."),
+            discord.SelectOption(label="Best Nicknames (Team)", description="Nominate the team with the best nicknames."),
+            discord.SelectOption(label="Biggest Blunder", description="Nominate the biggest mistake or misplay."),
+            discord.SelectOption(label="Game/Match of the Season", description="Nominate the most exciting match."),
+            discord.SelectOption(label="Coolest Team", description="Nominate the team with the coolest composition."),
+        ]
+        super().__init__(
+            placeholder="Select an award category",
+            max_values=1,
+            min_values=1,
+            options=options,
         )
 
-        async def callback(interaction: discord.Interaction):
-            await interaction.response.send_modal(NominationModal(self.bot))
+    async def callback(self, interaction: discord.Interaction):
+        category = self.values[0]
+        await interaction.response.send_modal(NominationsModal(category))
 
-        nominate_button.callback = callback
-        self.add_item(nominate_button)
+
+class NominationsModal(discord.ui.Modal):
+    def __init__(self, category):
+        super().__init__(title=f"Nominate for {category}")
+        self.category = category
+
+        # Add appropriate fields based on category
+        if category == "Best Nickname (Individual)":
+            self.add_item(discord.ui.TextInput(label="Player Name", placeholder="Enter player name"))
+            self.add_item(discord.ui.TextInput(label="Pokémon Name", placeholder="Enter Pokémon name"))
+            self.add_item(discord.ui.TextInput(label="Nickname", placeholder="Enter the nickname"))
+        elif category == "Biggest Brain Play":
+            self.add_item(discord.ui.TextInput(label="Player Name", placeholder="Enter player name"))
+            self.add_item(discord.ui.TextInput(label="Description", style=discord.TextStyle.paragraph, placeholder="Describe the play"))
+            self.add_item(discord.ui.TextInput(label="Replay Link (optional)", required=False))
+        elif category == "Biggest Blunder":
+            self.add_item(discord.ui.TextInput(label="Player Name", placeholder="Enter player name"))
+            self.add_item(discord.ui.TextInput(label="Description", style=discord.TextStyle.paragraph, placeholder="Describe the blunder"))
+            self.add_item(discord.ui.TextInput(label="Replay Link (optional)", required=False))
+        elif category == "Most Improved Player":
+            self.add_item(discord.ui.TextInput(label="Player Name", placeholder="Enter player name"))
+            self.add_item(discord.ui.TextInput(label="Reason", style=discord.TextStyle.paragraph, placeholder="Why are they most improved?"))
+        elif category == "King of Hax":
+            self.add_item(discord.ui.TextInput(label="Player Name", placeholder="Enter player name"))
+            self.add_item(discord.ui.TextInput(label="Description", style=discord.TextStyle.paragraph, placeholder="Describe the hax situation"))
+            self.add_item(discord.ui.TextInput(label="Replay Link (optional)", required=False))
+        elif category == "MVP":
+            self.add_item(discord.ui.TextInput(label="Player Name", placeholder="Enter player name"))
+            self.add_item(discord.ui.TextInput(label="Pokémon Name", placeholder="Enter Pokémon name"))
+            self.add_item(discord.ui.TextInput(label="Reason", style=discord.TextStyle.paragraph, placeholder="Why are they the MVP?"))
+        elif category == "Best Nicknames (Team)":
+            self.add_item(discord.ui.TextInput(label="Player Name", placeholder="Enter player name"))
+            self.add_item(discord.ui.TextInput(label="List of Nicknames", style=discord.TextStyle.paragraph, placeholder="List the nicknames"))
+        elif category == "Game/Match of the Season":
+            self.add_item(discord.ui.TextInput(label="Players Involved", placeholder="Enter both player names"))
+            self.add_item(discord.ui.TextInput(label="Replay Link", placeholder="Enter replay link"))
+            self.add_item(discord.ui.TextInput(label="Reason", style=discord.TextStyle.paragraph, placeholder="Why was this match special?"))
+        elif category == "Coolest Team":
+            self.add_item(discord.ui.TextInput(label="Team Name", placeholder="Enter team name"))
+            self.add_item(discord.ui.TextInput(label="Reason (optional)", required=False, style=discord.TextStyle.paragraph, placeholder="Why is this team cool?"))
+
+    async def on_submit(self, interaction: discord.Interaction):
+
+        # Collect all field values
+        fields = {item.label: item.value for item in self.children}
+
+        await interaction.response.send_message(
+            f"Nomination for **{self.category}** submitted!\n" +
+            "\n".join(f"**{k}:** {v}" for k, v in fields.items()),
+            ephemeral=False
+        )
+
+
+class NominationsView(discord.ui.View):
+    def __init__(self, *, timeout=180):
+        super().__init__(timeout=timeout)
+        self.add_item(NominationsSelect())
 
 
 class SeasonCog(commands.Cog):
@@ -362,9 +429,11 @@ class SeasonCog(commands.Cog):
         plt.savefig("tera.png")
         await ctx.send(file=discord.File("tera.png"))
 
-    @commands.command(aliases=["nom"])
+    
+
+    @commands.command(aliases=["nom"], brief="Nominate players for awards.")
     async def nominate(self, ctx):
-        await ctx.send(view=NominateView(self.bot))
+        await ctx.send(view=NominationsView())
 
 
 async def setup(bot):

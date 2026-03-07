@@ -4,11 +4,8 @@ import pandas as pd
 from bing_image_urls import bing_image_urls
 from discord.ext import commands
 from collections import Counter
-
-import rating_programs.sblglicko as sblglicko
 import misc_programs.players as players
 import utils
-
 
 class SBLCog(commands.Cog):
 
@@ -402,22 +399,23 @@ class SBLCog(commands.Cog):
             )
             await ctx.send(embed=embed)
 
-    @commands.command()
-    async def rating(self, ctx, name: str = None):
-        if name is None:
-            name = players.get_attribute_by_value("id", "name", ctx.message.author.id)
+    # @commands.command()
+    # async def rating(self, ctx, name: str = None):
+    #     if name is None:
+    #         name = players.get_attribute_by_value("id", "name", ctx.message.author.id)
 
-        await ctx.send(sblglicko.get_rating_string(name))
+    #     await ctx.send(sblglicko.get_rating_string(name))
 
-    @commands.command()
-    async def ratings(self, ctx):
+    # @commands.command()
+    # async def ratings(self, ctx):
 
-        await ctx.send(
-            embed=discord.Embed(
-                title="Leaderboard", description=sblglicko.get_leaderboard()
-            )
-        )
-        # await ctx.send(sblglicko.get_rating_string(name))
+    #     await ctx.send(
+    #         embed=discord.Embed(
+    #             title="Leaderboard", description=sblglicko.get_leaderboard()
+    #         )
+    #     )
+    #     # await ctx.send(sblglicko.get_rating_string(name))
+
 
 
 async def setup(bot):
