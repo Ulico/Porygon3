@@ -45,6 +45,8 @@ package-lock.json
 __pycache__/
 
 # Ignore Discord secret file
+deploy.bat
+webhook.py
 discord_secret.txt
 
 # Ignore service account file

@@ -30,7 +30,6 @@ class MiscCog(commands.Cog):
 
     @commands.command(brief="Displays Wooper.", help="Displays Wooper.")
     async def wooper(self, ctx):
-        await ctx.send("Wooper is the best Pokémon.")
         await ctx.send(random.choice(bing_image_urls("wooper", limit=500)))
 
     @commands.command(brief="Displays Tinkaton.", help="Displays Tinkaton.")
