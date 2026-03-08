@@ -74,11 +74,11 @@ class NominationModal(
 class NominationsSelect(discord.ui.Select):
     def __init__(self):
         options = [
+            discord.SelectOption(label="Best Nickname (Individual)", description="Nominate the best single nickname."),
             discord.SelectOption(label="Biggest Brain Play", description="Nominate a play that was genius!"),
             discord.SelectOption(label="Most Improved Player", description="Nominate a player who improved the most."),
             discord.SelectOption(label="King of Hax", description="Nominate the luckiest (or unluckiest) player."),
             discord.SelectOption(label="MVP", description="Nominate the most valuable Pokémon."),
-            discord.SelectOption(label="Best Nickname (Individual)", description="Nominate the best single nickname."),
             discord.SelectOption(label="Best Nicknames (Team)", description="Nominate the team with the best nicknames."),
             discord.SelectOption(label="Biggest Blunder", description="Nominate the biggest mistake or misplay."),
             discord.SelectOption(label="Game/Match of the Season", description="Nominate the most exciting match."),
