@@ -11,7 +11,7 @@
         "cyberstraw"
       ],
       "seed": 1,
-      "team": "The Spikemuth Seven",
+      
       "league": "Main",
       "active": true
     },
@@ -25,7 +25,7 @@
         "jdawg"
       ],
       "seed": 1,
-      "team": "Blackthorn Bellibombs",
+      
       "active": true,
       "league": "Main"
     },
@@ -36,7 +36,7 @@
       ],
       "active": true,
       "id": 346119366598983680,
-      "team": "The Boundless Tricksters",
+      
       "seed": 1,
       "league": "Main"
     },
@@ -46,7 +46,7 @@
         "IcyyyMatt"
       ],
       "id": 721162429123395636,
-      "team": "The Icenogle Pirates",
+      
       "active": true,
       "aliases": [
         "matty ice",
@@ -66,7 +66,7 @@
       "id": 383990061932347392,
       "seed": 4,
       "active": true,
-      "team": "The Femboy Compass",
+      
       "league": "Main"
     },
     {
@@ -76,7 +76,7 @@
       ],
       "id": 322111694367227925,
       "seed": 1,
-      "team": "The Rough & Tough Ragers",
+      
       "active": true,
       "league": "Main"
     },
@@ -91,7 +91,7 @@
         "legoyoda"
       ],
       "id": 521163587692134401,
-      "team": "Mamoswine <3",
+      
       "seed": 4,
       "active": false,
       "league": "Main"
@@ -106,7 +106,7 @@
         "robby"
       ],
       "seed": 2,
-      "team": "Roblox City Rotoms",
+      
       "active": true,
       "league": "Main"
     },
@@ -116,7 +116,7 @@
         "Praspian"
       ],
       "id": 675336056169824298,
-      "team": "Awesome Arctovishes",
+      
       "seed": 3,
       "active": true,
       "league": "Main"
@@ -140,7 +140,7 @@
         "callmeshrug"
       ],
       "id": 164238723892903937,
-      "team": "The Oakland PokeAthletics",
+      
       "seed": 2,
       "active": true,
       "league": "Main"
@@ -151,7 +151,7 @@
         "Saget69"
       ],
       "id": 690818858155507733,
-      "team": "Crown Tundra Crystals",
+      
       "seed": 2,
       "active": true,
       "league": "Main"
@@ -167,7 +167,7 @@
         "sat|maofever",
         "satmaofever"
       ],
-      "team": "Chicago White Swadloons",
+      
       "seed": 4,
       "active": true,
       "league": "Main"
@@ -179,7 +179,7 @@
       ],
       "id": 334109147048181761,
       "seed": 3,
-      "team": "Shellshock Stakes Squad",
+      
       "active": true,
       "league": "Main"
     },
@@ -192,7 +192,7 @@
         "trip_ics"
       ],
       "id": 455838049423720459,
-      "team": "2015 Chicago Chimchars",
+      
       "active": true,
       "seed": 4,
       "league": "Main"
@@ -228,7 +228,7 @@
       ],
       "id": 222471962881032192,
       "seed": 5,
-      "team": "Sleeper Pickzzz...",
+      
       "active": true,
       "league": "Main"
     },
@@ -261,7 +261,7 @@
       ],
       "seed": 2,
       "active": true,
-      "team": "Windy City Whimsicotts",
+      
       "league": "Main",
       "id": 360844232971386883
     },
@@ -291,7 +291,7 @@
       "name": "Laura",
       "id": 503314851666591746,
       "seed": 5,
-      "team": "Trash Dragoons",
+      
       "league": "Main",
       "active": false,
       "aliases": [
@@ -338,7 +338,7 @@
     },
     {
       "name": "Ajay",
-      "team": "Romeoville Rowlets",
+      
       "id": 100417412481961984,
       "league": "Main",
       "seed": 2,
@@ -352,7 +352,7 @@
       "id": 193042128606199808,
       "league": "Main",
       "active": true,
-      "team": "Slashing Sceptiles",
+      
       "seed": 4,
       "username": [
         "BIGSCEPTILEFAN"
@@ -372,7 +372,7 @@
       "name": "Wyki",
       "id": 425075709527195648,
       "league": "Main",
-      "team": "Imposter Syndrome",
+      
       "username": [
         "wyki"
       ],
@@ -393,7 +393,7 @@
       "username": [
         "mikey20100"
       ],
-      "team": "Kanto Classics",
+      
       "seed": 6
     },
     {

@@ -28,7 +28,8 @@ class SBLCog(commands.Cog):
     )
     async def history(self, ctx, *, name):
         async with ctx.typing():
-            gc = gspread.service_account(filename="resources/service_account.json")
+            from utils import get_gspread_client
+            gc = get_gspread_client()
 
             df = pd.DataFrame(gc.open("Trade History").sheet1.get_all_values())
             df.columns = df.iloc[0]

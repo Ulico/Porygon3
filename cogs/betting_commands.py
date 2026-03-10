@@ -265,7 +265,8 @@ class StakeSelectView(discord.ui.View):
 
 
 def process_bets(bets):
-    gc = gspread.service_account(filename="resources/service_account.json")
+    from utils import get_gspread_client
+    gc = get_gspread_client()
 
     found_bet = {bet: False for bet in bets}
 

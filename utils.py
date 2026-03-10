@@ -4,10 +4,18 @@ import requests
 import numpy as np
 import time
 import os
+import json
 import math
 import pandas as pd
 
 DEBUG = False
+
+
+def get_gspread_client():
+    """Load gspread client from SERVICE_ACCOUNT_JSON environment variable."""
+    service_account_json = os.getenv("SERVICE_ACCOUNT_JSON")
+    service_account_dict = json.loads(service_account_json)
+    return gspread.service_account_from_dict(service_account_dict)
 
 SBL_MATCH_REPLAYS_ID = 988627307801509929
 SBL_TRANSACTIONS = 988631759304396800
@@ -70,9 +78,10 @@ def get_current_week():
 
 
 def get_values_from_sheet(league_name, wsname):
-    gc = gspread.service_account(filename="resources/service_account.json")
+    gc = get_gspread_client()
     ws = gc.open_by_key(SBL_SEASON_DOC_KEY[league_name]).worksheet(wsname)
     # np.set_printoptions(threshold=np.inf)
+    # print(np.array(ws.get_all_values()))
     return np.array(ws.get_all_values())
 
 
@@ -126,7 +135,7 @@ def format_week(week_str):
 
 
 def get_record_sheet():
-    gc = gspread.service_account(filename="resources/service_account.json")
+    gc = get_gspread_client()
     df = pd.DataFrame(
         gc.open("Records").sheet1.get_all_values(),
         columns=[

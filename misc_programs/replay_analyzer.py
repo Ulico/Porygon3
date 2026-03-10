@@ -186,7 +186,11 @@ def upload_replay(gamelink: str):
 
         winner = re.search(r"\|win\|([\w\- !]*)", data).group(1)
 
-        gc = gspread.service_account(filename="resources/service_account.json")
+        import sys
+        import os
+        sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..'))
+        from utils import get_gspread_client
+        gc = get_gspread_client()
         print()
 
         # doc_id = '14IPwnyeKxohvc__aZz1HuspPHHaLmWSBzzIIX4wWi-U'
@@ -372,7 +376,11 @@ class Pokemon:
 
 def get_data(name):
     name = players.get_attribute_by_value("alias", "name", name)
-    gc = gspread.service_account(filename="resources/service_account.json")
+    import sys
+    import os
+    sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..'))
+    from utils import get_gspread_client
+    gc = get_gspread_client()
 
     # doc_id = '14IPwnyeKxohvc__aZz1HuspPHHaLmWSBzzIIX4wWi-U'
     doc_id = utils.SBL_SEASON_DOC_KEY[
@@ -564,7 +572,11 @@ def get_ots_data(name):
     print(name)
     name = players.get_attribute_by_value("alias", "name", name)
     print(name)
-    gc = gspread.service_account(filename="resources/service_account.json")
+    import sys
+    import os
+    sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..'))
+    from utils import get_gspread_client
+    gc = get_gspread_client()
 
     # doc_id = '14IPwnyeKxohvc__aZz1HuspPHHaLmWSBzzIIX4wWi-U'
     doc_id = utils.SBL_SEASON_DOC_KEY[

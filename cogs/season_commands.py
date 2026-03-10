@@ -19,8 +19,8 @@ def get_team(name: str):
     )
 
     start_loc = (1, 1)
-    row_jump = utils.NUM_POKEMON + 4
-    col_jump = 4
+    row_jump = utils.NUM_POKEMON + 3
+    col_jump = 5
     row_size = 6
     distance_from_name_to_pokemon = 2
 
@@ -164,7 +164,8 @@ class SeasonCog(commands.Cog):
     )
     async def schedule(self, ctx, *, name: str = None):
         async with ctx.typing():
-            gc = gspread.service_account(filename="resources/service_account.json")
+            from utils import get_gspread_client
+            gc = get_gspread_client()
 
             if name is None:
                 name = players.get_attribute_by_value(
