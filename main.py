@@ -1,7 +1,10 @@
 import discord
-
+import os
 from discord.ext import commands
 import string
+from dotenv import load_dotenv
+
+load_dotenv()
 
 COMMAND_PREFIX = "!"
 
@@ -44,9 +47,12 @@ async def on_message(message):
         await client.process_commands(message)
 
 
-with open("resources/discord_secret.txt") as f:
-    cogs = ["general", "trade", "betting", "season", "showdown", "sbl", "misc", "rating"]
+cogs = ["general", "trade", "betting", "season", "showdown", "sbl", "misc", "rating"]
 
-    for cog in cogs:
-        asyncio.run(client.load_extension(f"cogs.{cog}_commands"))
-    client.run(f.read())
+for cog in cogs:
+    asyncio.run(client.load_extension(f"cogs.{cog}_commands"))
+
+discord_token = os.getenv("DISCORD_TOKEN")
+if not discord_token:
+    raise ValueError("DISCORD_TOKEN environment variable not set")
+client.run(discord_token)
