@@ -1,7 +1,5 @@
 import discord
-import gspread
 import pandas as pd
-from bing_image_urls import bing_image_urls
 from discord.ext import commands
 from collections import Counter
 import misc_programs.players as players
