@@ -37,6 +37,10 @@ class MiscCog(commands.Cog):
         await ctx.send(random.choice(bing_image_urls("tinkaton", limit=500)))
 
     @commands.command()
+    async def image(self, ctx, *, query):
+        await ctx.send(random.choice(bing_image_urls(f'{query} pokemon', limit=500)))
+
+    @commands.command()
     async def chicanery(self, ctx):
         await ctx.send(
             "I am not crazy! I know they swapped those usernames! I knew it was Joel vs Robby. One after bingo vs Shellshock. As if I could ever make such a mistake. "
