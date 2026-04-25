@@ -25,20 +25,20 @@ SBL_STAFF_ID = 988624438876573726
 SBL_ROTOM_CODER_ID = 988967432062390293
 TEST_CHANNEL_ID = 884553177104523377
 
-NUM_TEAMS = 24
-NUM_POKEMON = 10
-START_WEEK = 8
-MATCHES_PER_WEEK = 12
+NUM_TEAMS = 22
+NUM_POKEMON = 8
+START_WEEK = 18
+MATCHES_PER_WEEK = 11
 
-SEASON_NUMBER = 9
+SEASON_NUMBER = 'MA'
 # DIVISIONS = ['Wayward', 'Iron', 'Hallowed']
 SBL_SEASON_DOC_KEY = {
-    "Main": "1upgmr3T10W08RLPArnJBeTgYUx3ju75nulKIPfNecQA",
+    "Main": "1NGVOp5wGpcqztxfbtdAatm-GbHeBTwYGR0dfaNpUws4",
 }
 
-FORMAT_ABBR = "gen94v4doublesdraft"
+FORMAT_ABBR = "gen9championsvgc2026regma"
 
-NUM_WEEKS = 10
+NUM_WEEKS = 4
 POST_SEASON_BREAK = 2
 ALLOW_UPLOAD = True
 WEEKLY_COINS = 250
@@ -71,10 +71,7 @@ color_dict = {
 def get_current_week():
     # return 2
     week = datetime.datetime.now().isocalendar()[1] - START_WEEK
-    if week <= 0:
-        return 1
-    else:
-        return week
+    return week
 
 
 def get_values_from_sheet(league_name, wsname):

@@ -18,15 +18,18 @@ def get_team(name: str):
         players.get_attribute_by_value("alias", "league", name), "Teams"
     )
 
-    start_loc = (1, 1)
+    # print(values)
+
+    start_loc = (0, 1)
     row_jump = utils.NUM_POKEMON + 3
-    col_jump = 5
-    row_size = 6
+    col_jump = 4
+    row_size = 5
     distance_from_name_to_pokemon = 2
 
     for i in range(utils.NUM_TEAMS):
         row = start_loc[0] + row_jump * (i // row_size)
         col = start_loc[1] + col_jump * (i % row_size)
+        # print(values[row][col].casefold())
         if name.casefold() in values[row][col].casefold():
             return [
                 f"{values.T[col][row + distance_from_name_to_pokemon + i]}"

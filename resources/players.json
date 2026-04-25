@@ -441,6 +441,24 @@
       ],
       "active": true,
       "seed": 6
+    },
+    {
+      "name": "Hamless",
+      "id": 327462697266315265,
+      "league": "Main",
+      "active": true
+    },
+    {
+      "name": "Hayes",
+      "id": 414159629002604575,
+      "league": "Main",
+      "active": true
+    },
+    {
+      "name": "Maddy",
+      "id": 92840691301900288,
+      "league": "Main",
+      "active": true
     }
   ]
 }
