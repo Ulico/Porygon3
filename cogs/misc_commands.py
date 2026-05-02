@@ -36,6 +36,10 @@ class MiscCog(commands.Cog):
     async def tinkaton(self, ctx):
         await ctx.send(random.choice(bing_image_urls("tinkaton", limit=500)))
 
+    @commands.command(brief="Displays Sceptile.", help="Displays Sceptile.")
+    async def sceptile(self, ctx):
+        await ctx.send(random.choice(bing_image_urls("sceptile", limit=500)))
+
     @commands.command()
     async def image(self, ctx, *, query):
         await ctx.send(random.choice(bing_image_urls(f'{query} pokemon', limit=500)))

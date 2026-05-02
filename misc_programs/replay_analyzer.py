@@ -49,6 +49,9 @@ name_replacement_dict = {
     "Alcremie-Salted-Cream":"Alcremie"
 }
 
+def replace_name(name):
+    return name_replacement_dict.get(name, name).replace("-Mega", "")
+
 
 def upload_replay(gamelink: str):
     try:
@@ -63,13 +66,15 @@ def upload_replay(gamelink: str):
 
         for poke in re.findall(r"\|poke\|p([12])\|(.*?),", data):
             teams[player1 if poke[0] == "1" else player2].add(
-                name_replacement_dict.get(poke[1], poke[1])
+                replace_name(poke[1])
             )
+
+        print(teams)
 
         for name in re.findall(
             r"\|(?:switch|drag|replace)\|p[12][ab]: (.*?)\|([\w\s\-.]*)", data
         ):
-            name_dict[name[0]] = name_replacement_dict.get(name[1], name[1])
+            name_dict[name[0]] = replace_name(name[1])
 
         print(name_dict)
         # print(teams)
@@ -184,6 +189,8 @@ def upload_replay(gamelink: str):
         ):  # leech seed
             kill_dict[name_dict[kill[0]]] += 1
 
+        print(kill_dict)
+
         winner = re.search(r"\|win\|([\w\- !]*)", data).group(1)
 
         import sys
@@ -199,7 +206,7 @@ def upload_replay(gamelink: str):
         ]
 
         ws = gc.open_by_key(doc_id).worksheet("Match Logging")
-        values = np.array(ws.get_all_values())
+        values = np.array(ws.get_values())
 
         update_array = np.empty((6, 6), dtype=object)
         update_array[0] = [player1, "", "", player2, "", ""]
@@ -216,9 +223,10 @@ def upload_replay(gamelink: str):
                 update_array[i][3:6] = [name, kill_dict[name], death_dict[name]]
                 i += 1
 
+        # print(values.shape)
         search_column = values.T[17]
 
-        # print(update_array)
+        print(update_array)
 
         first_open = (
             next(
@@ -231,7 +239,7 @@ def upload_replay(gamelink: str):
             )
             + 2
         )
-        # print(first_open)
+        print(first_open)
         looking_for_top = first_open - 2
 
         while (
@@ -252,7 +260,7 @@ def upload_replay(gamelink: str):
             while search_column[first_open] != "Kills":
                 first_open += 1
             first_open += 2
-
+            print(first_open)
             if player2 == values[looking_for_top][16]:
                 update_array = np.c_[update_array[:, 3:], update_array[:, :3]]
 
@@ -261,6 +269,7 @@ def upload_replay(gamelink: str):
                 for i in range(looking_for_top + 15, looking_for_top + 25)
                 if not values[i][4]
             )
+            print(looking_for_next_link)
             index_of_winner = looking_for_top + (
                 0 if winner == values[looking_for_top][16] else 7
             )
@@ -295,7 +304,7 @@ def upload_replay(gamelink: str):
                     )
 
                     ws = gc.open_by_key(doc_id).worksheet("Schedule and Results")
-                    values = ws.get_all_values()
+                    values = ws.get_values()
                     winner_name = players.get_attribute_by_value(
                         "username", "name", winner
                     )
@@ -388,7 +397,7 @@ def get_data(name):
     ]
 
     ws = gc.open_by_key(doc_id).worksheet(name)
-    values = np.array(ws.get_all_values())
+    values = np.array(ws.get_values())
     r = re.compile("https://.*$")
     link_list = list(filter(r.match, values[:, 13]))
 
@@ -584,7 +593,7 @@ def get_ots_data(name):
     ]
 
     ws = gc.open_by_key(doc_id).worksheet("Match Logging")
-    values = np.array(ws.get_all_values())
+    values = np.array(ws.get_values())
     # r = re.compile("https://.*$")
     # link_list = list(filter(r.match, values[:, 4]))
 

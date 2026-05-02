@@ -103,46 +103,57 @@ class NominationsModal(discord.ui.Modal):
     def __init__(self, category):
         super().__init__(title=f"Nominate for {category}")
         self.category = category
+        self.field_labels = {}
 
         # Add appropriate fields based on category
         if category == "Best Nickname (Individual)":
-            self.add_item(discord.ui.TextInput(label="Player Name", placeholder="Enter player name"))
-            self.add_item(discord.ui.TextInput(label="Pokémon Name", placeholder="Enter Pokémon name"))
-            self.add_item(discord.ui.TextInput(label="Nickname", placeholder="Enter the nickname"))
+            self._add_text_input("Player Name", placeholder="Enter player name")
+            self._add_text_input("Pokémon Name", placeholder="Enter Pokémon name")
+            self._add_text_input("Nickname", placeholder="Enter the nickname")
         elif category == "Biggest Brain Play":
-            self.add_item(discord.ui.TextInput(label="Player Name", placeholder="Enter player name"))
-            self.add_item(discord.ui.TextInput(label="Description", style=discord.TextStyle.paragraph, placeholder="Describe the play"))
-            self.add_item(discord.ui.TextInput(label="Replay Link (optional)", required=False))
+            self._add_text_input("Player Name", placeholder="Enter player name")
+            self._add_text_input("Description", style=discord.TextStyle.paragraph, placeholder="Describe the play")
+            self._add_text_input("Replay Link (optional)", required=False)
         elif category == "Biggest Blunder":
-            self.add_item(discord.ui.TextInput(label="Player Name", placeholder="Enter player name"))
-            self.add_item(discord.ui.TextInput(label="Description", style=discord.TextStyle.paragraph, placeholder="Describe the blunder"))
-            self.add_item(discord.ui.TextInput(label="Replay Link (optional)", required=False))
+            self._add_text_input("Player Name", placeholder="Enter player name")
+            self._add_text_input("Description", style=discord.TextStyle.paragraph, placeholder="Describe the blunder")
+            self._add_text_input("Replay Link (optional)", required=False)
         elif category == "Most Improved Player":
-            self.add_item(discord.ui.TextInput(label="Player Name", placeholder="Enter player name"))
-            self.add_item(discord.ui.TextInput(label="Reason", style=discord.TextStyle.paragraph, placeholder="Why are they most improved?"))
+            self._add_text_input("Player Name", placeholder="Enter player name")
+            self._add_text_input("Reason", style=discord.TextStyle.paragraph, placeholder="Why are they most improved?")
         elif category == "King of Hax":
-            self.add_item(discord.ui.TextInput(label="Player Name", placeholder="Enter player name"))
-            self.add_item(discord.ui.TextInput(label="Description", style=discord.TextStyle.paragraph, placeholder="Describe the hax situation"))
-            self.add_item(discord.ui.TextInput(label="Replay Link (optional)", required=False))
+            self._add_text_input("Player Name", placeholder="Enter player name")
+            self._add_text_input("Description", style=discord.TextStyle.paragraph, placeholder="Describe the hax situation")
+            self._add_text_input("Replay Link (optional)", required=False)
         elif category == "MVP":
-            self.add_item(discord.ui.TextInput(label="Player Name", placeholder="Enter player name"))
-            self.add_item(discord.ui.TextInput(label="Pokémon Name", placeholder="Enter Pokémon name"))
-            self.add_item(discord.ui.TextInput(label="Reason", style=discord.TextStyle.paragraph, placeholder="Why are they the MVP?"))
+            self._add_text_input("Player Name", placeholder="Enter player name")
+            self._add_text_input("Pokémon Name", placeholder="Enter Pokémon name")
+            self._add_text_input("Reason", style=discord.TextStyle.paragraph, placeholder="Why are they the MVP?")
         elif category == "Best Nicknames (Team)":
-            self.add_item(discord.ui.TextInput(label="Player Name", placeholder="Enter player name"))
-            self.add_item(discord.ui.TextInput(label="List of Nicknames", style=discord.TextStyle.paragraph, placeholder="List the nicknames"))
+            self._add_text_input("Player Name", placeholder="Enter player name")
+            self._add_text_input("List of Nicknames", style=discord.TextStyle.paragraph, placeholder="List the nicknames")
         elif category == "Game/Match of the Season":
-            self.add_item(discord.ui.TextInput(label="Players Involved", placeholder="Enter both player names"))
-            self.add_item(discord.ui.TextInput(label="Replay Link", placeholder="Enter replay link"))
-            self.add_item(discord.ui.TextInput(label="Reason", style=discord.TextStyle.paragraph, placeholder="Why was this match special?"))
+            self._add_text_input("Players Involved", placeholder="Enter both player names")
+            self._add_text_input("Replay Link", placeholder="Enter replay link")
+            self._add_text_input("Reason", style=discord.TextStyle.paragraph, placeholder="Why was this match special?")
         elif category == "Coolest Team":
-            self.add_item(discord.ui.TextInput(label="Team Name", placeholder="Enter team name"))
-            self.add_item(discord.ui.TextInput(label="Reason (optional)", required=False, style=discord.TextStyle.paragraph, placeholder="Why is this team cool?"))
+            self._add_text_input("Team Name", placeholder="Enter team name")
+            self._add_text_input("Reason (optional)", required=False, style=discord.TextStyle.paragraph, placeholder="Why is this team cool?")
+
+    def _add_text_input(self, label, **kwargs):
+        custom_id = re.sub(r"[^A-Za-z0-9]+", "_", label).strip("_").lower()
+        text_input = discord.ui.TextInput(label=label, custom_id=custom_id, **kwargs)
+        self.add_item(text_input)
+        self.field_labels[custom_id] = label
 
     async def on_submit(self, interaction: discord.Interaction):
 
-        # Collect all field values
-        fields = {item.label: item.value for item in self.children}
+        # Collect all field values without using the deprecated label property
+        fields = {
+            self.field_labels.get(item.custom_id, item.custom_id): item.value
+            for item in self.children
+            if isinstance(item, discord.ui.TextInput)
+        }
 
         await interaction.response.send_message(
             f"Nomination for **{self.category}** submitted!\n" +
