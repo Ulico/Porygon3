@@ -1,4 +1,4 @@
-2680
+667
 Ghost;82
 Fairy;75
 Water;68

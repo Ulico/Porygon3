@@ -445,12 +445,18 @@
     {
       "name": "Hamless",
       "id": 327462697266315265,
+      "username": [
+        "hamlessmel"
+      ],
       "league": "Main",
       "active": true
     },
     {
       "name": "Hayes",
       "id": 414159629002604575,
+      "username": [
+        "HayesL"
+      ],
       "league": "Main",
       "active": true
     },
@@ -458,7 +464,8 @@
       "name": "Maddy",
       "id": 92840691301900288,
       "username": [
-        "MaddyB"
+        "MaddyB",
+        "MaddyBea"
       ],
       "league": "Main",
       "active": true

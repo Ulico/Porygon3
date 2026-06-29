@@ -1,6 +1,11 @@
 import random
 
-from bing_image_urls import bing_image_urls
+from ddgs import DDGS
+
+
+def image_urls(query, limit=100):
+    results = DDGS().images(query, max_results=limit)
+    return [r['image'] for r in results]
 from discord.ext import commands
 
 
@@ -30,19 +35,19 @@ class MiscCog(commands.Cog):
 
     @commands.command(brief="Displays Wooper.", help="Displays Wooper.")
     async def wooper(self, ctx):
-        await ctx.send(random.choice(bing_image_urls("wooper", limit=500)))
+        await ctx.send(random.choice(image_urls("wooper", limit=500)))
 
     @commands.command(brief="Displays Tinkaton.", help="Displays Tinkaton.")
     async def tinkaton(self, ctx):
-        await ctx.send(random.choice(bing_image_urls("tinkaton", limit=500)))
+        await ctx.send(random.choice(image_urls("tinkaton", limit=500)))
 
     @commands.command(brief="Displays Sceptile.", help="Displays Sceptile.")
     async def sceptile(self, ctx):
-        await ctx.send(random.choice(bing_image_urls("sceptile", limit=500)))
+        await ctx.send(random.choice(image_urls("sceptile", limit=500)))
 
     @commands.command()
     async def image(self, ctx, *, query):
-        await ctx.send(random.choice(bing_image_urls(f'{query} pokemon', limit=500)))
+        await ctx.send(random.choice(image_urls(f'{query} pokemon', limit=500)))
 
     @commands.command()
     async def chicanery(self, ctx):

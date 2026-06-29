@@ -285,34 +285,34 @@ class SeasonCog(commands.Cog):
                 embed=discord.Embed(title=title, description="\n".join(match_strings))
             )
 
-    @commands.command(hidden=True)
-    async def data(self, ctx, *, name):
-        if isinstance(ctx.channel, discord.channel.DMChannel):
-            async with ctx.typing():
-                await ctx.send(
-                    embed=discord.Embed(
-                        title=f"{name} Data", description=replay_analyzer.get_data(name)
-                    )
-                )
+    # @commands.command(hidden=True)
+    # async def data(self, ctx, *, name):
+    #     if isinstance(ctx.channel, discord.channel.DMChannel):
+    #         async with ctx.typing():
+    #             await ctx.send(
+    #                 embed=discord.Embed(
+    #                     title=f"{name} Data", description=replay_analyzer.get_data(name)
+    #                 )
+    #             )
 
-    @commands.command(hidden=True)
-    async def tsdata(self, ctx, *, name):
-        if isinstance(ctx.channel, discord.channel.DMChannel):
-            async with ctx.typing():
-                text = replay_analyzer.get_ots_data(name)
-                # print(text.split("Name: "))
+    # @commands.command(hidden=True)
+    # async def tsdata(self, ctx, *, name):
+    #     if isinstance(ctx.channel, discord.channel.DMChannel):
+    #         async with ctx.typing():
+    #             text = replay_analyzer.get_ots_data(name)
+    #             # print(text.split("Name: "))
 
-                embed = discord.Embed(title=f"{name} Data")
-                print(text)
-                # print(text.split("Name: ")[1:])
-                for item in text.split("Name: ")[1:]:
-                    field_name = item.split("\n")[0]
-                    field_value = item[len(item.split("\n")[0]) :]
-                    # print(field_name)
-                    embed.add_field(name=field_name, value=field_value, inline=False)
-                    # embed.add_field(name="test", value="test")
-                #
-                await ctx.send(embed=embed)
+    #             embed = discord.Embed(title=f"{name} Data")
+    #             print(text)
+    #             # print(text.split("Name: ")[1:])
+    #             for item in text.split("Name: ")[1:]:
+    #                 field_name = item.split("\n")[0]
+    #                 field_value = item[len(item.split("\n")[0]) :]
+    #                 # print(field_name)
+    #                 embed.add_field(name=field_name, value=field_value, inline=False)
+    #                 # embed.add_field(name="test", value="test")
+    #             #
+    #             await ctx.send(embed=embed)
 
     @commands.command()
     async def teras(self, ctx):

@@ -216,9 +216,7 @@ class ShowdownCog(commands.Cog):
         if "a best-of" in self.driver.page_source:
             # if "bo3" in game_link:
             print("This is a Bo3")
-            print(self.driver.find_elements(By.CLASS_NAME, "notice uhtml-bestof"))
-            print(self.driver.find_elements(By.CLASS_NAME, "battle-log"))
-            print(self.driver.find_elements(By.CLASS_NAME, "inner message-log"))
+            
             bo3_link = (
                 self.driver.find_elements(By.CLASS_NAME, "battle-log")[0]
                 .find_element(By.TAG_NAME, "a")
