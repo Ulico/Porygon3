@@ -1,18 +1,12 @@
 import datetime
-import os
+import json
 import re
-import sys
 import traceback
-from collections import Counter
-from io import StringIO
 from urllib.request import Request, urlopen
-import misc_programs.showdown_data as showdown_data
-import gspread
-import numpy as np
 
-import misc_programs.players as players
-import utils
+import db
 
+POKEMON_JSON_URL = "https://planner.springfieldbattleleague.com/pokemon.json"
 
 name_replacement_dict = {
     "Lycanroc": "Lycanroc-Midday",
@@ -25,9 +19,6 @@ name_replacement_dict = {
     "Florges-Orange": "Florges",
     "Florges-Blue": "Florges",
     "Florges-White": "Florges",
-    "Tauros-Paldea-Combat": "Tauros-Paldea",
-    "Tauros-Paldea-Blaze": "Tauros-Paldea-Fire",
-    "Tauros-Paldea-Aqua": "Tauros-Paldea-Water",
     "Basculegion": "Basculegion-M",
     "Meowstic": "Meowstic-M",
     "Squawkabilly-Blue": "Squawkabilly",
@@ -42,704 +33,261 @@ name_replacement_dict = {
     "Urshifu-*": "Urshifu-RS",
     "Urshifu-Rapid-Strike": "Urshifu-RS",
     "Tatsugiri-Stretchy": "Tatsugiri",
-    "Tatsugiri-Droopy" : "Tatsugiri",
+    "Tatsugiri-Droopy": "Tatsugiri",
     "Ogerpon-Hearthflame-Tera": "Ogerpon-Hearthflame",
     "Sinistcha-Masterpiece": "Sinistcha",
-    "Greninja-*":"Greninja",
-    "Alcremie-Salted-Cream":"Alcremie"
+    "Greninja-*": "Greninja",
+    "Alcremie-Salted-Cream": "Alcremie",
+    "Alcremie-Caramel-Swirl": "Alcremie",
+    "Alcremie-Mint-Cream": "Alcremie",
+    "Alcremie-Ruby-Cream": "Alcremie",
+    "Gastrodon-East": "Gastrodon",
 }
 
+
 def replace_name(name):
-    return name_replacement_dict.get(name, name).replace("-Mega", "")
+    return name_replacement_dict.get(name, name)
 
 
-def upload_replay(gamelink: str):
+def load_pokemon_ids():
+    req = Request(url=POKEMON_JSON_URL, headers={"User-Agent": "Mozilla/5.0"})
+    data = json.loads(urlopen(req).read().decode("utf-8"))
+    return {entry["name"]: entry["id"] for entry in data["pokemon"] if "name" in entry and "id" in entry}
+
+
+def analyze_replay(gamelink: str, pokemon_ids: dict):
     try:
         req = Request(url=gamelink, headers={"User-Agent": "Mozilla/5.0"})
         data = urlopen(req).read().decode("utf-8")
-        name_dict = {}
 
         player1 = re.search(r"\|player\|p1\|(.*?)\|", data).group(1)
         player2 = re.search(r"\|player\|p2\|(.*?)\|", data).group(1)
 
         teams = {player1: set(), player2: set()}
-
         for poke in re.findall(r"\|poke\|p([12])\|(.*?),", data):
-            teams[player1 if poke[0] == "1" else player2].add(
-                replace_name(poke[1])
-            )
+            teams[player1 if poke[0] == "1" else player2].add(replace_name(poke[1]))
 
-        print(teams)
-
-        for name in re.findall(
+        name_dict = {}
+        for nickname, species in re.findall(
             r"\|(?:switch|drag|replace)\|p[12][ab]: (.*?)\|([\w\s\-.]*)", data
         ):
-            name_dict[name[0]] = replace_name(name[1])
+            if nickname not in name_dict:
+                name_dict[nickname] = replace_name(species)
 
-        print(name_dict)
-        # print(teams)
         death_dict = {name: 0 for name in name_dict.values()}
-
         for death in re.findall(r"\|faint\|p[12][ab]: (.*)\s", data):
             death_dict[name_dict[death]] += 1
 
         kill_dict = {name: 0 for name in name_dict.values()}
-        print(death_dict)
+
         for kill in re.findall(
             r"(?=\|move\|p1[ab]: ([^|]*?)\|[\w -]*\|.*\n(?:^(?:(?!\|move\||\|\n).)*$\n)*?(\|faint\|p2[ab].*\n)(?:.*\n)*?(?:\|(faint)\|p2[ab].*\n)?)",
-            data,
-            re.MULTILINE,
+            data, re.MULTILINE,
         ):
             kill_dict[name_dict[kill[0]]] += 2 if kill[2] else 1
+
         for kill in re.findall(
             r"(?=\|move\|p2[ab]: ([^|]*?)\|[\w -]*\|.*\n(?:^(?:(?!\|move\||\|\n).)*$\n)*?(\|faint\|p1[ab].*\n)(?:.*\n)*?(?:\|(faint)\|p1[ab].*\n)?)",
-            data,
-            re.MULTILINE,
+            data, re.MULTILINE,
         ):
             kill_dict[name_dict[kill[0]]] += 2 if kill[2] else 1
 
         for kill in re.findall(
             r"(?=\|move\|p[12][ab]: (.*?)\|Toxic\|(p[12][ab]: .*)(?:.|\n)*\|-damage\|\2\|0 fnt\|\[from\] psn)",
-            data,
-            re.MULTILINE,
-        ):  # toxic
+            data, re.MULTILINE,
+        ):
             kill_dict[name_dict[kill[0]]] += 1
 
         for kill in re.findall(
             r"(?=\|move\|p[12][ab]: (.*?)\|Poison Jab\|(p[12][ab]: .*)(?:.|\n)*\|-damage\|\2\|0 fnt\|\[from\] psn)",
-            data,
-            re.MULTILINE,
-        ):  # Poison jab poison
+            data, re.MULTILINE,
+        ):
             kill_dict[name_dict[kill[0]]] += 1
 
         for kill in re.findall(
             r"(?:\|move\|p[12][ab]: (.*?)\|Will-O-Wisp\|(p[12][ab]: .*)\n(?:.|\n)*\|-status\|(\2)\|brn\n(?:.|\n)*0 fnt\|\[from\] brn)",
-            data,
-            re.MULTILINE,
-        ):  # will-o-wisp
+            data, re.MULTILINE,
+        ):
             kill_dict[name_dict[kill[0]]] += 1
 
         for kill in re.findall(
             r"(?:\|move\|p[12][ab]: (.*?)\|Scald\|(p[12][ab]: .*)\n(?:.|\n)*\|-status\|(\2)\|brn\n(?:.|\n)*0 fnt\|\[from\] brn)",
-            data,
-            re.MULTILINE,
-        ):  # will-o-wisp
+            data, re.MULTILINE,
+        ):
             kill_dict[name_dict[kill[0]]] += 1
 
         for kill in re.findall(
             r"(?:\|move\|p[12][ab]: (.*?)\|Tri Attack\|(p[12][ab]: .*)\n(?:.|\n)*\|-status\|(\2)\|brn\n(?:.|\n)*0 fnt\|\[from\] brn)",
-            data,
-            re.MULTILINE,
-        ):  # will-o-wisp
+            data, re.MULTILINE,
+        ):
             kill_dict[name_dict[kill[0]]] += 1
 
         for kill in re.findall(
             r"(?:\|move\|p[12][ab]: (.*?)\|Heat Wave\|(?:.|\n)*\|-status\|(.*?)\|brn\n(?:.|\n)*\2\|0 fnt\|\[from\] brn)",
-            data,
-            re.MULTILINE,
-        ):  # heatwave
+            data, re.MULTILINE,
+        ):
             kill_dict[name_dict[kill[0]]] += 1
 
         for kill in re.findall(
             r"(?:\|move\|p[12][ab]: (.*?)\|Sacred Fire\|(?:.|\n)*\|-status\|(.*?)\|brn\n(?:.|\n)*\2\|0 fnt\|\[from\] brn)",
-            data,
-            re.MULTILINE,
-        ):  # heatwave
+            data, re.MULTILINE,
+        ):
             kill_dict[name_dict[kill[0]]] += 1
 
         for kill in re.findall(
             r"(?:\|-weather\|Sandstorm\|\[from\] ability: Sand Stream\|\[of\] p1[ab]: (.*)\n(?:.|\n)*\|-damage\|p2[ab]: (.*?)\|0 fnt\|\[from\] Sandstorm(?:.|\n)*\|faint\|p2[ab]: \2)",
-            data,
-            re.MULTILINE,
-        ):  # sand
+            data, re.MULTILINE,
+        ):
             kill_dict[name_dict[kill[0]]] += 1
 
         for kill in re.findall(
             r"(?:\|-weather\|Sandstorm\|\[from\] ability: Sand Stream\|\[of\] p2[ab]: (.*)\n(?:.|\n)*\|-damage\|p1[ab]: (.*?)\|0 fnt\|\[from\] Sandstorm(?:.|\n)*\|faint\|p1[ab]: \2)",
-            data,
-            re.MULTILINE,
-        ):  # sand
+            data, re.MULTILINE,
+        ):
             kill_dict[name_dict[kill[0]]] += 1
 
         for kill in re.findall(
             r"\|-damage\|p[12][ab]: ([^|]*?)\|0 fnt\|\[from\] ability: Rough Skin\|\[of\] p[12][ab]: ([^|]*?)$",
-            data,
-            re.MULTILINE,
-        ):  # rough skin
+            data, re.MULTILINE,
+        ):
             kill_dict[name_dict[kill[0]]] += 1
 
         for kill in re.findall(
             r"(?:\|move\|p2[ab]: (.*?)\|Perish Song\|(?:p2[ab]: .*)\n(?:.|\n)*\|perish0(?:.|\n)*(?:\|faint\|p1[ab]: (.*))\n(?:\|faint\|p1[ab]: (.*)))",
-            data,
-            re.MULTILINE,
-        ):  # perish song 1
+            data, re.MULTILINE,
+        ):
             kill_dict[name_dict[kill[0]]] += 2 if kill[2] else 1
 
         for kill in re.findall(
             r"(?:\|move\|p1[ab]: (.*?)\|Perish Song\|(?:p1[ab]: .*)\n(?:.|\n)*\|perish0(?:.|\n)*(?:\|faint\|p2[ab]: (.*))\n(?:\|faint\|p2[ab]: (.*)))",
-            data,
-            re.MULTILINE,
-        ):  # perish song 2
+            data, re.MULTILINE,
+        ):
             kill_dict[name_dict[kill[0]]] += 2 if kill[2] else 1
 
         for kill in re.findall(
             r"(?:p[12][ab]: ([^|]*?)\|0 fnt\|\[from\] Leech Seed\|\[of\] p[12][ab]: ([^|]*?)$)",
-            data,
-            re.MULTILINE,
-        ):  # leech seed
+            data, re.MULTILINE,
+        ):
             kill_dict[name_dict[kill[0]]] += 1
 
-        print(kill_dict)
+        winner_match = re.search(r"\|win\|([\w\- !]*)", data)
+        winner = winner_match.group(1) if winner_match else "Unknown"
 
-        winner = re.search(r"\|win\|([\w\- !]*)", data).group(1)
-
-        import sys
-        import os
-        sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..'))
-        from utils import get_gspread_client
-        gc = get_gspread_client()
-        print()
-
-        # doc_id = '14IPwnyeKxohvc__aZz1HuspPHHaLmWSBzzIIX4wWi-U'
-        doc_id = utils.SBL_SEASON_DOC_KEY[
-            players.get_attribute_by_value("username", "league", player1)
-        ]
-
-        ws = gc.open_by_key(doc_id).worksheet("Match Logging")
-        values = np.array(ws.get_values())
-
-        update_array = np.empty((6, 6), dtype=object)
-        update_array[0] = [player1, "", "", player2, "", ""]
-        i = 2
-        update_array[1] = ["Pokemon", "Kills", "Deaths", "Pokemon", "Kills", "Deaths"]
-        for name in teams[player1]:
-            if name in kill_dict.keys():
-                update_array[i][0:3] = [name, kill_dict[name], death_dict[name]]
-                i += 1
-
-        i = 2
-        for name in teams[player2]:
-            if name in kill_dict.keys():
-                update_array[i][3:6] = [name, kill_dict[name], death_dict[name]]
-                i += 1
-
-        # print(values.shape)
-        search_column = values.T[17]
-
-        print(update_array)
-
-        first_open = (
-            next(
-                (
-                    i
-                    for i in range(len(search_column) - 1, -1, -1)
-                    if search_column[i] and search_column[i] != "Kills"
-                ),
-                -1,
-            )
-            + 2
-        )
-        print(first_open)
-        looking_for_top = first_open - 2
-
-        while (
-            search_column[looking_for_top] == "Kills"
-            or search_column[looking_for_top].isdigit()
-            or (
-                search_column[looking_for_top] == ""
-                and values[looking_for_top][20] != ""
-            )
-        ):
-            looking_for_top -= 1
-        # print(looking_for_top)
-        if [player1, player2] in [
-            [values[looking_for_top][16], values[looking_for_top][19]],
-            [values[looking_for_top][19], values[looking_for_top][16]],
-        ]:
-            first_open -= 1
-            while search_column[first_open] != "Kills":
-                first_open += 1
-            first_open += 2
-            print(first_open)
-            if player2 == values[looking_for_top][16]:
-                update_array = np.c_[update_array[:, 3:], update_array[:, :3]]
-
-            looking_for_next_link = next(
-                i + 1
-                for i in range(looking_for_top + 15, looking_for_top + 25)
-                if not values[i][4]
-            )
-            print(looking_for_next_link)
-            index_of_winner = looking_for_top + (
-                0 if winner == values[looking_for_top][16] else 7
-            )
-            update_data = [
+        appeared = set(name_dict.values())
+        team_data = {}
+        for player in [player1, player2]:
+            team_data[player] = [
                 {
-                    "range": f"Q{first_open}:V{first_open + 3}",
-                    "values": update_array[-4:].tolist(),
-                },
-                {"range": f"E{looking_for_next_link}", "values": [[gamelink]]},
-                {
-                    "range": f"J{index_of_winner + 1}:J{index_of_winner + 1}",
-                    "values": [[int(values[index_of_winner][9]) + 1]],
-                },
+                    "name": poke_name,
+                    "pokemon_id": pokemon_ids.get(poke_name, "N/A"),
+                    "kills": kill_dict.get(poke_name, 0),
+                    "deaths": death_dict.get(poke_name, 0),
+                    "appeared": poke_name in appeared,
+                }
+                for poke_name in sorted(teams[player])
             ]
-            print(f"This has been a problem number: {int(values[index_of_winner][9])}")
-            ws.batch_update(update_data)
 
-            week = utils.get_current_week()
-            set_winner_score = int(values[index_of_winner][9]) + 1
-            if week <= 9:
-                if set_winner_score >= 2:
-                    set_score = (
-                        max(
-                            int(values[looking_for_top][9]),
-                            int(values[looking_for_top + 7][9]),
-                        )
-                        + 1,
-                        min(
-                            int(values[looking_for_top][9]),
-                            int(values[looking_for_top + 7][9]),
-                        ),
-                    )
+        return {
+            "player1": player1,
+            "player2": player2,
+            "replay_url": gamelink,
+            "winner": winner,
+            "teams": team_data,
+        }
 
-                    ws = gc.open_by_key(doc_id).worksheet("Schedule and Results")
-                    values = ws.get_values()
-                    winner_name = players.get_attribute_by_value(
-                        "username", "name", winner
-                    )
-                    # winner_name = 'Shellshock'
-                    loser_name = players.get_attribute_by_value(
-                        "username", "name", player1 if player2 == winner else player2
-                    )
-                    # loser_name = 'Tagtree Mischievous Creatures (Saget)'
-                    row, col = utils.get_row_col_from_number(week)
+    except Exception:
+        traceback.print_exc()
+        return None
 
-                    for i in range(1, utils.MATCHES_PER_WEEK + 1):
-                        if (
-                            winner_name in values[row + i][col + 1]
-                            and loser_name in values[row + i][col + 5]
-                        ):
-                            # update_score_and_format(
-                            #     ws, row + i + 1, col + 1, set_score[0], 'green')
-                            ws.update_cell(row + i + 1, col + 1, set_score[0])
-                            ws.update_cell(row + i + 1, col + 9, set_score[1])
-                        elif (
-                            loser_name in values[row + i][col + 1]
-                            and winner_name in values[row + i][col + 5]
-                        ):
-                            ws.update_cell(row + i + 1, col + 1, set_score[1])
-                            ws.update_cell(row + i + 1, col + 9, set_score[0])
-        else:
-            print("That's not me!")
-            while values[first_open][7] != "K/D" or values[first_open - 7][7] == "K/D":
-                first_open += 1
-            first_open += 1
-            looking_for_next_link = next(
-                i + 1
-                for i in range(first_open + 14, first_open + 25)
-                if not values[i][4]
-            )
-            # print(winner, player1, player2)
-            update_data = [
-                {
-                    "range": f"Q{first_open}:V{first_open + 5}",
-                    "values": update_array.tolist(),
-                },
-                {
-                    "range": f"E{first_open + 1}:E{first_open + 6}",
-                    "values": np.array(list(teams[player1])).reshape(6, 1).tolist(),
-                },
-                {
-                    "range": f"E{first_open + 8}:E{first_open + 13}",
-                    "values": np.array(list(teams[player2])).reshape(6, 1).tolist(),
-                },
-                {
-                    "range": f"J{first_open}:J{first_open}",
-                    "values": [["1" if winner == player1 else "0"]],
-                },
-                {"range": f"E{looking_for_next_link}", "values": [[gamelink]]},
-                {
-                    "range": f"J{first_open + 7}:J{first_open + 7}",
-                    "values": [["1" if winner == player2 else "0"]],
-                },
-            ]
-            ws.batch_update(update_data, value_input_option="USER_ENTERED")
 
+def upload_replay(replay_data: dict):
+    player1 = replay_data["player1"]
+    player2 = replay_data["player2"]
+    winner = replay_data["winner"]
+    replay_url = replay_data["replay_url"]
+
+    season_id = db.get_current_season_id()
+    if not season_id:
+        print("ERROR: Could not determine current season ID")
+        return
+    team1_id = db.get_team_id_for_username(player1, season_id)
+    team2_id = db.get_team_id_for_username(player2, season_id)
+    if not team1_id or not team2_id:
+        print(f"ERROR: Could not resolve team IDs — {player1}={team1_id}, {player2}={team2_id}")
+        return
+    match = db.get_match_for_teams(team1_id, team2_id, season_id)
+    if not match:
+        print(f"ERROR: No match found for {player1} vs {player2} in current season")
+        return
+    match_id = match["id"]  # type: ignore[index]
+    team_a_id = match["team_a_id"]  # type: ignore[index]
+    team_b_id = match["team_b_id"]  # type: ignore[index]
+
+    game_number = db.count_games_for_match(match_id) + 1
+
+    winner_team_id = team1_id if winner == player1 else team2_id
+    game_date = datetime.date.today().isoformat()
+    game_id = db.insert_game(match_id, game_number, replay_url, winner_team_id, game_date)
+    if not game_id:
+        print("ERROR: Failed to insert game row")
+        return
+    print(f"Inserted game {game_id} (game #{game_number})")
+
+    player_to_team = {player1: team1_id, player2: team2_id}
+
+    stats_rows = [
+        {
+            "game_id": game_id,
+            "team_id": player_to_team[player],
+            "pokemon_id": p["pokemon_id"],
+            "kills": p["kills"],
+            "deaths": p["deaths"],
+        }
+        for player, pokemon_list in replay_data["teams"].items()
+        for p in pokemon_list
+        if p["appeared"] and p["pokemon_id"] != "N/A"
+    ]
+    if stats_rows:
+        db.insert_game_pokemon_stats(stats_rows)
+        print(f"Inserted {len(stats_rows)} game_pokemon_stats rows")
+
+    match_poke_rows = [
+        {
+            "match_id": match_id,
+            "team_id": player_to_team[player],
+            "pokemon_id": p["pokemon_id"],
+        }
+        for player, pokemon_list in replay_data["teams"].items()
+        for p in pokemon_list
+        if p["appeared"] and p["pokemon_id"] != "N/A"
+    ]
+    if match_poke_rows:
+        db.upsert_match_pokemon(match_poke_rows)
+        print(f"Upserted {len(match_poke_rows)} match_pokemon rows")
+
+    a_score, b_score = db.update_match_scores(match_id, team_a_id, team_b_id)
+    print(f"Match scores updated: team_a={a_score}, team_b={b_score}")
+
+
+def process_replay(gamelink: str):
+    """Load IDs, analyze replay, and upload to DB. Returns 0 on success, 1 on failure."""
+    try:
+        pokemon_ids = load_pokemon_ids()
+        replay_data = analyze_replay(gamelink, pokemon_ids)
+        if replay_data is None:
+            return 1
+        upload_replay(replay_data)
         return 0
     except Exception:
         traceback.print_exc()
         return 1
 
 
-class Pokemon:
-    def __init__(self, name, player):
-        self.player = player
-        self.name = name
-        self.moves = list()
-        self.items = list()
-        self.ability = set()
-        self.teras = list()
-        self.count = 0
-
-
-def get_data(name):
-    name = players.get_attribute_by_value("alias", "name", name)
-    import sys
-    import os
-    sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..'))
-    from utils import get_gspread_client
-    gc = get_gspread_client()
-
-    # doc_id = '14IPwnyeKxohvc__aZz1HuspPHHaLmWSBzzIIX4wWi-U'
-    doc_id = utils.SBL_SEASON_DOC_KEY[
-        players.get_attribute_by_value("name", "league", name)
-    ]
-
-    ws = gc.open_by_key(doc_id).worksheet(name)
-    values = np.array(ws.get_values())
-    r = re.compile("https://.*$")
-    link_list = list(filter(r.match, values[:, 13]))
-
-    # return
-    # r = Replay('replays/test.txt')
-    # f = open("replays/test.txt", "r")
-    # print(re.findall(r'https:\/\/replay.*\n', f.read()))
-    links = [str(x.strip()) + ".log" for x in link_list]
-
-    # print(len(links))
-    pokemon = {}
-    player_names = players.get_attribute_by_value("name", "username", name)
-    player_names = [name.lower() for name in player_names]
-
-    for link in links:
-        # print(link)
-        req = Request(url=link, headers={"User-Agent": "Mozilla/5.0"})
-        data = urlopen(req).read().decode("utf-8")
-
-        name_dict = {}
-
-        #
-        # print(data)
-        player1 = re.search(r"\|player\|p1\|([\w !-]*)\|", data).group(1).lower()
-        player2 = re.search(r"\|player\|p2\|([\w !-]*)\|", data).group(1).lower()
-
-        player = 1 if player1 in player_names else 2
-
-        # if '|showteam|' in data:
-
-        switched_pokemon = set()
-
-        for name in re.findall(
-            r"\|(switch|drag|replace)\|p([12])[ab]: (.*?)\|([\w\s\-.]*)", data
-        ):
-            name_dict[name[2]] = name[3]
-            # print(name[3])
-            pokemon_trainer = player1 if name[1] == "1" else player2
-
-            if not name[3] in pokemon:
-                # print(name_dict)
-                pokemon[name[3]] = Pokemon(name[3], pokemon_trainer)
-
-            # print(pokemon_trainer, player_name)
-            if pokemon_trainer in player_names:
-                # print(switched_pokemon)
-                if name[3] not in switched_pokemon:
-                    pokemon[name[3]].count += 1
-                    switched_pokemon.add(name[3])
-
-        used_moves = set()
-        used_items = set()
-        # print(name_dict)
-        for thing in re.findall(
-            r"\|move\|p%s[ab]: (.*)\|(.*)\|p[12][ab]: (.*?)[|\n]" % player, data
-        ):
-            # print('eher')
-            move_string = name_dict[thing[0]] + "|" + thing[1]
-            if move_string not in used_moves:
-                pokemon[name_dict[thing[0]]].moves.append(thing[1])
-                used_moves.add(move_string)
-
-        for item in re.findall(r"p%s[ab]: (.*?)\|.*item: ([\w\s]*)\n" % player, data):
-            item_string = name_dict[item[0]] + "|" + item[1]
-            if item_string not in used_items:
-                pokemon[name_dict[item[0]]].items.append(item[1])
-                used_items.add(item_string)
-            # pokemon[name_dict[item[0]]].items.add(item[1])
-
-        for item in re.findall(r"item\|p%s[ab]: (.*?)\|([\w\s]*?)[\n|]" % player, data):
-            item_string = name_dict[item[0]] + "|" + item[1]
-            if item_string not in used_items:
-                pokemon[name_dict[item[0]]].items.append(item[1])
-                used_items.add(item_string)
-
-        for item in re.findall(
-            r"item: ([\w\s]*)\|\[of\] p%s[ab]: (.*?)\n" % player, data
-        ):
-            item_string = name_dict[item[1]] + "|" + item[0]
-            if item_string not in used_items:
-                pokemon[name_dict[item[1]]].items.append(item[0])
-                used_items.add(item_string)
-
-        for terastallize in re.findall(
-            r"\|-terastallize\|p%s[ab]: (.*?)\|(.*)\n" % player, data
-        ):
-            # print(terastallize[1])
-            pokemon[name_dict[terastallize[0]]].teras.append(terastallize[1])
-
-        for ability in re.findall(
-            r"ability\|p%s[ab]: ([^|]*?)\|([^|]*?)[|\n](?!\[from\] ability: Trace)(?:.*?)[|\n]"
-            % player,
-            data,
-        ):
-            if name_dict[ability[0]] != "Gardevoir" or ability[1] not in ["Intimidate"]:
-                pokemon[name_dict[ability[0]]].ability.add(ability[1])
-
-        for ability in re.findall(
-            r"p%s[ab]: ([\w\s]*)\|(?:.*)\|\[from\] ability: (Trace)" % player, data
-        ):  # Trace
-            pokemon[name_dict[ability[0]]].ability.add(ability[1])
-
-        for ability in re.findall(
-            r"ability: (?!Trace)([\w\s]*)\|\[of] p%s[ab]: (.*?)[|\n]" % player, data
-        ):
-            pokemon[name_dict[ability[1]]].ability.add(ability[0])
-
-        for ability in re.findall(
-            r"(setboost|immune)\|p%s[ab]: (.*?)\|.*\[from] ability: (.*?)[|\n]"
-            % player,
-            data,
-        ):
-            pokemon[name_dict[ability[1]]].ability.add(ability[2])
-
-        for ability in re.findall(
-            r"p%s[ab]: (.*?)\|ability: (\w*)[|\n]" % player, data
-        ):
-            pokemon[name_dict[ability[0]]].ability.add(ability[1])
-
-        #
-
-    result = StringIO()
-    sys.stdout = result
-    # print(*[f'{move[0]} ({"{:.1%}".format(move[1] / value.count)})' for move in Counter(value.moves).most_common()], sep=', ')
-
-    for key, value in pokemon.items():
-        # print(key, value.player)
-
-        if value.player in player_names:
-            print(f"Name: {key}")
-            print("Moves:", end=" ")
-            # print(Counter(value.moves))
-            if value.moves:
-                print(
-                    *[
-                        f'{move[0]} ({"{:.1%}".format(move[1] / value.count)})'
-                        for move in Counter(value.moves).most_common()
-                    ],
-                    sep=", ",
-                )
-            else:
-                print("None revealed")
-            print("Ability:", end=" ")
-            if value.ability:
-                print(*value.ability, sep=", ")
-
-            else:
-                print("None revealed")
-            print("Tera Types:", end=" ")
-            if value.teras:
-                print(
-                    *[
-                        f'{tera[0]} ({"{:.1%}".format(tera[1] / value.count)})'
-                        for tera in Counter(value.teras).most_common()
-                    ],
-                    sep=", ",
-                )
-
-            else:
-                print("None revealed")
-            print("Items:", end=" ")
-            if value.items:
-                print(
-                    *[
-                        f'{item[0]} ({"{:.1%}".format(item[1] / value.count)})'
-                        for item in Counter(value.items).most_common()
-                    ],
-                    sep=", ",
-                )
-            else:
-                print("None revealed")
-            print(f"Count: {value.count}")
-            print()
-
-    output = result.getvalue()
-    sys.stdout = sys.__stdout__
-    return output
-
-
-def get_ots_data(name):
-    print(name)
-    name = players.get_attribute_by_value("alias", "name", name)
-    print(name)
-    import sys
-    import os
-    sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..'))
-    from utils import get_gspread_client
-    gc = get_gspread_client()
-
-    # doc_id = '14IPwnyeKxohvc__aZz1HuspPHHaLmWSBzzIIX4wWi-U'
-    doc_id = utils.SBL_SEASON_DOC_KEY[
-        players.get_attribute_by_value("name", "league", name)
-    ]
-
-    ws = gc.open_by_key(doc_id).worksheet("Match Logging")
-    values = np.array(ws.get_values())
-    # r = re.compile("https://.*$")
-    # link_list = list(filter(r.match, values[:, 4]))
-
-    link_list = []
-    found = False
-
-    # print(values[:, 4])
-
-    for item in values[:, 4]:
-        # print(item)
-        if name.lower() in item.lower():
-            found = True
-        elif found and re.match(r"https://replay.*$", item):
-            link_list.append(item)
-        elif found and item == "":
-            found = False
-
-    print(link_list)
-    # link_list = ["https://replay.pokemonshowdown.com/gen9vgc2024regf-2016216707"]
-    # return
-    # r = Replay('replays/test.txt')
-    # f = open("replays/test.txt", "r")
-    # print(re.findall(r'https:\/\/replay.*\n', f.read()))
-    links = [str(x.strip()) + ".log" for x in link_list]
-
-    # print(len(links))
-    pokemon = {}
-    player_names = players.get_attribute_by_value("name", "username", name)
-    player_names = [name.lower() for name in player_names]
-
-    item_dict = showdown_data.get_dict("items")
-    ability_dict = showdown_data.get_dict("abilities")
-    move_dict = showdown_data.get_dict("moves")
-
-    # print("here")
-    # total_iterations = len(links)
-    # percent_step = 100 / 10
-    # last_printed_progress = 0
-    for i, link in enumerate(links):
-        print(link)
-        # progress_percentage = (i / total_iterations) * 100
-        # nearest_ten_percent = round(progress_percentage / percent_step) * percent_step
-        # if (
-        #     progress_percentage >= nearest_ten_percent
-        #     and nearest_ten_percent > last_printed_progress
-        # ):
-        #     print(f"Progress: {nearest_ten_percent}%")
-        #     last_printed_progress = nearest_ten_percent
-        req = Request(url=link, headers={"User-Agent": "Mozilla/5.0"})
-        data = urlopen(req).read().decode("utf-8")
-
-        #
-        # print(data)
-        player1 = re.search(r"\|player\|p1\|([\w !-]*)\|", data).group(1).lower()
-        player2 = re.search(r"\|player\|p2\|([\w !-]*)\|", data).group(1).lower()
-
-        # print(player_names)
-        if player1 in player_names:
-            player = 1
-        elif player2 in player_names:
-            player = 2
-        else:
-            continue
-        print(player1)
-        # player = 1 if player1 in player_names else 2
-        # print(player)
-        # if '|showteam|' in data:
-        ts = re.search(r"\|showteam\|p%s\|(.*?)\n" % player, data)
-
-        # print(ts == None)
-        if ts == None:
-            continue
-        else:
-            ts = ts.group(1)
-        for line in ts.split("]"):
-            name, item, ability, move_string, tera = re.search(
-                r"(.*?)\|\|(.*?)\|(.*?)\|(.*?)\|\|.*,(.*)", line
-            ).groups()
-            # print(name, item, ability, move_string, tera)
-
-            if not name in pokemon:
-                pokemon[name] = Pokemon(name, player1 if player == 1 else player2)
-
-            pokemon[name].items.append(item_dict[item.lower()]["name"])
-            pokemon[name].ability.add(ability_dict[ability.lower()]["name"])
-            pokemon[name].teras.append(tera)
-            pokemon[name].count += 1
-            for move in move_string.split(","):
-                pokemon[name].moves.append(move_dict[move.lower()]["name"])
-            # print(pokemon)
-        #
-    print("here")
-    result = StringIO()
-    sys.stdout = result
-    # print(*[f'{move[0]} ({"{:.1%}".format(move[1] / value.count)})' for move in Counter(value.moves).most_common()], sep=', ')
-
-    for key, value in pokemon.items():
-        # print(key, value.player)
-
-        if value.player in player_names:
-            print(f"Name: {key}")
-            print("Moves:", end=" ")
-            # print(Counter(value.moves))
-            if value.moves:
-                print(
-                    *[
-                        f'{move[0]} ({"{:.1%}".format(move[1] / value.count)})'
-                        for move in Counter(value.moves).most_common()
-                    ],
-                    sep=", ",
-                )
-            else:
-                print("None revealed")
-            print("\nAbility:", end=" ")
-            if value.ability:
-                print(*value.ability, sep=", ")
-
-            else:
-                print("None revealed")
-            print("\nTera Types:", end=" ")
-            if value.teras:
-                print(
-                    *[
-                        f'{tera[0]} ({"{:.1%}".format(tera[1] / value.count)})'
-                        for tera in Counter(value.teras).most_common()
-                    ],
-                    sep=", ",
-                )
-
-            else:
-                print("None revealed")
-            print("\nItems:", end=" ")
-            if value.items:
-                print(
-                    *[
-                        f'{item[0]} ({"{:.1%}".format(item[1] / value.count)})'
-                        for item in Counter(value.items).most_common()
-                    ],
-                    sep=", ",
-                )
-            else:
-                print("None revealed")
-            print(f"\nCount: {value.count}\n\n\n")
-            print()
-
-    output = result.getvalue()
-    sys.stdout = sys.__stdout__
-    # print(output)
-    return output
+if __name__ == "__main__":
+    pokemon_ids = load_pokemon_ids()
+    replay_data = analyze_replay(
+        "https://replay.pokemonshowdown.com/gen9vgc2024regf-2062315380",
+        pokemon_ids,
+    )
+    if replay_data:
+        upload_replay(replay_data)
